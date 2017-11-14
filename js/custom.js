@@ -1,62 +1,40 @@
-/***************************************************************************************************************/
-/***************************************************************************************************************/
+(function ($) {
 
-/* Template: Flat Stylish Responsive Portfolio Template
-/* Author: Sarfraz Shoukat, Muhammad Shahbaz Saleem
-/* URL: http://www.egrappler.com
-/* License: http://www.egrappler.com/license
+    "use strict";
 
-/****************************************************************************************************************/
-		
-$(window).load(function(){
-	/* ---------------------------------------------------------------------- */
-	/*	Portfolio
-	/* ---------------------------------------------------------------------- */
+        // PRE loader
+        $(window).load(function(){
+          $('.preloader').fadeOut(1000); // set duration in brackets    
+        });
 
-	// Needed variables
-	var $container = $('#portfolio-list');
-	var $filter = $('#portfolio-filter');
 
-	// Run Isotope  
-	$container.isotope({
-		filter: '*',
-		layoutMode: 'fitRows',
-		animationEngine: 'jQuery',
-		animationOptions: {
-			duration: 750,
-			easing: 'linear'
-		}
-	});
+        //Navigation Section
+        $('.navbar-collapse a').on('click',function(){
+          $(".navbar-collapse").collapse('hide');
+        });
 
-	// Isotope Filter 
-	$filter.find('a').click(function () {
-		var selector = $(this).attr('data-filter');
-		$container.isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false
-			}
-		});
-		return false;
-	});
+        $(window).scroll(function() {
+          if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+              } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+              }
+        });
 
-	// Copy categories to item classes
-	$filter.find('a').click(function () {
-		var currentOption = $(this).attr('data-filter');
-		$filter.find('a').removeClass('current');
-		$(this).addClass('current');
-	});
 
-	/* ---------------------------------------------------------------------- */
-	/*	Fancybox 
-	/* ---------------------------------------------------------------------- */
-	$container.find('.folio').fancybox({
-		'transitionIn': 'elastic',
-		'transitionOut': 'elastic',
-		'speedIn': 200,
-		'speedOut': 200,
-		'overlayOpacity': 0.6
-	});
-});
+        // Smoothscroll js
+        $(function() {
+          $('.custom-navbar a, #home a').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 49
+            }, 1000);
+            event.preventDefault();
+          });
+        });  
+
+
+        // WOW Animation js
+        new WOW({ mobile: false }).init();
+
+})(jQuery);
