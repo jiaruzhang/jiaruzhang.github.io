@@ -54,8 +54,3 @@ Tipuesearch 有个缺点就是需要浏览器将搜索数据下载下来。而�
 
 ### 友链
 欢迎互换友链~~~
-
-### 联系我
-我的邮箱：<riteme@qq.com>
-我的 GitHub：<https://github.com/riteme>
-我的知乎：<https://www.zhihu.com/people/riteme>

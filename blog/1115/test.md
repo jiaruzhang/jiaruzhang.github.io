@@ -62,9 +62,6 @@ if __name__ == "__main__":
 |:-----:|--------|:-----:|
 |233333333333333   |23333333|233    |
 
-我的GitHub: <https://github.com/riteme>  
-[GitHub](https://github.com/riteme)  
-我的E-mail: <riteme@qq.com>
 
 脚注[^footnote]？  
 [^footnote]: 真的行吗......
