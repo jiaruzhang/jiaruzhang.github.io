@@ -2,6 +2,7 @@
 *.pyc
 *.pyo
 *.DS_Store
+*.iml
 map.json
 .idea/*
 .vscode/*
