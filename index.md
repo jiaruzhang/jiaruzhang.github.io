@@ -6,7 +6,7 @@ tags: Home
 ---
 
 ### 欢迎来到 lan-qing's site！
-none
+##### This blog is build upon [riteme](https://github.com/riteme/riteme.github.io).
 
 ### 最近更新
-copy from riteme
+- copy from riteme
