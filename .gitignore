@@ -2,3 +2,7 @@
 *.pyc
 *.pyo
 *.DS_Store
+map.json
+.idea/*
+.vscode/*
+__pycache__/*
