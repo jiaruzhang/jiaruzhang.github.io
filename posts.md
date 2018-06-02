@@ -5,4 +5,4 @@ modified: 2018.3.2
 tags: Posts
 ---
 #### 2018-4
-* [test](./blog/1115/test.html)
+* [A note of *A Survey on Transfer Learning*](./blog/180602/ASoTL.html)

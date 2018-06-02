@@ -1,5 +1,5 @@
 ---
-title: A survey on Transfer Learning
+title: A note of *survey on Transfer Learning*
 create: 2018.6.1
 modified: 2016.6.2
 tags: Note
