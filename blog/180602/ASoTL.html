@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A survey on Transfer Learning - lan-qing.site</title>
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/material/material-icons.css">
+  <link rel="stylesheet" href="/material/material.min.css" >
+  <link href="/tipuesearch/tipuesearch.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/gitment/gitment.css">
+  <link rel="stylesheet" href="/math-renderer/katex/katex.min.css">
+  <link href="/css/site.css" rel="stylesheet">
+  <script src="/jquery/jquery-2.2.4.min.js"></script>
+  <script src="/jquery/js-cookie.js"></script>
+  <script defer src="/material/material.min.js"></script>
+  <script src="/tipuesearch/tipuesearch_set.js"></script>
+  <script src="/tipuesearch/tipuesearch.min.js"></script>
+  <script src="/gitment/gitment.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config( { tex2jax: { inlineMath: [['$','$']] }, "HTML-CSS": { scale: 95 } } );
+  </script>
+  <script src="/math-renderer/selector.js"></script>
+  <script src="/math-renderer/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="/math-renderer/katex/katex.min.js"></script>
+  <script src="/math-renderer/katex/auto-render.js"></script>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">A survey on Transfer Learning</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+        for="fixed-header-drawer-exp"><i class="material-icons">search</i></label>
+        <div class="mdl-textfield__expandable-holder">
+          <form action="/search.html"><input type="text" class="mdl-textfield__input" placeholder="Search Here" name="q" id="fixed-header-drawer-exp" autocomplete="off" required></form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title drawer-title">
+      <a href="/index.html" style="color: inherit; font-weight: inherit;text-decoration: none;">
+        <img src="/favicon.png" width=32 height=32> lan-qing.site
+      </a>
+    </span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/index.html"><i class="material-icons" style="vertical-align: bottom;">home</i> 首页</a>
+      <a class="mdl-navigation__link" href="/posts.html"><i class="material-icons" style="vertical-align: bottom;">library_books</i> 所有文章</a>
+      <a class="mdl-navigation__link" href="/about.html"><i class="material-icons" style="vertical-align: bottom;">info</i> 关于</a>
+      <a class="mdl-navigation__link" href="/links.html"><i class="material-icons" style="vertical-align: bottom;">links</i> 友链</a>
+      <a class="mdl-navigation__link" href="/search.html"><i class="material-icons" style="vertical-align: bottom;">search</i> 搜索</a>
+      <a class="mdl-navigation__link" href="https://github.com/lan-qing/lan-qing.github.io"><i class="material-icons" style="vertical-align: bottom;">class</i> GitHub 项目</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+        <div class="article">
+          <h1 id="a-survey-on-transfer-learning">A Survey on Transfer Learning</h1>
+<h2 id="introduction">Introduction</h2>
+<h4 id="applied-range">Applied range</h4>
+<p><em>knowledge transfer</em>  or <em>transfer learning</em> would be desirable when it is expensive or impossible to recollect the needed training data and rebuild the models.</p>
+<h4 id="examples">Examples</h4>
+<ul>
+<li>
+<p>Web-document classification</p>
+<p>To classify a given Web document into several predefined categories. </p>
+<p>For example, the labeled examples may be the university webpages. But the newly created website may have different data features or data distributions. </p>
+</li>
+<li>
+<p>Data which outdate easily </p>
+<p>Example: indoor WiFi localization problems. We wish to adapt the localization model trained in one time period (the source domain) for a new time period (the target domain), or to adapt the localization model trained on a mobile device (the source domain) for a new mobile device (the target domain)</p>
+</li>
+<li>
+<p>The problem of sentiment classification</p>
+<p>To adapt a classification model that is trained on some products to help learn classification models for some other products</p>
+</li>
+</ul>
+<h2 id="overview">Overview</h2>
+<h3 id="brief-history">Brief History</h3>
+<h4 id="history">History</h4>
+<ul>
+<li>
+<p>Traditional machine learning algorithms: make predictions on the future data using statistical models that are trained on previously collected training data</p>
+</li>
+<li>
+<p>Semisupervised classification: much unlabeled data, little labeled data. Assume they are the same.</p>
+</li>
+</ul>
+<h4 id="transfer-learning">Transfer Learning</h4>
+<ul>
+<li>
+<p>Motivation: People can intelligently apply knowledge learned previously to solve new problems</p>
+</li>
+<li>
+<p>Fundamental motivation: A NIPS-95 workshop on “Learning to Learn”</p>
+</li>
+<li>
+<p>Different names: learning to learn, life-long learning, knowledge transfer, inductive transfer, multitask learning, knowledge consolidation, context-sensitive learning, knowledge-based inductive bias, metalearning, and incremental/cumulative learning</p>
+</li>
+<li>
+<p>New definition: the ability of a system to recognize and apply knowledge and skills learned in previous tasks to novel tasks.</p>
+<ul>
+<li>Difference between transfer learning and mutitask learning: transfer learning cares most about the target task, while multitask learning learning all of the source and target tasks simultaneously</li>
+</ul>
+</li>
+<li>
+<p>Top venues: </p>
+<ul>
+<li>data mining: ACM KDD, IEEE ICDM, and PKDD, for example</li>
+<li>machine learning: ICML, NIPS, ECML, AAAI, and IJCAI, for example</li>
+<li>applications of machine learning and data mining: ACM SIGIR, WWW, and ACL, for example</li>
+</ul>
+</li>
+</ul>
+<h3 id="notations-and-definitions">Notations and Definitions</h3>
+<h4 id="definitions-of-domain-and-task">Definitions of &ldquo;Domain&rdquo; and &ldquo;Task&rdquo;</h4>
+<p>A <em>domain</em> <mathjax>$D$</mathjax> consists of two components: a feature space <mathjax>$\mathcal{X}$</mathjax> and a marginal probability distribution <mathjax>$P(X)$</mathjax>, where <mathjax>$X = \{x_1, \dots, x_n\} \in \mathcal{X}$</mathjax>.</p>
+<p>A <em>task</em> consists of two components: a label space <mathjax>$\mathcal{Y}$</mathjax> and an objective predictive function <mathjax>$f(\cdot)$</mathjax>.</p>
+<p>This survey only consider one source domain <mathjax>$\mathcal{D}_S$</mathjax>, one target domain <mathjax>$\mathcal{D}_T$</mathjax> and usually <mathjax>$0 \le N_T \ll N_S$</mathjax>.</p>
+<h4 id="unified-definition">Unified definition</h4>
+<p><strong>Transfer Learning</strong>: Given a source domain <mathjax>$\mathcal{D}_S$</mathjax> and learning task <mathjax>$\mathcal{T}_S$</mathjax>, a target domain <mathjax>$\mathcal{D}_T$</mathjax> and learning task <mathjax>$\mathcal{T}_T$</mathjax>, transfer learning aims to help improve the learning of the target predictive function <mathjax>$f_T(\cdot)$</mathjax> in <mathjax>$\mathcal{D}_T$</mathjax> using the knowledge in <mathjax>$\mathcal{D}_S$</mathjax> and <mathjax>$\mathcal{T}_S$</mathjax>,where <mathjax>$\mathcal{D}_S \neq \mathcal{D}_T$</mathjax>, or <mathjax>$\mathcal{T}_S \neq \mathcal{T}_T$</mathjax>.</p>
+<h3 id="a-categorization-of-transfer-learning-techniques">A Categorization of Transfer Learning Techniques</h3>
+<p>Three main research issues:</p>
+<ol>
+<li>what to transfer</li>
+<li>how to transfer</li>
+<li>when to transfer</li>
+</ol>
+<p>Three subsettings:</p>
+<ol>
+<li>inductive transfer learning</li>
+<li>transductive transfer learning</li>
+<li>unsupervised transfer learning</li>
+</ol>
+<h5 id="inductive-transfer-learning">inductive transfer learning</h5>
+<p>The target task is different from the source task, no matter when the source and target domains are the same or not.</p>
+<p>Two cases:<br />
+1. A lot of labeled data in the source domain are available.<br />
+2. No labeled data in the source domain are available.</p>
+<h5 id="transductive-transfer-learning">transductive transfer learning</h5>
+<p>The source and target tasks are the same, while the source and target domains are different.</p>
+<p>Two cases:<br />
+1. <mathjax>$\mathcal{X}_S \neq \mathcal{X}_T$</mathjax>.<br />
+2. <mathjax>$\mathcal{X}_S = \mathcal{X}_T$</mathjax> but <mathjax>$P(X_S) \neq P(X_T)$</mathjax>.</p>
+<h5 id="unsupervised-transfer-learning">unsupervised transfer learning</h5>
+<p>no labeled data available in both source and target domains in training.</p>
+<h2 id="inductive-transfer-learning_1">Inductive transfer learning</h2>
+<p><strong>Inductive transfer learning</strong>: Given a source domain <mathjax>$\mathcal{D}_S$</mathjax> and a learning task <mathjax>$\mathcal{T}_S$</mathjax>, a target domain <mathjax>$\mathcal{D}_T$</mathjax> and a learning task <mathjax>$\mathcal{T}_T$</mathjax>, inductive transfer learning aims to help improve the learning of the target predictive function <mathjax>$f_T(\cdot)$</mathjax> in <mathjax>$\mathcal{D}_T$</mathjax> using the knowledge in <mathjax>$\mathcal{D}_S$</mathjax> and <mathjax>$\mathcal{T}_S$</mathjax> where <mathjax>$\mathcal{T}_S \neq \mathcal{T}_T$</mathjax>.</p>
+<h3 id="transferring-knowledge-of-instances">Transferring Knowledge of Instances</h3>
+<p><strong>a boosting algorithm</strong>: <em>TrAdaBoost</em></p>
+<h3 id="transferring-knowledge-of-feature-representations">Transferring Knowledge of Feature Representations</h3>
+          <hr/>
+          <div id="comments"></div>
+          <script type="text/javascript">
+            const gitment = new Gitment({
+              id: '8fa76de233bf1039cb9a2dd4197efbc1',
+              owner: 'lan-qing',
+              repo: 'lan-qing.github.io',
+              oauth: {
+                client_id: '7219b2b674890d7beff8',
+                client_secret: '66c0883978fde2c8460c54d2f85558572d3583bf',
+              },
+              perPage: 10,
+            })
+            gitment.render('comments')
+          </script>
+       </div>
+     </div>
+
+     <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+       <div class="article">
+        <div class="mdl-card mdl-shadow--3dp" style="width: 100%">
+          <div class="mdl-card__supporting-text">
+            标签: <a href="/search.html?q=Note"><span class="label">Note</span></a><br/>
+            创建时间: 2018.06.01<br/>
+            上次修改: 2016.06.02<br />
+            统计: 4973 字 / 约 19 分钟
+          </div>
+        </div>
+        <br />
+        
+        <br />
+        <div class="mdl-card mdl-shadow--3dp" style="width: 100%">
+          <div class="mdl-card__supporting-text">
+            <span class="mathopt-head">数学公式渲染引擎：</span>
+            <form name="mathopt">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="sel" value="mathjax">
+                <span class="mdl-radio__label">MathJax (推荐)</span>
+              </label><br />
+              <div id="tip-1">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                  <input type="radio" id="option-2" class="mdl-radio__button" name="sel" value="katex">
+                  <span class="mdl-radio__label">KaTeX</span>
+                </label>
+              </div>
+              <div id="tip-2">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                  <input type="radio" id="option-3" class="mdl-radio__button" name="sel" value="katex&mathjax">
+                  <span class="mdl-radio__label">Mixed</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mdl-tooltip" data-mdl-for="tip-1">
+        KaTeX 渲染效率很高，但是由于部分 LaTeX 命令无法使用（如 <code>\tag</code>），并且目前 KaTeX 容错性不强，因此使用 KaTeX 时可能会存在一些数学公式无法渲染的情况
+        </div>
+        <div class="mdl-tooltip" data-mdl-for="tip-2">
+        先使用 KaTeX 渲染，再使用 MathJax 渲染
+        </div>
+      </div>
+      <div class="return-up-button">
+        <a href="javascript:$('main').animate( { scrollTop: 0 } , 'fast')">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">vertical_align_top</i>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer__middle-section">
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">LAN-QING.SITE</h1>
+        ve
+      </div>
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">POWERED BY</h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="http://pythonhosted.org/Markdown/">Python Markdown</a></li>
+          <li><a href="http://getmdl.io/">Material Design Lite</a></li>
+          <li><a href="http://www.tipue.com/search/">Tipuesearch</a></li>
+          <li><a href="http://www.mathjax.org/">MathJax</a> & <a href="http://khan.github.io/KaTeX/">KaTeX</a></li>
+          <li><a href="https://github.com/imsun/gitment">Gitment</a></li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">友情链接</h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="https://riteme.github.io">riteme</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mdl-mega-footer__bottom-section">
+      Theme based on <a href="https://getmdl.io/">MDL</a> | Copyright © 2018 lan-qing. All rights reserved.
+    </div>
+  </footer>
+</main>
+</div>
+</body>
+</html>
