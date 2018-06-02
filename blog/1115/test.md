@@ -6,7 +6,7 @@ tags: test
 ---
 [TOC]
 # pagegen.py的试炼
-希望`pagegen.py`能正确工作。  
+希望`pagegen.py`能正确工作。.  
 
 ## 常规Markdown测试
 # h1
