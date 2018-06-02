@@ -11,6 +11,7 @@ import pagegen
 
 
 if __name__ != "__main__":
+    print("ERROR")
     exit(0)
 
 
