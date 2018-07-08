@@ -1,7 +1,7 @@
 ---
 title: 搜索结果
-create: 2016.12.13
-modified: 2016.12.13
+create: 2018.6.1
+modified: 2018.7.8
 tags: 站内搜索
 ---
 
