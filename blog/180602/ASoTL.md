@@ -1,7 +1,7 @@
 ---
 title: A note of《A Survey on Transfer Learning》
 create: 2018.6.2
-modified: 2016.6.2
+modified: 2016.7.8
 tags: Notes
 ---
 [TOC]
