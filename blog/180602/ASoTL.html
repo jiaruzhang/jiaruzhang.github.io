@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A note of <i>A survey on Transfer Learning</i> - lan-qing.site</title>
+  <title>A note of《A Survey on Transfer Learning》 - lan-qing.site</title>
   <link rel="shortcut icon" href="/favicon.png" type="image/png">
   <link rel="stylesheet" href="/material/material-icons.css">
   <link rel="stylesheet" href="/material/material.min.css" >
@@ -30,7 +30,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">A note of <i>A survey on Transfer Learning</i></span>
+        <span class="mdl-layout-title">A note of《A Survey on Transfer Learning》</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
         mdl-textfield--floating-label mdl-textfield--align-right">
@@ -60,7 +60,8 @@
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
         <div class="article">
-          <h1 id="a-survey-on-transfer-learning">A Survey on Transfer Learning</h1>
+          
+<h1 id="a-survey-on-transfer-learning">A Survey on Transfer Learning</h1>
 <h2 id="introduction">Introduction</h2>
 <h4 id="applied-range">Applied range</h4>
 <p><em>knowledge transfer</em>  or <em>transfer learning</em> would be desirable when it is expensive or impossible to recollect the needed training data and rebuild the models.</p>
@@ -154,11 +155,98 @@
 <h3 id="transferring-knowledge-of-instances">Transferring Knowledge of Instances</h3>
 <p><strong>a boosting algorithm</strong>: <em>TrAdaBoost</em></p>
 <h3 id="transferring-knowledge-of-feature-representations">Transferring Knowledge of Feature Representations</h3>
+<p>Aims at finding “good” feature representations to minimize domain divergence and classi- fication or regression model error. </p>
+<p>Similar to <em>common feature learning</em> in the field of multitask learning</p>
+<h4 id="supervised-feature-construction">Supervised Feature Construction</h4>
+<p>In the <em>inductive transfer learning</em> setting, the common features can be learned by solving an optimization problem, given as follows:</p>
+<p><mathjax>$$ argmin_{A, U} \sum_{t \in \{T, S\}} \sum_{i=1}^{n_t} L(y_{t_i}, \langle a_t, U^T x_{t_i}\rangle) + \gamma ||A||^2_{2, 1}$$</mathjax> </p>
+<p><mathjax>$$s.t. U \in \mathbf{O}^d .$$</mathjax></p>
+<h4 id="unsupervised-feature-construction">Unsupervised Feature Construction</h4>
+<p>Sparse coding is an unsupervised feature construction method for learning <em>higher level</em> features for transfer learning. It consists of two steps.</p>
+<p>In the first step, higher level basis vectors <mathjax>$b = \{b_1, b_2, \dots, b_s\}$</mathjax> are learned from</p>
+<p><mathjax>$$ min_{a, b}\sum_i ||x_{S_i} - \sum_j a_{S_i}^j b_j||^2_2 + \beta ||a_{S_i}||_1$$</mathjax></p>
+<p><mathjax>$$s.t. ||b_j||_2 \le 1 , \forall j \in 1, \dots, s. $$</mathjax></p>
+<p>In the second step, <em>higher level</em> features on the target-domain data will be learned based on the basis vectors <mathjax>$b$</mathjax>:</p>
+<p><mathjax>$$a_{T_i}^* = argmin_{a_{T_i}} ||x_{T_i} - \sum_j a_{T_i}^j b_j||^2_2 + \beta||a_{T_i}||_1$$</mathjax></p>
+<h3 id="transferring-knowledge-of-parameters">Transferring Knowledge of Parameters</h3>
+<p>Most approaches are designed to work under multitask learning. But they can be easily modified for transfer learning. Intuitively, we may assign a larger weight to the loss function of the target domain to achieve better performance in the target domain.</p>
+<p><strong>Algorithms</strong>: </p>
+<ul>
+<li>MT-IVM (Lawrence and Platt)</li>
+<li>SVMs for multitask learning (Evgeniou and Pontil)</li>
+<li>A locally weighted ensemble learning framework (Gao et al)</li>
+</ul>
+<h3 id="transferring-relational-knowledge">Transferring Relational Knowledge</h3>
+<p>It deals with transfer learning problems in relational domains. It does not assume that the data drawn from each domain be independent and identically distributed (i.i.d.).</p>
+<p><em>Statistical relational learning techniques</em> are proposed to solve these problems.</p>
+<p><strong>Algorithms</strong>: </p>
+<ul>
+<li>TAMAR (Mihalkova et al)</li>
+</ul>
+<h2 id="transductive-transfer-learning_1">Transductive transfer learning</h2>
+<h3 id="transferring-the-knowledge-of-instances">Transferring the Knowledge of Instances</h3>
+<p>We want to minimize<br />
+<mathjax>$$ \theta^* = argmin_{\theta \in \Theta} \sum_{(x, y)\in D_S} \frac{P(D_T)}{P(D_S)}P(D_S)l(x,y,\theta) \\
+\approx argmin_{\theta \in \Theta} \sum_{i=1}^{n_S}\frac{P_T(x_{T_i}, y_{T_i})}{P_S(x_{S_i}, y_{S_i})} l(x_{S_i}, y_{S_i}, \theta).$$</mathjax><br />
+and<br />
+<mathjax>$$\frac{P_T(x_{T_i}, y_{T_i})}{P_S(x_{S_i}, y_{S_i})}= \frac{P(x_{S_i})}{P(x_{T_i})}$$</mathjax></p>
+<p>Algorithms to estimate <mathjax>$\frac{P(x_{S_i})}{P(x_{T_i})}$</mathjax>:</p>
+<ul>
+<li>kernel-mean matching(KMM）</li>
+<li>Kullback-Leibler Importance Estimation Procedure(KLIEP)</li>
+</ul>
+<h3 id="transferring-knowledge-of-feature-representations_1">Transferring Knowledge of Feature Representations</h3>
+<p>Structural correspondence learning (SCL) algorithm：<br />
+ 1. Define a set of <em>pivot</em> features from both domains<br />
+ 2. Remove these <em>pivot</em> features from the data and treats each <em>pivot</em> feature as a new label vector. Solve <mathjax>$m$</mathjax> classification problem:<br />
+<mathjax>$$f_1(x)= sgn(w_l^T \cdot x), l=1, \dots, m.$$</mathjax><br />
+ 3. Use SVD on matrix <mathjax>$W$</mathjax>: <mathjax>$W = UDV^T$</mathjax>, and <mathjax>$\theta = U^T_{[1:h,:]}$</mathjax>(h is the number of the shared features)is the matrix (linear mapping) whose rows are the top left singular vectors of W.<br />
+ 4. Use the augmented feature vector to build models.</p>
+<p>Disadvantages: How to select the pivot features is difficult and domain dependent.</p>
+<p>MI-SCL: Use Mutual Information (MI) to choose the pivot features instead of using more heuristic criteria.</p>
+<p>Other algorithms:</p>
+<ul>
+<li>coclustering-based algorithm: propagate the label information across different domains.</li>
+<li>bridged refinement</li>
+<li>spectral classification framework for cross-domain transfer learning problem</li>
+<li>a cross-domain text classification algorithm that extended the traditional prob- abilistic latent semantic analysis (PLSA) algorithm</li>
+</ul>
+<p>Transfer learning via dimensionality reduction:<br />
+Maximum Mean Discrepancy Embedding(MMDE) can learn a low-dimensional space to reduce the difference of distributions between different domains. Transfer Component Analysis (TCA) overcomes the drawback of computational burden.</p>
+<h2 id="unsupervised-transfer-learning_1">Unsupervised Transfer Learning</h2>
+<p>Little research works on this setting. <em>Self-taught clustering</em> (STC) and transferred discriminative analysis (TDA) algorithms are proposed to transfer clustering and transfer dimensionality reduction problems, respectively.</p>
+<h3 id="transferring-knowledge-of-feature-representations_2">Transferring Knowledge of Feature Representations</h3>
+<p><em>Self-taught clustering</em> is an instance of <em>unsupervised transfer learning</em>, which aims at clustering a small collection of unlabeled data in the target domain with the help of a large amount of unlabeled data in the source domain.</p>
+<p>STC: tries to learn a common feature space across domains.</p>
+<p><em>TDA</em> algorithm: solves the transfer dimensionality reduction problem. First applies clustering methods to generate pseudoclass labels for the target unlabeled data, then applies dimensionality reduction methods to the target data and labeled source data to reduce the dimensions. Run iteratively.</p>
+<h2 id="transfer-bounds-and-negative-transfer">Transfer Bounds and Negative Transfer</h2>
+<p>Conditional Kolmogorov complexity is used to measure relatedness between tasks and transfer the “right” amount of information. </p>
+<p>A novel graph-based method is used for knowledge transfer.</p>
+<p>How to avoid negative transfer is a very important issue. If two tasks are too dissimilar, then brute-force transfer may hurt the performance.</p>
+<h2 id="applications-of-transfer-learning">Applications of Transfer Learning</h2>
+<p>Datasets:<br />
+- text mining data sets<br />
+- Email spam-filtering data set<br />
+- WiFi localization over time periods data set<br />
+- Sentiment classification data set</p>
+<p>Toolboxes:<br />
+a MATLAB toolkit for transfer learning. http://multitask.cs.berkeley.edu/</p>
+<p>Other applications:<br />
+In sequential machine learning</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This survey reviewed several current trends of transfer learning. Three different settings of Transfer Learning: inductive transfer learning, transductive transfer learning, and unsupervised transfer learning. </p>
+<p>Approaches can be classified into four contexts based on “what to transfer” in learning.</p>
+<p>Future research issues:<br />
+- how to avoid negative transfer<br />
+- how to make sure that no negative transfer happens<br />
+- when an entire domain cannot be used for transfer learning and whether we can still transfer part of the domain for useful learning in the target domain.</p>
+<p>Most transfer learning algorithms assumed that the feature spaces between the source and target domains are the same. However, we may wish to transfer knowledge across domains or tasks that have different feature spaces, and transfer from multiple such source domains. This type is <em>heterogeneous transfer learning</em>.</p>
+<p>Use transfer learning to solve other challenging applications.</p>
           <hr/>
           <div id="comments"></div>
           <script type="text/javascript">
             const gitment = new Gitment({
-              id: '9ee42fbf8f037181c2b90f6f4e98f235',
+              id: '5b27a2dbc0727c4f4ea66bb4c2d2df26',
               owner: 'lan-qing',
               repo: 'lan-qing.github.io',
               oauth: {
@@ -176,14 +264,76 @@
        <div class="article">
         <div class="mdl-card mdl-shadow--3dp" style="width: 100%">
           <div class="mdl-card__supporting-text">
-            标签: <a href="/search.html?q=Note"><span class="label">Note</span></a><br/>
-            创建时间: 2018.06.01<br/>
+            标签: <a href="/search.html?q=Notes"><span class="label">Notes</span></a><br/>
+            创建时间: 2018.06.02<br/>
             上次修改: 2016.06.02<br />
-            统计: 4973 字 / 约 19 分钟
+            统计: 11746 字 / 约 46 分钟
           </div>
         </div>
         <br />
         
+<div class="mdl-card mdl-shadow--3dp" style="width: 100%">
+  <div class="mdl-card__title mdl-card--border">
+    <h4 class="mdl-card__title-text">目录</h4>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <div class="toc">
+<ul>
+<li><a href="#a-survey-on-transfer-learning">A Survey on Transfer Learning</a><ul>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#applied-range">Applied range</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
+</li>
+<li><a href="#overview">Overview</a><ul>
+<li><a href="#brief-history">Brief History</a><ul>
+<li><a href="#history">History</a></li>
+<li><a href="#transfer-learning">Transfer Learning</a></li>
+</ul>
+</li>
+<li><a href="#notations-and-definitions">Notations and Definitions</a><ul>
+<li><a href="#definitions-of-domain-and-task">Definitions of &ldquo;Domain&rdquo; and &ldquo;Task&rdquo;</a></li>
+<li><a href="#unified-definition">Unified definition</a></li>
+</ul>
+</li>
+<li><a href="#a-categorization-of-transfer-learning-techniques">A Categorization of Transfer Learning Techniques</a><ul>
+<li><a href="#inductive-transfer-learning">inductive transfer learning</a></li>
+<li><a href="#transductive-transfer-learning">transductive transfer learning</a></li>
+<li><a href="#unsupervised-transfer-learning">unsupervised transfer learning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#inductive-transfer-learning_1">Inductive transfer learning</a><ul>
+<li><a href="#transferring-knowledge-of-instances">Transferring Knowledge of Instances</a></li>
+<li><a href="#transferring-knowledge-of-feature-representations">Transferring Knowledge of Feature Representations</a><ul>
+<li><a href="#supervised-feature-construction">Supervised Feature Construction</a></li>
+<li><a href="#unsupervised-feature-construction">Unsupervised Feature Construction</a></li>
+</ul>
+</li>
+<li><a href="#transferring-knowledge-of-parameters">Transferring Knowledge of Parameters</a></li>
+<li><a href="#transferring-relational-knowledge">Transferring Relational Knowledge</a></li>
+</ul>
+</li>
+<li><a href="#transductive-transfer-learning_1">Transductive transfer learning</a><ul>
+<li><a href="#transferring-the-knowledge-of-instances">Transferring the Knowledge of Instances</a></li>
+<li><a href="#transferring-knowledge-of-feature-representations_1">Transferring Knowledge of Feature Representations</a></li>
+</ul>
+</li>
+<li><a href="#unsupervised-transfer-learning_1">Unsupervised Transfer Learning</a><ul>
+<li><a href="#transferring-knowledge-of-feature-representations_2">Transferring Knowledge of Feature Representations</a></li>
+</ul>
+</li>
+<li><a href="#transfer-bounds-and-negative-transfer">Transfer Bounds and Negative Transfer</a></li>
+<li><a href="#applications-of-transfer-learning">Applications of Transfer Learning</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</div>
+  </div>
+</div>
+
         <br />
         <div class="mdl-card mdl-shadow--3dp" style="width: 100%">
           <div class="mdl-card__supporting-text">
@@ -242,14 +392,6 @@
           <li><a href="http://www.tipue.com/search/">Tipuesearch</a></li>
           <li><a href="http://www.mathjax.org/">MathJax</a> & <a href="http://khan.github.io/KaTeX/">KaTeX</a></li>
           <li><a href="https://github.com/imsun/gitment">Gitment</a></li>
-        </ul>
-      </div>
-
-      <div class="mdl-mega-footer__drop-down-section">
-        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-        <h1 class="mdl-mega-footer__heading">友情链接</h1>
-        <ul class="mdl-mega-footer__link-list">
-          <li><a href="https://riteme.github.io">riteme</a></li>
         </ul>
       </div>
     </div>

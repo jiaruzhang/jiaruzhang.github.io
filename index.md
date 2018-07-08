@@ -6,7 +6,6 @@ tags: Home
 ---
 
 ### 欢迎来到 lan-qing's site！
-##### This blog is build upon [riteme](https://github.com/riteme/riteme.github.io).
 
 ### 最近更新
 - Added note [A note of *A Survey on Transfer Learning*](./blog/180602/ASoTL.html)
