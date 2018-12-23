@@ -6,12 +6,11 @@ import sys
 import json
 import hashlib
 
-import tipuesearch
+import lib.tipuesearch as tipuesearch
 import pagegen
 
 
 if __name__ != "__main__":
-    print("ERROR")
     exit(0)
 
 

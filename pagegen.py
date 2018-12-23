@@ -7,11 +7,11 @@ from __future__ import unicode_literals
 import os
 import hashlib
 
-import info
-import tag
-import tocer
-import parser
-import navigater
+import lib.info as info
+import lib.tag as tag
+import lib.tocer as tocer
+import lib.parser as parser
+import lib.navigater as navigater
 
 import bs4
 
@@ -31,6 +31,7 @@ from markdown.postprocessors import Postprocessor
 
 WORDS_PER_MINUTE = 250
 BEAUTIFUL_SOUP_PARSER = "lxml"
+GITHUB_LOCATION = "https://github.com/riteme/riteme.github.io/blob/master"
 
 # Mathjax Extension
 class MathJaxPattern(markdown.inlinepatterns.Pattern):
@@ -221,25 +222,34 @@ def generate(filepath):
     if not os.path.exists(filepath):
         raise ValueError("File not found")
 
+    reader = parser.Parser()
+    reader.load_syntax(parser.PanelBeginSyntax)
+    reader.load_syntax(parser.PanelEndSyntax)
+    reader.load_syntax(parser.IncludeSyntax)
     converter = markdown.Markdown(
         extensions=MARKDOWN_EXT,
         extension_configs=MARKDOWN_CONFIG
     )
     with open(filepath) as md:
-        content = md.read()
+        content, temp = reader.process(md.read())
+        if temp:
+            print("(warn) This is a temporary post. Stopped.")
+            return
+
         content = content.replace(chr(8203), '')
         content = converter.convert(content)
-    mdinfo = converter.Meta
 
-    reader = parser.Parser()
-    reader.load_syntax(parser.PanelBeginSyntax)
-    reader.load_syntax(parser.PanelEndSyntax)
-    content, temp = reader.process(content)
-    toc, content = tocer.cut(content)
+    metalost = False
+    try:
+        mdinfo = converter.Meta
+    except AttributeError:
+        metalost = True
 
-    if temp:
-        print("(warn) This is a temporary post. Stopped.")
+    if metalost or len(mdinfo) == 0:
+        print("(info) No metadata. Skipped.")
         return
+
+    toc, content = tocer.cut(content)
 
     title = info.generate_title(mdinfo["title"][0])
 
@@ -263,6 +273,7 @@ def generate(filepath):
     navigater.home_folder = os.path.abspath(".")
     index_url = navigater.get_path("myself")
     index_url = index_url.rsplit(".", 1)[0] + ".html"
+    filename = os.path.basename(filepath)
     words = len(index_text)
 
     # 处理特殊信息
@@ -289,7 +300,9 @@ def generate(filepath):
             content=content,
             page_key=pagekey,
             page_title=pagetitle,
-            page_url=pageurl
+            page_url=pageurl,
+            mdname=filename,
+            github_location=os.path.join(GITHUB_LOCATION, os.path.dirname(index_url), filename)
         ))
 
     # 返回索引信息
