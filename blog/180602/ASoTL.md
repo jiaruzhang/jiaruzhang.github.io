@@ -5,7 +5,7 @@ modified: 2018.7.8
 tags: Notes
 ---
 [TOC]
-# A Survey on Transfer Learning
+# A note of A Survey on Transfer Learning
 
 ## Introduction
 
