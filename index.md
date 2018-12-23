@@ -5,7 +5,9 @@ modified: 2018.12.23
 tags: Home
 ---
 
-### 欢迎来到 lan-qing's site！
+### Welcome to lan-qing's site！
+
+### Visit bio page [here](./bio.html)
 
 ### 最近更新
 - Added diary for [2018.12.23](./blog/181223/today.html)
