@@ -31,7 +31,7 @@ from markdown.postprocessors import Postprocessor
 
 WORDS_PER_MINUTE = 250
 BEAUTIFUL_SOUP_PARSER = "lxml"
-GITHUB_LOCATION = "https://github.com/riteme/riteme.github.io/blob/master"
+GITHUB_LOCATION = "https://github.com/lan-qing/lan-qing.github.io/blob/master"
 
 # Mathjax Extension
 class MathJaxPattern(markdown.inlinepatterns.Pattern):
