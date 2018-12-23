@@ -2,5 +2,4 @@ var tipuesearch = {"pages": [{"title": "A note of A Survey on Transfer Learning"
 {"title": "About Today","text": "2013年12月23日《社会主义核心价值》首次发布。<br/>和我一起读：<br/>1<br/>2<br/>3富强！民主！文明！和谐！<br/>自由！平等！公正！法制！<br/>爱国！敬业！诚信！友善！<br/><br/><br/>高举中国特色社会主义伟大旗帜，为中华民族伟大复兴而奋斗！","tags": "Diary","url": "blog/181223/today.html"},
 {"title": "Home Page","text": "欢迎来到 lan-qing’s site！<br/>最近更新<br/><br/>Added diary for 2018.12.23<br/>Added note A note of A Survey on Transfer Learning<br/>","tags": "Home","url": "index.html"},
 {"title": "关于","text": "关于<br/><br/>从riteme那里复制来的博客<br/>","tags": "About","url": "about.html"},
-{"title": "友链","text": "友情链接","tags": "Friend Links","url": "links.html"},
 {"title": "所有文章","text": "2018-12<br/><br/>Diary - 2018.12.23<br/><br/>2018-6<br/><br/>A note of A Survey on Transfer Learning<br/>","tags": "Posts","url": "posts.html"}]};
