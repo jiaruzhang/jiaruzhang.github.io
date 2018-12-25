@@ -7,7 +7,7 @@ tags: Home
 
 ### Welcome to lan-qing's blog site！
 
-### Visit bio page [here](./bio.html)
+### Visit my bio page [here](./bio.html)
 
 ### 最近更新
 - Added diary for [2018.12.23](./blog/181223/today.html)
