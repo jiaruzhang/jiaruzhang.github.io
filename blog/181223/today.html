@@ -15,6 +15,9 @@
   <script defer src="/material/material.min.js"></script>
   <script src="/math-renderer/selector.js"></script>
   <script src="/gitment/gitment.js"></script>
+  <script src="/valine/av-min.js"></script>
+  <script src="/valine/Valine.min.js"></script>
+  <script src="/valine/myvaline.js" ></script>
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -62,20 +65,7 @@
 
 <p>高举中国特色社会主义伟大旗帜，为中华民族伟大复兴而奋斗！</p>
           <hr/>
-          <div id="comments"></div>
-          <script type="text/javascript">
-              const gitment = new Gitment({
-                  id: 'a700e480d40dcb08dd8faeae4d3df2c7',
-                      owner: 'lan-qing',
-                      repo: 'lan-qing.github.io',
-                      oauth: {
-                      client_id: '7219b2b674890d7beff8',
-                          client_secret: '66c0883978fde2c8460c54d2f85558572d3583bf',
-                  },
-                  perPage: 10,
-              })
-              gitment.render('comments')
-          </script>
+          <div id="comment"></div>
         </div>
       </div>
       <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone sidebar">

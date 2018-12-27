@@ -279,7 +279,7 @@ def generate(filepath):
     # 处理特殊信息
     pagetitle = mdinfo["title"][0].strip().replace("\"", " ")
     pagekey = hashlib.md5(pagetitle.encode("utf8")).hexdigest()
-    pageurl = "http://riteme.github.io/" + os.path.relpath(
+    pageurl = "http://lan-qing.github.io/" + os.path.relpath(
         os.path.abspath(filepath), start=os.path.abspath("."))[
         :-3] + ".html"
 
