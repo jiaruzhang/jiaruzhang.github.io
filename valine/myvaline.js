@@ -1,5 +1,4 @@
 new Valine({
-    enable: true,
     av: AV,
     el: '.comment',
     emoticon_url: 'https://cloud.panjunwen.com/alu',
