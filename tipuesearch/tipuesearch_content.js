@@ -2,4 +2,5 @@ var tipuesearch = {"pages": [{"title": "A note of A Survey on Transfer Learning"
 {"title": "About Today","text": "2013年12月23日，中共中央办公厅印发的《关于培育和践行社会主义核心价值观的意见》中首<br/>次提出社会主义核心价值观。<br/>和我一起读：<br/>1<br/>2<br/>3富强！民主！文明！和谐！<br/>自由！平等！公正！法制！<br/>爱国！敬业！诚信！友善！<br/><br/><br/>高举中国特色社会主义伟大旗帜，为中华民族伟大复兴而奋斗！","tags": "Diary","url": "blog/181223/today.html"},
 {"title": "Home Page","text": "Welcome to lan-qing’s blog site！<br/>Visit my bio page here<br/>最近更新<br/><br/>Added diary for 2018.12.23<br/>Added note A note of A Survey on Transfer Learning<br/>","tags": "Home","url": "index.html"},
 {"title": "关于","text": "关于<br/><br/>从riteme那里复制来的博客<br/>","tags": "About","url": "about.html"},
+{"title": "博客主页","text": "欢迎来到我的博客！<br/>我的介绍页面<br/>最近更新<br/><br/>添加了一篇日记 2018.12.23<br/>添加了阅读笔记 A note of A Survey on Transfer Learning<br/>","tags": "Home","url": "index.html"},
 {"title": "所有文章","text": "2018-12<br/><br/>Diary - 2018.12.23<br/><br/>2018-6<br/><br/>A note of A Survey on Transfer Learning<br/>","tags": "Posts","url": "posts.html"}]};
