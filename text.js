@@ -8,7 +8,7 @@ quotes = [
     '当时明月在，曾照彩云归。',
     '你在凝望深渊时，深渊也在凝望你。',
     '起落参商终不见，人如棋子梦如真。',
-    '向鬼神借一秒，抚过当时你含泪眼角。',
+    '向鬼神借一秒，抚过当时你含泪眼角。'
 ];
 var index = Math.floor(Math.random() * quotes.length);
 var quote = quotes[index];
