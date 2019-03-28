@@ -11,7 +11,7 @@ Here I use a two feature fusion network to explain it: $\mathbf{x}, \mathbf{z} \
 
 I list some of questions and my thoughts here:
 
-1. Why $\mathbf{x}$ and $\mathbf{y}$ can be called two features here? Maybe they are taken from different
+1. Why $\mathbf{x}$ and $\mathbf{z}$ can be called two features here? Maybe they are taken from different
 domains and can be distinguished by humans easily, but is there any quantified criteria to measure
 whether they are two different features or just two parts of one features? On the other hand, if we mix them
 as one feature $[\mathbf{x};\mathbf{z}]$, can it be split as original two features again?
