@@ -14,6 +14,11 @@
 "text": "Welcome to lan-qing\u2019s blog site\uff01<br/>Visit my bio page here<br/>\u6700\u8fd1\u66f4\u65b0<br/><br/>Added diary for 2018.12.23<br/>Added note A note of A Survey on Transfer Learning<br/>",
 "url": "index.html"
 },
+"Some thoughts about feature fusion network": {
+"tags": "Notes",
+"text": "Feature fusion neural network I defined before is a network with multiple input features and single output features.<br/>Here I use a two feature fusion network to explain it: $\\\\mathbf{x}, \\\\mathbf{z} \\\\xrightarrow^{Neural Network} \\\\mathbf{y}$.<br/>I list some of questions and my thoughts here:<br/><br/>Why $\\\\mathbf{x}$ and $\\\\mathbf{y}$ can be called two features here? Maybe they are taken from different<br/>domains and can be distinguished by humans easily, but is there any quantified criteria to measure<br/>whether they are two different features or just two parts of one features? On the other hand, if we mix them<br/>as one feature $\\\\[x;z\\\\]$, can they be separated as two features again?<br/>",
+"url": "blog/190328/today.html"
+},
 "\u5173\u4e8e": {
 "tags": "About",
 "text": "\u5173\u4e8e<br/><br/>\u4eceriteme\u90a3\u91cc\u590d\u5236\u6765\u7684\u535a\u5ba2<br/>",
