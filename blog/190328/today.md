@@ -14,7 +14,7 @@ I list some of questions and my thoughts here:
 1. Why $\mathbf{x}$ and $\mathbf{y}$ can be called two features here? Maybe they are taken from different
 domains and can be distinguished by humans easily, but is there any quantified criteria to measure
 whether they are two different features or just two parts of one features? On the other hand, if we mix them
-as one feature $[\mathbf{x};\mathbf{z}]$, can they be splited as two features again?
+as one feature $[\mathbf{x};\mathbf{z}]$, can they be split as two features again?
 
     I guess different feature vectors come from different high-dimensional probability distributions.
     Moreover, the inner correlation coefficient is larger than outer correlation coefficient.
