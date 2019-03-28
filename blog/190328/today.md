@@ -23,6 +23,5 @@ as one feature $[\mathbf{x};\mathbf{z}]$, can it be split as original two featur
     methods.
 
 2. Why tensor-based feature fusion is helpful? If the neural network to make final decision is powerful enough
-(can always find the global optimal solution), the feature fusion method will be useless. But how to combine the
-feature fusion process and the neural network structure?
+(can always find the global optimal solution), the feature fusion method will be useless. But the analysis about combining the feature fusion process and the neural network structure is still remained.
 
