@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Some thoughts about feature fusion network - lan-qing.site</title>
+  <title>《On the Expressive Power of Deep Neural Networks》阅读笔记 - lan-qing.site</title>
   <link rel="shortcut icon" href="/favicon.png" type="image/png">
   <link rel="stylesheet" href="/material/material-icons.css">
   <link rel="stylesheet" href="/material/material.min.css" >
@@ -23,7 +23,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Some thoughts about feature fusion network</span>
+        <span class="mdl-layout-title">《On the Expressive Power of Deep Neural Networks》阅读笔记</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp"><i class="material-icons">search</i></label>
@@ -52,25 +52,50 @@
       <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
         <div class="article main-article" lang="en-US">
           
-<p>Feature fusion neural network I defined before is a network with multiple input features and single output features.<br />
-Here I use a two feature fusion network to explain it: <mathjax>$\mathbf{x}, \mathbf{z} \rightarrow^{NN} \mathbf{y}$</mathjax>.</p>
-<p>I list some of questions and my thoughts here:</p>
+<p>本文结合个人理解，简要梳理《On the Expressive Power of Deep Neural Networks》的内容。这是一篇Maithra Raghu等人发表在2017年的ICML上的文章，并且在会议上做了近20分钟的<a href="https://vimeo.com/237276052">展示讲解</a>。</p>
+<h2 id="introduction">Introduction</h2>
+<p>论文的题目中有两个关键词：expressive power 和 deep neural network。对expressive power，我们可能会产生的问题有：</p>
 <ol>
-<li>
-<p>Why <mathjax>$\mathbf{x}$</mathjax> and <mathjax>$\mathbf{z}$</mathjax> can be called two features here? Maybe they are taken from different<br />
-domains and can be distinguished by humans easily, but is there any quantified criteria to measure<br />
-whether they are two different features or just two parts of one features? On the other hand, if we mix them<br />
-as one feature <mathjax>$[\mathbf{x};\mathbf{z}]$</mathjax>, can it be split as original two features again?</p>
-<p>I guess different feature vectors come from different high-dimensional probability distributions.<br />
-Moreover, the inner correlation coefficient is larger than outer correlation coefficient.</p>
-<p>If this question is answered, it will be feasible to split any features into two parts and fuse them with tensor<br />
-methods.</p>
-</li>
-<li>
-<p>Why tensor-based feature fusion is helpful? If the neural network to make final decision is powerful enough<br />
-(can always find the global optimal solution), the feature fusion method will be useless. But the analysis about combining the feature fusion process and the neural network structure is still remained.</p>
-</li>
+<li>什么是expressive power？</li>
+<li>为什么要研究expressive power？</li>
+<li>如何测量expressive power?</li>
+<li>什么决定了网络的expressive power?</li>
+<li>研究expressive power对理论上神经网络的结构理解，和实际的生产生活应用带来了什么好处？</li>
 </ol>
+<p>本文正是为这些问题提供了解答。</p>
+<h2 id="expressive-power">Expressive power</h2>
+<p><strong>神经网络实际上是在拟合一个从输入到输出的函数</strong>。一个确定的神经网络结构<mathjax>$A$</mathjax>对应着一个确定的函数<mathjax>$F_A(x;W)$</mathjax>，其中<mathjax>$x$</mathjax>是输入，<mathjax>$W$</mathjax>是整个<br />
+网络中的参数。<strong>对于一个仅使用分段线性激活函数（如：ReLU和hard tanh）的神经网络而言，无论最后拟合出的函数有多么复杂，也一定是一个分段线性函数</strong>。更精确地，<br />
+有定理：</p>
+<blockquote>
+<p><strong>Theorem 2.</strong> Regions in Input Space. <em>Given the corresponding function<br />
+of a neural network <mathjax>$F_A(\mathbb{R}^m;W)$</mathjax> with ReLU or hard tanh activations,<br />
+ the input space is partitioned into convex polytopes,<br />
+ with <mathjax>$F_A(\mathbb{R}^m;W)$</mathjax> corresponding to a different linear function on each region.</em></p>
+<p><strong>定理 2.</strong> 输入空间区域定理. <em>一个仅使用ReLU和hard tanh激活函数的神经网络<mathjax>$F_A(\mathbb{R}^m;W)$</mathjax>，会将<br />
+输入空间分割成多个凸的多面体。在每一个多面体上，<mathjax>$F_A(\mathbb{R}^m;W)$</mathjax>都对应于一个不同的线性函数。</em></p>
+</blockquote>
+<p><strong>因此，从神经网络的整体结果来看，一个很自然的expressive power的度量就是在某个输入空间上分段线性函数的线性区间的数量。为方便表示说明，这里将输入空间限制为一条一维的路径</strong>。</p>
+<p><img alt="" src="./f1.png" /> <img alt="" src="./f2.png" /></p>
+<p>定义输入空间中的一维路径如下：</p>
+<blockquote>
+<p><strong>Definition.</strong> Given two points, <mathjax>$x_0, x_1 \in \mathbb{R}^m$</mathjax>, we say <mathjax>$x(t)$</mathjax> is a trajectory (between <mathjax>$x_0$</mathjax> and <mathjax>$x_1$</mathjax><br />
+) if <mathjax>$x(t)$</mathjax> is a curve parametrized by a scalar <mathjax>$t \in [0, 1]$</mathjax>, with <mathjax>$x(0) = x_0$</mathjax> and <mathjax>$x(1) = x_1$</mathjax>.</p>
+<p><strong>定义.</strong> 对空间中的两个点 <mathjax>$x_0, x_1 \in \mathbb{R}^m$</mathjax>, 定义<mathjax>$x(t)$</mathjax>为<mathjax>$x_0$</mathjax> 和 <mathjax>$x_1$</mathjax> 之间的路径，其中<mathjax>$t \in [0,1]$</mathjax> 为参数，满足<br />
+<mathjax>$x(0) = x_0$</mathjax> 且 <mathjax>$x(1) = x_1$</mathjax>.</p>
+</blockquote>
+<p><strong>Montufar 等人的论文中证明了，在同样的参数数量限制下，一个多层全连接网络一定会比一个单层神经网络有更多的线性区间。 本文在这篇论文的基础上，进一步提出使用每一个神经元的可能的激活状态的组合的数目（以下简称：激活状态组合数）来表示网络的expressive power。以relu神经元为例，如图所示，在输入不同的情况下，神经元的激活状态是不同的。</strong> </p>
+<p><img alt="" src="./f3.png" /> <img alt="" src="./f4.png" /></p>
+<p>具体定义如下：</p>
+<blockquote>
+<p>Define <mathjax>$\mathcal{AP}(F_A(x;W))$</mathjax> to be the activation pattern – a string of form <mathjax>${0, 1}^\text{num neurons}$</mathjax> (for ReLUs) and <mathjax>${-1, 0, 1}^\text{num neurons}$</mathjax> (for hard tanh) of the network encoding the linear region of the activation function of every neuron, for an input <mathjax>$x$</mathjax> and weights <mathjax>$W$</mathjax>. </p>
+<p>Define \mathcal{A}(F_A(x(t);W)) as the number of distinct <mathjax>$\mathcal{AP}(F_A(x;W))$</mathjax> as we sweep <mathjax>$x$</mathjax> along <mathjax>$x(t)$</mathjax>.</p>
+</blockquote>
+<p><strong>很自然的问题是：激活状态组合数受到哪些参数的影响？定理1指出，对ReLU神经网络，激活状态组合数的上界为<mathjax>$O(k^{mn})$</mathjax>；对hard tanh网络则为<mathjax>$O((2k)^{mn})$</mathjax>，其中n是网络层数，k是网络宽度，m是输入空间维度。 作者在附录中给出了一页半的证明过程。</strong></p>
+<blockquote>
+<p><strong>Theorem 1</strong>. (Tight) Upper Bound for Number of Activation Patterns <em>Let <mathjax>$A_{(n,k)}$</mathjax> denote a fully connected network with <mathjax>$n$</mathjax> hidden layers of width <mathjax>$k$</mathjax>, and inputs in <mathjax>$\mathbb{R}^m$</mathjax>. Then the number of activation patterns <mathjax>$\mathcal{A}(F_{A_{n,k}}(\mathbb{R}^m;W)$</mathjax> is upper bounded by <mathjax>$O(k^{mn})$</mathjax> for ReLU activations, and <mathjax>$O((2k)^{mn})$</mathjax> for hard tanh.</em></p>
+</blockquote>
+<p><strong>根据这一定理我们可以回答以下问题：当总神经元个数（kn）一定时，如何安排能达到最大的激活状态组合数？经过代入公式求导计算，解得<mathjax>$k=e$</mathjax>为最大值。所以当<mathjax>$k&gt;e$</mathjax>时，网络的expressive power随着每层神经元个数的增加而减小。</strong></p>
           <hr/>
           <div class="comment"></div>
           <script src="/valine/myvaline.js" ></script>
@@ -82,9 +107,9 @@ methods.</p>
             <div class="mdl-card__actions sidebar-title">页面信息</div>
             <div class="mdl-card__supporting-text">
               标签: <a href="/search.html?q=Notes"><span class="label">Notes</span></a><br/>
-              创建时间: 2019.03.28<br/>
-              上次修改: 2019.03.28<br/>
-              字数统计: 1379 字 / 约 5 分钟
+              创建时间: 2018.06.02<br/>
+              上次修改: 2018.07.08<br/>
+              字数统计: 2826 字 / 约 11 分钟
             </div>
           </div>
           <br/>
@@ -93,7 +118,10 @@ methods.</p>
   <div class="mdl-card__actions sidebar-title">目录</div>
   <div class="mdl-card__supporting-text">
     <div class="toc">
-<ul></ul>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#expressive-power">Expressive power</a></li>
+</ul>
 </div>
   </div>
 </div>
