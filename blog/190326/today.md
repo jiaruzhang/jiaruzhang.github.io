@@ -50,7 +50,7 @@ $x(0) = x_0$ 且 $x(1) = x_1$.
 ![](./f3.png) ![](./f4.png)
 
 具体定义如下：
-> Define $\mathcal{AP}(F_A(x;W))$ to be the activation pattern – a string of form ${0, 1}^\text{num neurons}$ (for ReLUs) and ${-1, 0, 1}^\text{num neurons}$ (for hard tanh) of the network encoding the linear region of the activation function of every neuron, for an input $x$ and weights $W$. 
+> Define $\mathcal{AP}(F_A(x;W))$ to be the activation pattern – a string of form $\{0, 1\}^\text{num neurons}$ (for ReLUs) and $\{-1, 0, 1\}^\text{num neurons}$ (for hard tanh) of the network encoding the linear region of the activation function of every neuron, for an input $x$ and weights $W$. 
 > 
 > Define \mathcal{A}(F_A(x(t);W)) as the number of distinct $\mathcal{AP}(F_A(x;W))$ as we sweep $x$ along $x(t)$.
 
