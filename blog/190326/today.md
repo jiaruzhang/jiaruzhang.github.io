@@ -58,4 +58,7 @@ $x(0) = x_0$ 且 $x(1) = x_1$.
 
 > **Theorem 1**. (Tight) Upper Bound for Number of Activation Patterns *Let $A_{(n,k)}$ denote a fully connected network with $n$ hidden layers of width $k$, and inputs in $\mathbb{R}^m$. Then the number of activation patterns $\mathcal{A}(F_{A_{n,k}}(\mathbb{R}^m;W)$ is upper bounded by $O(k^{mn})$ for ReLU activations, and $O((2k)^{mn})$ for hard tanh.*
 
-**根据这一定理我们可以回答以下问题：当总神经元个数（kn）一定时，如何安排能达到最大的激活状态组合数？经过代入公式求导计算，解得$k=e$为最大值。所以当$k>e$时，网络的expressive power随着每层神经元个数的增加而减小。**
+**作者在MNIST数据集上验证了这一定理，结果如下图。实验显示，transitions number 随网络深度的增加成指数增加，而随网络宽度的增加在对数坐标轴上并不明显。**
+![](./f5.png)
+
+**根据定理1我们可以回答以下问题：当总神经元个数（kn）一定时，如何安排能达到最大的激活状态组合数？经过代入公式求导计算，解得$k=e$为最大值。所以当$k>e$时，网络的expressive power随着每层神经元个数的增加而减小。**
