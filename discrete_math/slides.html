@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
+  <title>课件</title>
   <link rel="shortcut icon" href="/favicon.png" type="image/png">
   <link rel="stylesheet" href="/material/material-icons.css">
   <link rel="stylesheet" href="/material/material.min.css" >
@@ -23,7 +23,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">{title}</span>
+        <span class="mdl-layout-title">课件</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp"><i class="material-icons">search</i></label>
@@ -50,7 +50,7 @@
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
         <div class="article main-article" lang="en-US">
-          {content}
+          <h3 id="_1">课件列表</h3>
           <hr/>
           <div class="comment"></div>
           <script src="/valine/myvaline.js" ></script>
@@ -61,14 +61,14 @@
           <div class="mdl-card mdl-shadow--3dp sidebar-card">
             <div class="mdl-card__actions sidebar-title">页面信息</div>
             <div class="mdl-card__supporting-text">
-              标签: {tags}<br/>
-              创建时间: {create}<br/>
-              上次修改: {modified}<br/>
-              字数统计: {time}
+              标签: <a href="/search.html?q=slides"><span class="label">slides</span></a><br/>
+              创建时间: 2019.09.07<br/>
+              上次修改: 2019.09.07<br/>
+              字数统计: 4 字 / 约 0 分钟
             </div>
           </div>
           <br/>
-          {toc}
+          
           <div class="mdl-card mdl-shadow--3dp sidebar-card">
             <div class="mdl-card__actions sidebar-title">数学公式渲染</div>
             <div class="mdl-card__supporting-text">

@@ -1,14 +1,9 @@
 ---
-title: 离散数学
+title: 课件
 create: 2019.9.7
 modified: 2019.9.7
-tags: Home
+tags: slides
 ---
 
-### 离散数学
+### 课件列表
 
-###
-
-### 最近更新
-
-- None
