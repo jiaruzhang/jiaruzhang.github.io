@@ -6,3 +6,5 @@ tags: homework
 ---
 
 ### 作业
+
+1. (Sep. 9) P9 - 1,2,3

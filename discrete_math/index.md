@@ -24,4 +24,5 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 
 ### 最近更新
 
+- 上传了第一次课课件，更新第一次课作业
 - 添加了课程介绍
