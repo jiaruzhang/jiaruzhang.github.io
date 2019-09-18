@@ -1,7 +1,7 @@
 .header .mdl-navigation__link {
-    color: #eeeeee;
-    font-weight: 700;
-    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .navigation-container {
@@ -33,6 +33,6 @@
     border-bottom: 4px solid #8bc34a;
 }
 
-.center-items {
-    justify-content: center;
+section.section--center {
+    max-width: 1920px;
 }

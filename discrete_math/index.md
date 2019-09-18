@@ -5,8 +5,7 @@ modified: 2019.9.16
 tags: Home
 ---
 
-
-### 课程信息 
+## 课程信息 {: #top }
 
 离散数学 (MA238)
 
@@ -23,14 +22,14 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 上课地点：下院307
 
 
-### <span><i class="material-icons">create</i></span> 课件
+## <i class="material-icons">create</i> 课件 {: #课件 }
 
-| # | 课程           | 下载链接|
-|---|----------------|--|
-| 1 | [图论-Chapter01](/discrete_math/files/Chapter01.pdf) | <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><a href="/discrete_math/files/Chapter01.pdf">下载</a><span><i class="material-icons">get_app</i></span></button> |
-| 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) | <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">下载<span><i class="material-icons">get_app</i></span></button>|
+| # | 课程                                                 |
+|---|------------------------------------------------------|
+| 1 | [图论-Chapter01](/discrete_math/files/Chapter01.pdf) |
+| 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) |
 
-### <span><i class="material-icons">insert_drive_file</i></span> 作业
+## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
 | # | 日期    | 作业                           |
 |---|---------|--------------------------------|

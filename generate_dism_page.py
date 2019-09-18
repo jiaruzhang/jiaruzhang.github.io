@@ -176,6 +176,7 @@ MARKDOWN_EXT = [
     "markdown.extensions.nl2br",
     "markdown.extensions.meta",
     "markdown.extensions.smarty",
+    "markdown.extensions.attr_list",
     latex_friendly(),
     # new_tab_on_links(),
     tasklist(),
