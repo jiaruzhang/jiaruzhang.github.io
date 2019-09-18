@@ -1,5 +1,5 @@
 .header .mdl-navigation__link {
-    color: white;
+    color: #eeeeee;
     font-weight: 700;
     font-size: 14px;
 }
@@ -29,13 +29,10 @@
   }
 
 .navigation .mdl-navigation__link:hover {
+    color: white;
     border-bottom: 4px solid #8bc34a;
 }
 
-.mdl-layout__content {
-    flex: 1 0 auto;
-}
-
-.mdl-mega-footer {
-    flex: 0 0 auto;
+.center-items {
+    justify-content: center;
 }
