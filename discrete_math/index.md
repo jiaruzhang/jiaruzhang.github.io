@@ -36,4 +36,4 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | Sep. 9  | P9 -1,2,3                      |
 | 2 | Sep. 12 | P9 - 7, 8 (边列表，正向表不做) |
 | 3 | Sep. 16 | P35 - 1, 2, 3, 6                            |
-| 4 | Sep. 24 | [小练习](/discrete_math/files/exercise1.pdf)                         |
+| 4 | Sep. 24 | [小练习](/discrete_math/files/exercise1.pdf)\|[答案](/discrete_math/files/exercise1-sol.pdf)|
