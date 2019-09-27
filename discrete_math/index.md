@@ -28,6 +28,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 |---|------------------------------------------------------|
 | 1 | [图论-Chapter01](/discrete_math/files/Chapter01.pdf) |
 | 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) |
+| 2 | [图论-Chapter02](/discrete_math/files/Chapter03.pdf) |
 
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
