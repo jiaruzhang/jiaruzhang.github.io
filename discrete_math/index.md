@@ -21,7 +21,6 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 
 上课地点：下院307
 
-
 ## <i class="material-icons">create</i> 课件 {: #课件 }
 
 | # | 课程                                                 |
@@ -32,14 +31,22 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
-| # | 日期    | 作业                           |
-|---|---------|--------------------------------|
-| 1 | Sep. 9  | P9 -1,2,3                      |
-| 2 | Sep. 12 | P9 - 7, 8 (边列表，正向表不做) |
-| 3 | Sep. 16 | P35 - 1, 2, 3, 6                            |
-|4| Sep. 23| P36 - 8, 9, 10|
+<!-- 
+替换答案的链接即可
+
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> 
+-->
+
+| # | 日期    | 作业                           |答案|
+|---|---------|--------------------------------|--|
+| 1 | Sep.9  | P9 -1, 2, 3                      ||
+| 2 | Sep.12 | P9 - 7, 8 (边列表，正向表不做) | |
+| 3 | Sep.16 | P35 - 1, 2, 3, 6 ||
+| 4 | Sep.23 | P36 - 8, 9, 10||
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
-| # | 日期 | 题目 |
-|--|--|--|
-| 1 | Sep. 24 | [习题一](/discrete_math/files/exercise1.pdf)\|[答案](/discrete_math/files/exercise1-sol.pdf)|
+
+| # | 日期 | 题目 | 答案 |
+|--|--|--| -- |
+| 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
+
