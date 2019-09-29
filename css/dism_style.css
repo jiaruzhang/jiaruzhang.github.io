@@ -36,3 +36,7 @@
 section.section--center {
     max-width: 1920px;
 }
+
+h2 {
+    padding-top: 50px;
+}

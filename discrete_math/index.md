@@ -32,7 +32,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
 <!-- 
-替换答案的链接即可
+增加下载链接的话替换下面的href即可
 
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> 
 -->
