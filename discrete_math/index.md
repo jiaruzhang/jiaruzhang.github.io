@@ -42,7 +42,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | Sep.9  | P9 -1, 2, 3                      ||
 | 2 | Sep.12 | P9 - 7, 8 (边列表，正向表不做) | |
 | 3 | Sep.16 | P35 - 1, 2, 3, 6 ||
-| 4 | Sep.23 | P36 - 8, 9, 10||
+| 4 | Sep.23 | P36 - 8, 9, 10| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
