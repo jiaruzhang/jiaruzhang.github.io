@@ -53,4 +53,9 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | # | 日期 | 题目 | 答案 |
 |--|--|--| -- |
 | 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
+| 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
 
+## <i class="material-icons">local_library</i> 小测 {: #小测}
+| # | 题目|  答案 |
+|--|--|--|
+| 1 | [小测一](/discrete_math/files/quiz1.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
