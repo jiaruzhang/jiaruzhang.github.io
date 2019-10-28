@@ -47,7 +47,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 4 | Sep.23 | P36 - 8, 9, 10| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 5 | Oct.11 | P66 - 1, 2, 14, 16| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework5-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 6 | Oct.14 | P12 - 1(2,4,6,8), 4(2,4,6), 5(2,4,6,8), 6(2)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework6-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
-| 7 | | P37 - 1(1,3), 2| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework7-sol.jpg"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
+| 7 | Oct.24 | P37 - 1(1,3), 2| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework7-sol.jpg"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
