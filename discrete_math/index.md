@@ -21,6 +21,8 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 
 上课地点：下院307
 
+平时成绩: 作业20%，小测30%
+
 ## <i class="material-icons">create</i> 课件 {: #课件 }
 
 | # | 课程                                                 |
