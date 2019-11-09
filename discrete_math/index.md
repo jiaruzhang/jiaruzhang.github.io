@@ -41,7 +41,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> 
 -->
 
-| # | 日期    | 作业                           |答案|
+| # | 日期    | 作业                           |参考答案|
 |---|---------|--------------------------------|--|
 | 1 | Sep.9  | P9 -1, 2, 3                      ||
 | 2 | Sep.12 | P9 - 7, 8 (边列表，正向表不做) | |
@@ -49,16 +49,16 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 4 | Sep.23 | P36 - 8, 9, 10| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 5 | Oct.11 | P66 - 1, 2, 14, 16| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework5-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 6 | Oct.14 | P12 - 1(2,4,6,8), 4(2,4,6), 5(2,4,6,8), 6(2)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework6-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
-| 7 | | P37 - 1(1,3), 2| |
+| 7 | Oct.24 | P37 - 1(1,3), 2| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework7-sol.jpg"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
-| # | 日期 | 题目 | 答案 |
+| # | 日期 | 题目 | 参考答案 |
 |--|--|--| -- |
 | 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
 | 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
 
 ## <i class="material-icons">local_library</i> 小测 {: #小测}
-| # | 题目|  答案 |
+| # | 题目|  参考答案 |
 |--|--|--|
 | 1 | [小测一](/discrete_math/files/quiz1.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
