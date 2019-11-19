@@ -31,18 +31,9 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) |
 | 3 | [图论-Chapter03](/discrete_math/files/Chapter03.pdf) |
 | 4 | [数理逻辑-Chapter01](/discrete_math/files/Chapter11.pdf) |
-<<<<<<< HEAD
 | 5 | [数理逻辑-Chapter02](/discrete_math/files/Chapter12.pdf)
 | 6 | [数理逻辑-Chapter04](discreate_math/files/离散数学chapter04.pdf)
 | 7 | [数理逻辑-Chapter05](discrete_math/files/离散数学chapter05.pdf)
-||||||| merged common ancestors
-| 5 | [数理逻辑-Chapter02](/discrete_math/files/Chapter12.pdf)
-=======
-| 5 | [数理逻辑-Chapter02](/discrete_math/files/Chapter12.pdf) |
-| 6 | [数理逻辑-Chapter04](/discrete_math/files/Chapter14.pdf) |
-| 7 | [数理逻辑-Chapter05](/discrete_math/files/Chapter15.pdf)|
-
->>>>>>> 21adf2a3fa1d3bd0e69bbc938ae4360cd25cd8b5
 
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
@@ -57,7 +48,6 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | Sep.9  | P9 -1, 2, 3                      ||
 | 2 | Sep.12 | P9 - 7, 8 (边列表，正向表不做) | |
 | 3 | Sep.16 | P35 - 1, 2, 3, 6 ||
-<<<<<<< HEAD
 | 4 | Sep.23 | P36 - 8, 9, 10| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 5 | Oct.11 | P66 - 1, 2, 14, 16| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework5-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 6 | Oct.14 | P12 - 1(2, 4, 6, 8), 4(2, 4, 6), 5(2, 4, 6, 8), 6(2)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework6-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
@@ -70,18 +60,9 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 
 | # | 日期 | 题目 | 参考答案 |
 |--|--|--| -- |
-<<<<<<< HEAD
-| 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-| 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-||||||| merged common ancestors
-| 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-| 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-=======
 | 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 3 | Nov.12 | [习题三](/discrete_math/files/exercise3.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise3-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-
->>>>>>> 21adf2a3fa1d3bd0e69bbc938ae4360cd25cd8b5
 
 ## <i class="material-icons">local_library</i> 小测 {: #小测}
 
