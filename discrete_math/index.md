@@ -1,7 +1,7 @@
 ---
 title: 离散数学 - MA238
 create: 2019.9.7
-modified: 2019.9.16
+modified: 2019.11.19
 tags: Home
 ---
 
@@ -53,6 +53,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 6 | Oct.14 | P12 - 1(2,4,6,8), 4(2,4,6), 5(2,4,6,8), 6(2)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework6-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 7 | Oct.24 | P37 - 1(1,3), 2| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework7-sol.jpg"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 | 8 | Nov.7 | P37 - 3, 4(2), 5(8) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework8-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
+| 9 | Nov.11 | 7(10,11), 8(4,5,6,及补充), 9(1), 12(1) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework9-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
@@ -60,6 +61,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 |--|--|--| -- |
 | 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
 | 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
+| 3 | Nov.12 | [习题三](/discrete_math/files/exercise3.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise3-sol.pdf"><i class="material-icons left">file_download</i>&nbsp;下载</a>|
 
 ## <i class="material-icons">local_library</i> 小测 {: #小测}
 | # | 题目|  参考答案 |
