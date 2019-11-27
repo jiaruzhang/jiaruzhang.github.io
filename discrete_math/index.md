@@ -30,12 +30,12 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | [图论-Chapter01](/discrete_math/files/Chapter01.pdf) |
 | 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) |
 | 3 | [图论-Chapter03](/discrete_math/files/Chapter03.pdf) |
-| 4 | [数理逻辑-Chapter01](/discrete_math/files/Chapter11.pdf) |
-| 5 | [数理逻辑-Chapter02](/discrete_math/files/Chapter12.pdf) |
-| 6 | [数理逻辑-Chapter04](discreate_math/files/离散数学chapter04.pdf) |
-| 7 | [数理逻辑-Chapter05](discrete_math/files/离散数学chapter05.pdf) |
-| 8 | [数理逻辑-Chapter09](discrete_math/files/离散数学chapter09.pdf) |
-| 9 | [数理逻辑-Chapter11](discrete_math/files/离散数学chapter11.pdf) |
+| 4 | [数理逻辑-Chapter01](/discrete_math/files/离散数学chapter01.pdf) |
+| 5 | [数理逻辑-Chapter02](/discrete_math/files/离散数学chapter02.pdf) |
+| 6 | [数理逻辑-Chapter04](/discreate_math/files/离散数学chapter04.pdf) |
+| 7 | [数理逻辑-Chapter05](/discrete_math/files/离散数学chapter05.pdf) |
+| 8 | [数理逻辑-Chapter09](/discrete_math/files/离散数学chapter09.pdf) |
+| 9 | [数理逻辑-Chapter11](/discrete_math/files/离散数学chapter11.pdf) |
 
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
