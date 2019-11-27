@@ -30,10 +30,12 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | [图论-Chapter01](/discrete_math/files/Chapter01.pdf) |
 | 2 | [图论-Chapter02](/discrete_math/files/Chapter02.pdf) |
 | 3 | [图论-Chapter03](/discrete_math/files/Chapter03.pdf) |
-| 4 | [数理逻辑-Chapter01](/discrete_math/files/Chapter11.pdf) |
-| 5 | [数理逻辑-Chapter02](/discrete_math/files/Chapter12.pdf) |
-| 6 | [数理逻辑-Chapter04](/discrete_math/files/Chapter14.pdf)|
-| 7 | [数理逻辑-Chapter05](/discrete_math/files/Chapter15.pdf)|
+| 4 | [数理逻辑-Chapter01](/discrete_math/files/离散数学chapter01.pdf) |
+| 5 | [数理逻辑-Chapter02](/discrete_math/files/离散数学chapter02.pdf) |
+| 6 | [数理逻辑-Chapter04](/discreate_math/files/离散数学chapter04.pdf) |
+| 7 | [数理逻辑-Chapter05](/discrete_math/files/离散数学chapter05.pdf) |
+| 8 | [数理逻辑-Chapter09](/discrete_math/files/离散数学chapter09.pdf) |
+| 9 | [数理逻辑-Chapter11](/discrete_math/files/离散数学chapter11.pdf) |
 
 ## <i class="material-icons">insert_drive_file</i> 作业 {: #作业 }
 
@@ -55,6 +57,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 8 | Nov.7 | P37 - 3, 4(2), 5(8) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework8-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 9 | Nov.11 | 7(10, 11), 8(4, 5, 6, 及补充), 9(1), 12(1) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework9-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 10 | Nov.18 | P66 - 5(2, 4, 6, 8, 10), 7(10), 8(2, 4, 6, 7), 10(1, 3, 5, 7) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework10-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
+| 12 | Nov.25 | P84 - 3(7~12), 5 | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework12-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
