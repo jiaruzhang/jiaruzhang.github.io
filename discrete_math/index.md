@@ -75,4 +75,6 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | # | 题目|  参考答案 |
 |--|--|--|
 | 1 | [小测一](/discrete_math/files/quiz1.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
+| 2 | [小测二](/discrete_math/files/quiz2.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 暂无</a> |
+
 
