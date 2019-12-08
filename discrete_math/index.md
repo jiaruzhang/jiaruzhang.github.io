@@ -59,7 +59,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 10 | Nov.18 | P66 - 5(2, 4, 6, 8, 10), 7(10), 8(2, 4, 6, 7), 10(1, 3, 5, 7) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework10-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 |11| Nov.21 | P84 - 1(1, 3, 5, 7, 9), 2(2, 4, 6, 8), 4(1, 2, 3, 4, 5, 9, 10)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework11-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 12 | Nov.25 | P84 - 3(7~12), 5 | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework12-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
-| 12 | Dec.2 | P156 - 1(4), 2(3), 5, 6(4), 7(1, 3, 5), 8(1, 2, 3), 11(2, 4), 12(2, 4) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework13-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
+| 13 | Dec.2 | P156 - 1(4), 2(3), 5, 6(4), 7(1, 3, 5), 8(1, 2, 3), 11(2, 4), 12(2, 4) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework13-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
@@ -68,7 +68,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 1 | Sep.24 | [习题一](/discrete_math/files/exercise1.pdf) |<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 3 | Nov.12 | [习题三](/discrete_math/files/exercise3.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise3-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
-| 4 | Dec.5 | [习题四](/discrete_math/files/exercise4.pdf)| |
+| 4 | Dec.5 | [习题四](/discrete_math/files/exercise4.pdf)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 
 ## <i class="material-icons">local_library</i> 小测 {: #小测}
 
