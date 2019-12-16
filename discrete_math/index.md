@@ -32,7 +32,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 3 | [图论-Chapter03](/discrete_math/files/Chapter03.pdf) |
 | 4 | [数理逻辑-Chapter01](/discrete_math/files/离散数学chapter01.pdf) |
 | 5 | [数理逻辑-Chapter02](/discrete_math/files/离散数学chapter02.pdf) |
-| 6 | [数理逻辑-Chapter04](/discreate_math/files/离散数学chapter04.pdf) |
+| 6 | [数理逻辑-Chapter04](/discrete_math/files/离散数学chapter04.pdf) |
 | 7 | [数理逻辑-Chapter05](/discrete_math/files/离散数学chapter05.pdf) |
 | 8 | [数理逻辑-Chapter09](/discrete_math/files/离散数学chapter09.pdf) |
 | 9 | [数理逻辑-Chapter10](/discrete_math/files/离散数学chapter10.pdf) |
