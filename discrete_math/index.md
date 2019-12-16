@@ -73,6 +73,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 2 | Oct.24 | [习题二](/discrete_math/files/exercise2.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 3 | Nov.12 | [习题三](/discrete_math/files/exercise3.pdf)|<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise3-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a>|
 | 4 | Dec.5 | [习题四](/discrete_math/files/exercise4.pdf)| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/exercise4-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
+| 5 | Dec.19 | [习题五](/discrete_math/files/exercise5.pdf)|  |
 
 ## <i class="material-icons">local_library</i> 小测 {: #小测}
 
