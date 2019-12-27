@@ -64,8 +64,8 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 14 | Dec.9 | P156 - 13(2,4), 14(1), 15(1), 16(1), 17(6), 18(4), 19(2), 22 | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework14-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 15 | Dec.16 | P158 - 23， 24(2), 27, 29, 31, 34(2) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework15-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 17 | Dec.19 | P189 - 12(2), 14, 15, 17(2), 18(4), 21, 22 | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework17-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
-| 18 | Dec.19 | P190 - 27, 30, 33, 35, 37, 38| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework18-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
-
+| 18 | Dec.22 | P190 - 27, 30, 33, 35, 37, 38| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework18-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 暂无</a> |
+| 19 | Dec.24 | P191 - 39(1), 41(1), 42, 47, P211 - 2(2), 4, 5(4)(5), 7, 9(2), 10(2), 14| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework18-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 暂无</a> |
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
 | # | 日期 | 题目 | 参考答案 |
