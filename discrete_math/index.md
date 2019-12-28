@@ -66,6 +66,7 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 | 17 | Dec.19 | P189 - 12(2), 14, 15, 17(2), 18(4), 21, 22 | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework17-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 18 | Dec.22 | P190 - 27, 30, 33, 35, 37, 38| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework18-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 暂无</a> |
 | 19 | Dec.24 | P191 - 39(1), 41(1), 42, 47, P211 - 2(2), 4, 5(4)(5), 7, 9(2), 10(2), 14| <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/homework18-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 暂无</a> |
+
 ## <i class="material-icons">storage</i> 习题 {: #习题}
 
 | # | 日期 | 题目 | 参考答案 |
@@ -83,3 +84,4 @@ TA: [刘俊男](mailto:liujunnan@sjtu.edu.cn) [张家儒](mailto:jiaruzhang@sjtu
 |--|--|--|
 | 1 | [小测一](/discrete_math/files/quiz1.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz1-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
 | 2 | [小测二](/discrete_math/files/quiz2.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz2-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
+| 3 | [小测三](/discrete_math/files/quiz3.pdf) | <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/discrete_math/files/quiz3-sol.pdf"><i class="material-icons left">file_download</i>&nbsp; 下载</a> |
