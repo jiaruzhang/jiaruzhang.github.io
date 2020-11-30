@@ -95,10 +95,12 @@ of a neural network <mathjax>$F_A(\mathbb{R}^m;W)$</mathjax> with ReLU or hard t
 <blockquote>
 <p><strong>Theorem 1</strong>. (Tight) Upper Bound for Number of Activation Patterns <em>Let <mathjax>$A_{(n,k)}$</mathjax> denote a fully connected network with <mathjax>$n$</mathjax> hidden layers of width <mathjax>$k$</mathjax>, and inputs in <mathjax>$\mathbb{R}^m$</mathjax>. Then the number of activation patterns <mathjax>$\mathcal{A}(F_{A_{n,k}}(\mathbb{R}^m;W)$</mathjax> is upper bounded by <mathjax>$O(k^{mn})$</mathjax> for ReLU activations, and <mathjax>$O((2k)^{mn})$</mathjax> for hard tanh.</em></p>
 </blockquote>
-<p><strong>根据这一定理我们可以回答以下问题：当总神经元个数（kn）一定时，如何安排能达到最大的激活状态组合数？经过代入公式求导计算，解得<mathjax>$k=e$</mathjax>为最大值。所以当<mathjax>$k&gt;e$</mathjax>时，网络的expressive power随着每层神经元个数的增加而减小。</strong></p>
+<p><strong>作者在MNIST数据集上验证了这一定理，结果如下图。实验显示，transitions number 随网络深度的增加成指数增加，而随网络宽度的增加在对数坐标轴上并不明显。</strong><br />
+<img alt="" src="./f5.png" /></p>
+<p><strong>根据定理1我们可以回答以下问题：当总神经元个数（kn）一定时，如何安排能达到最大的激活状态组合数？经过代入公式求导计算，解得<mathjax>$k=e$</mathjax>为最大值。所以当<mathjax>$k&gt;e$</mathjax>时，网络的expressive power随着每层神经元个数的增加而减小。</strong></p>
           <hr/>
-          <div class="comment"></div>
-          <script src="/valine/myvaline.js" ></script>
+          <!-- <div class="comment"></div>
+          <script src="/valine/myvaline.js" ></script> -->
         </div>
       </div>
       <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone sidebar">
@@ -109,7 +111,7 @@ of a neural network <mathjax>$F_A(\mathbb{R}^m;W)$</mathjax> with ReLU or hard t
               标签: <a href="/search.html?q=Notes"><span class="label">Notes</span></a><br/>
               创建时间: 2018.06.02<br/>
               上次修改: 2018.07.08<br/>
-              字数统计: 2834 字 / 约 11 分钟
+              字数统计: 2928 字 / 约 11 分钟
             </div>
           </div>
           <br/>
