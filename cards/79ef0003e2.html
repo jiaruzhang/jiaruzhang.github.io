@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>给棒棒的小礼物</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #FFFFFF;
+    }
+    
+    #card {
+        height: 100%;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 100px;
+        text-align: center;
+        background: #FAFAFA;
+    }
+    
+    #scratch {
+        width: 300px;
+        height: 100px;
+        margin: 50px auto 0;
+        border: 1px solid #ccc;
+    }
+    </style>
+    <link rel="stylesheet" href="./dist/lucky-card.css">
+    <script src="./dist/lucky-card.min.js"></script>
+</head>
+
+<body>
+    <div id="scratch">
+        <div id="card">洛丽塔一条
+</div>
+    </div>
+    <script>
+    LuckyCard.case({
+        ratio: 1.
+    }, function() {
+        alert('全刮开了！额外奖励一个亲亲！');
+        this.clearCover();
+    });
+    </script>
+</body>
+
+</html>
