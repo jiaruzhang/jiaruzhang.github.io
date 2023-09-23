@@ -84,5 +84,7 @@ I am a 24-year-old Ph.D Candidate of Computer Science at Shanghai Jiao Tong Univ
 co-supervised by [Prof. Yang Hua](https://www.qub.ac.uk/schools/eeecs/Study/PostgraduateResearch/find-a-phd-supervisor/dr-yang-hua.html), [Prof. Tao Song](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=424), and [Prof. Ruhui Ma](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=328). 
 My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Casual Discovery. 
 
+I am looking for a PostDoc position now.
+
 [//]: # (She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.)
 {style="text-align: justify;"}
