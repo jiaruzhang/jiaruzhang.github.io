@@ -126,12 +126,20 @@
     <lastmod>2020-09-21T19:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://lan-qing.github.io/talk/robustness-of-bayesian-neural-networks-to-gradient-based-attacks/</loc>
+    <lastmod>2020-08-04T19:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://lan-qing.github.io/talk/how-much-position-information-do-convolutional-neural-networks-encode/</loc>
     <lastmod>2020-05-16T19:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</loc>
+    <lastmod>2019-05-21T19:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/featurefusion/</loc>
