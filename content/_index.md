@@ -180,7 +180,7 @@ sections:
           company_logo: org-cicc2
           location: Shanghai
           date_start: '2023-08-08'
-          date_end: '2020-09-12'
+          date_end: '2023-09-12'
           description: |2-
               Responsibilities include:
               * Reproduce factor mining techniques based on deep neural networks.
