@@ -12,7 +12,7 @@ address:
   postcode: '200240'
   country: China
 
-summary: "A short review of the applications of Lipschitz constraint and spectral Norm in Deep Learning."
+summary: "A short review of the applications of Lipschitz constraint and spectral norm in Deep Learning."
 abstract: ''
 
 # Talk start and end times.

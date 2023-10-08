@@ -272,11 +272,22 @@ sections:
       title: Awards
       subtitle:
       text: |-
+        - Stars of Tomorrow (Award of Excellent Intern of Microsoft Research Asia) (2023)
         - CETC The 14TH Research Institute Glarun Scholarship (2021)
         - Three Good Student of SJTU (2018, 2020, 2021)
         - Excellent League Member of SJTU (2016, 2020, 2021)
         - Outstanding graduate of SJTU (2019)
-        - Excellent Student Cadre (2016)
+        - Excellent Student Cadre of SJTU (2016)
+    design:
+      columns: '2'
+  - block: contact
+    id: others
+    content:
+      title: Others
+      subtitle:
+      text: |-
+        - I serve as a network manager of students' dormitory in SJTU from 2019, as a core member of [SJTU Network & Information Management Oragnization (SJTU-NIMO)](https://nimo.sjtu.edu.cn).
+        - I enjoy learning to tune virtual singers. Check [bilibili page](https://space.bilibili.com/33129609) to see my creations!
     design:
       columns: '2'
   - block: contact

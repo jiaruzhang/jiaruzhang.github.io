@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Jiaru Zhang 张家儒
+title: Jiaru Zhang
 
 # Full name (for SEO)
 first_name: Jiaru
@@ -35,14 +35,16 @@ education:
   courses:
     - course: PhD in Computer Science and Technology
       institution: Shanghai Jiao Tong University
-      year: 2019.9 - 2024.6 (expected)
+      year: 2019.9 - 2024.3 (expected)
 #    - course: MEng in Artificial Intelligence
 #      institution: Massachusetts Institute of Technology
 #      year: 2009
     - course: BSc in Computer Science and Technology (IEEE Honor Class)
       institution: Shanghai Jiao Tong University
       year: 2015.9 - 2019.6
-
+    - course: Electrical Engineering International Intensive program
+      institution: University of Washington
+      year: 2017.6 - 2017.8
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -81,10 +83,10 @@ highlight_name: true
 ---
 
 I am a 24-year-old Ph.D Candidate of Computer Science at Shanghai Jiao Tong University, supervised by [Prof. Haibing Guan](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102), and 
-co-supervised by [Prof. Yang Hua](https://www.qub.ac.uk/schools/eeecs/Study/PostgraduateResearch/find-a-phd-supervisor/dr-yang-hua.html), [Prof. Tao Song](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=424), and [Prof. Ruhui Ma](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=328). 
+co-supervised by [Prof. Yang Hua](https://pure.qub.ac.uk/en/persons/yang-hua/), [Prof. Tao Song](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=424), and [Prof. Ruhui Ma](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=328). 
 My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Casual Discovery. 
 
-I am looking for a PostDoc position now.
+I am looking for a postdoc position now.
 
 [//]: # (She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.)
 {style="text-align: justify;"}

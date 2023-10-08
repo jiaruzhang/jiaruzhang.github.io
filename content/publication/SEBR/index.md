@@ -50,7 +50,7 @@ featured: true
 url_pdf: ''
 url_code: 'https://github.com/AISIGSJTU/SEBR'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-#url_poster: ''
+url_poster: 'poster.pdf'
 #url_project: ''
 url_slides: 'slides/SEBR.pdf'
 #url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'
@@ -79,12 +79,6 @@ projects:
 #slides: example
 ---
 
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
 
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}}
 
 [//]: # (Supplementary notes can be added here, including [code, math, and images]&#40;https://wowchemy.com/docs/writing-markdown-latex/&#41;.)

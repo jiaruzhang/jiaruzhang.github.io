@@ -12,7 +12,7 @@ address:
   postcode: '200240'
   country: China
 
-summary: "A group sharing about the paper *Robustness of Bayesian Neural Networks to Gradient-Based Attacks*."
+summary: "A short sharing about the paper *Robustness of Bayesian Neural Networks to Gradient-Based Attacks*."
 abstract: ''
 
 # Talk start and end times.
