@@ -5,12 +5,28 @@
     <link>https://lan-qing.github.io/</link>
       <atom:link href="https://lan-qing.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiaru Zhang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Jiaru Zhang</title>
       <link>https://lan-qing.github.io/</link>
     </image>
+    
+    <item>
+      <title>CGI-DM: Digital Copyright Authentication for Diffusion Models via Contrasting Gradient Inversion</title>
+      <link>https://lan-qing.github.io/publication/cgi-dm/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/cgi-dm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPOT: Harnessing Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior</title>
+      <link>https://lan-qing.github.io/publication/spot/</link>
+      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/spot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>THOR: Generic Energy Estimation for On-device Training</title>
@@ -37,7 +53,7 @@
     </item>
     
     <item>
-      <title>Learning Identifiable Causal Structures with Pairwise Representation</title>
+      <title>Supervised Causal Learning of Identifiable Causal Structures</title>
       <link>https://lan-qing.github.io/publication/paire/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/publication/paire/</guid>
@@ -57,14 +73,6 @@
       <link>https://lan-qing.github.io/publication/aedg/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/publication/aedg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SPOT: Harnessing Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior</title>
-      <link>https://lan-qing.github.io/publication/spot/</link>
-      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/spot/</guid>
       <description></description>
     </item>
     
@@ -340,7 +348,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-431726598&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-952817634&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -350,7 +358,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-431726598&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-952817634&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
