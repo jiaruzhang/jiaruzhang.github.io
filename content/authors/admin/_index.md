@@ -22,20 +22,20 @@ organizations:
     url: https://en.sjtu.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Bayesian Neural Networks, Adversarial Attack and Defense, and Casual Discovery.
+bio: My research interests include Bayesian Neural Networks, Adversarial Attack and Defense, and Causal Discovery.
 
 # Interests to show in About widget
 interests:
   - Bayesian Neural Networks
   - Adversarial Attack and Defense
-  - Casual Discovery
+  - Causal Discovery
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD in Computer Science and Technology
       institution: Shanghai Jiao Tong University
-      year: 2019.9 - 2024.3 (expected)
+      year: 2019.9 - 2024.6 (expected)
 #    - course: MEng in Artificial Intelligence
 #      institution: Massachusetts Institute of Technology
 #      year: 2009
@@ -73,7 +73,7 @@ social:
   # and uncomment the lines below.
 #  - icon: cv
 #    icon_pack: ai
-#    link: uploads/resume.pdf
+#    link: uploads/CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
@@ -82,9 +82,9 @@ email: ''
 highlight_name: true
 ---
 
-I am a 24-year-old Ph.D Candidate of Computer Science at Shanghai Jiao Tong University, supervised by [Prof. Haibing Guan](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102), and 
+I am a 25-year-old Ph.D. Candidate of Computer Science at Shanghai Jiao Tong University, supervised by [Prof. Haibing Guan](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102), and 
 co-supervised by [Prof. Yang Hua](https://pure.qub.ac.uk/en/persons/yang-hua/), [Prof. Tao Song](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=424), and [Prof. Ruhui Ma](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=328). 
-My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Casual Discovery. 
+My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Causal Discovery. 
 
 I am looking for a postdoc position now.
 

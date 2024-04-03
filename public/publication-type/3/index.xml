@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 | Jiaru Zhang</title>
+    <link>https://lan-qing.github.io/publication-type/3/</link>
+      <atom:link href="https://lan-qing.github.io/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
+    <description>3</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 09 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
+      <title>3</title>
+      <link>https://lan-qing.github.io/publication-type/3/</link>
+    </image>
+    
+    <item>
+      <title>SPOT: Harnessing Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior</title>
+      <link>https://lan-qing.github.io/publication/spot/</link>
+      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/spot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>THOR: Generic Energy Estimation for On-device Training</title>
+      <link>https://lan-qing.github.io/publication/thor/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/thor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supervised Causal Learning of Identifiable Causal Structures</title>
+      <link>https://lan-qing.github.io/publication/paire/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/paire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All Frequency Components Matter: A Learnable Frequency Component Compression Framework for Adversarial Defense</title>
+      <link>https://lan-qing.github.io/publication/frequency/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/frequency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generalized Tensor-based Multiple Feature Fusion Network using Block Decomposition</title>
+      <link>https://lan-qing.github.io/publication/featurefusion/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/featurefusion/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

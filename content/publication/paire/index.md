@@ -1,5 +1,5 @@
 ---
-title: 'Learning Identifiable Causal Structures with Pairwise Representation'
+title: 'Supervised Causal Learning of Identifiable Causal Structures'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -8,6 +8,7 @@ authors:
   - admin
   - Rui Ding
   - Qiang Fu
+  - Bojun Huang
   - Yang Hua
   - Haibing Guan
   - Shi Han

@@ -51,7 +51,7 @@ featured: true
 url_pdf: 'IBBNN.pdf'
 url_code: 'https://github.com/AISIGSJTU/IBBNN'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-#url_poster: ''
+url_poster: 'poster.pdf'
 #url_project: ''
 url_slides: ''
 #url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'

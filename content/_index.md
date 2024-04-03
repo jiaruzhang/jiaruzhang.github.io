@@ -170,7 +170,7 @@ sections:
           date_start: '2022-11-18'
           date_end: '2023-08-01'
           description: |2-
-              Responsibilities include:
+              Mentor: [Justin Ding](https://www.microsoft.com/en-us/research/people/juding/). Responsibilities include:
 
               * Solve supervised causal discovery problem based on transformer neural network architecture.
               * Explore better solutions and submit two papers to a top conference as first author and co-author separately.
@@ -298,7 +298,7 @@ sections:
       text: |-
       #        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: jiaruzhang@sjtu.edu.cn
+      email: jiaruzhang AT sjtu DOT edu DOT cn
       #      phone: 888 888 88 88
       #      appointment_url: 'https://calendly.com'
       address:
