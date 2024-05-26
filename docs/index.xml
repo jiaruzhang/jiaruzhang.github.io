@@ -5,12 +5,20 @@
     <link>https://lan-qing.github.io/</link>
       <atom:link href="https://lan-qing.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiaru Zhang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Jiaru Zhang</title>
       <link>https://lan-qing.github.io/</link>
     </image>
+    
+    <item>
+      <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
+      <link>https://lan-qing.github.io/publication/bfm/</link>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/bfm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CGI-DM: Digital Copyright Authentication for Diffusion Models via Contrasting Gradient Inversion</title>
@@ -348,7 +356,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-231879456&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-956328714&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -358,7 +366,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-231879456&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-956328714&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -3,7 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lan-qing.github.io/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication-type/3/</loc>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/bfm/</loc>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication_types/</loc>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/</loc>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication-type/1/</loc>
@@ -12,18 +28,6 @@
   </url><url>
     <loc>https://lan-qing.github.io/publication/cgi-dm/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication_types/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication-type/3/</loc>
-    <lastmod>2024-02-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/spot/</loc>
