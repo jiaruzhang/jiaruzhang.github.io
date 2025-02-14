@@ -5,12 +5,28 @@
     <link>https://lan-qing.github.io/publication/</link>
       <atom:link href="https://lan-qing.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://lan-qing.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>THOR: A Generic Energy Estimation Approach for On-Device Training</title>
+      <link>https://lan-qing.github.io/publication/thor/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/thor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Identifiable Structures Helps Avoid Bias in DNN-based Supervised Causal Learning</title>
+      <link>https://lan-qing.github.io/publication/paire/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/paire/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
@@ -37,26 +53,10 @@
     </item>
     
     <item>
-      <title>THOR: Generic Energy Estimation for On-device Training</title>
-      <link>https://lan-qing.github.io/publication/thor/</link>
-      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/thor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Information Bound and its Applications in Bayesian Neural Networks</title>
       <link>https://lan-qing.github.io/publication/ibbnn/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/publication/ibbnn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Supervised Learning of Identifiable Causal Structures</title>
-      <link>https://lan-qing.github.io/publication/paire/</link>
-      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/paire/</guid>
       <description></description>
     </item>
     
