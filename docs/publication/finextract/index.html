@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: May 13, 2025 --><html lang="en-us" >
+<!-- Last Published: June 26, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -276,7 +276,7 @@
 
   
 
-<meta name="description" content="" />
+<meta name="description" content="Diffusion Models (DMs) have evolved into advanced image generation tools, especially for few-shot fine-tuning where a pretrained DM is fine-tuned on a small set of images to capture specific styles or objects. Many people upload these personalized checkpoints online, fostering communities such as Civitai and HuggingFace. However, model owners may overlook the potential risks of data leakage by releasing their fine-tuned checkpoints. Moreover, concerns regarding copyright violations arise when unauthorized data is used during fine-tuning.  In this paper, we ask *&#34;Can training data be extracted from these fine-tuned DMs shared online?”* A successful extraction would present not only data leakage threats but also offer tangible evidence of copyright infringement. To answer this, we propose FineXtract, a framework for extracting fine-tuning data.  Our method approximates fine-tuning as a gradual shift in the model&#39;s learned distribution---from the original pretrained DM toward the fine-tuning data. By extrapolating the models before and after fine-tuning, we guide the generation toward high-probability regions within the fine-tuned data distribution. We then apply a clustering algorithm to extract the most probable images from those generated using this extrapolated guidance. Experiments on DMs fine-tuned with datasets such as WikiArt, DreamBooth, and real-world checkpoints posted online validate the effectiveness of our method, extracting approximately 20\% of fine-tuning data in most cases, significantly surpassing baseline performance." />
 
 
 
@@ -304,22 +304,21 @@
 
 
   
-  
 
 
 
 
 
 
-<meta property="twitter:card" content="summary" />
+<meta property="twitter:card" content="summary_large_image" />
 
   <meta property="twitter:site" content="@wowchemy" />
   <meta property="twitter:creator" content="@wowchemy" />
-<meta property="twitter:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" />
+<meta property="twitter:image" content="https://lan-qing.github.io/publication/finextract/featured.png" />
 <meta property="og:site_name" content="Jiaru Zhang" />
 <meta property="og:url" content="https://lan-qing.github.io/publication/finextract/" />
 <meta property="og:title" content="Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models | Jiaru Zhang" />
-<meta property="og:description" content="" /><meta property="og:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="Diffusion Models (DMs) have evolved into advanced image generation tools, especially for few-shot fine-tuning where a pretrained DM is fine-tuned on a small set of images to capture specific styles or objects. Many people upload these personalized checkpoints online, fostering communities such as Civitai and HuggingFace. However, model owners may overlook the potential risks of data leakage by releasing their fine-tuned checkpoints. Moreover, concerns regarding copyright violations arise when unauthorized data is used during fine-tuning.  In this paper, we ask *&#34;Can training data be extracted from these fine-tuned DMs shared online?”* A successful extraction would present not only data leakage threats but also offer tangible evidence of copyright infringement. To answer this, we propose FineXtract, a framework for extracting fine-tuning data.  Our method approximates fine-tuning as a gradual shift in the model&#39;s learned distribution---from the original pretrained DM toward the fine-tuning data. By extrapolating the models before and after fine-tuning, we guide the generation toward high-probability regions within the fine-tuned data distribution. We then apply a clustering algorithm to extract the most probable images from those generated using this extrapolated guidance. Experiments on DMs fine-tuned with datasets such as WikiArt, DreamBooth, and real-world checkpoints posted online validate the effectiveness of our method, extracting approximately 20\% of fine-tuning data in most cases, significantly surpassing baseline performance." /><meta property="og:image" content="https://lan-qing.github.io/publication/finextract/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -356,6 +355,10 @@
   },
   "headline": "Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models",
   
+  "image": [
+    "https://lan-qing.github.io/publication/finextract/featured.png"
+  ],
+  
   "datePublished": "2025-05-01T00:00:00Z",
   "dateModified": "2025-05-01T00:00:00Z",
   
@@ -372,7 +375,7 @@
       "url": "https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": ""
+  "description": "Diffusion Models (DMs) have evolved into advanced image generation tools, especially for few-shot fine-tuning where a pretrained DM is fine-tuned on a small set of images to capture specific styles or objects. Many people upload these personalized checkpoints online, fostering communities such as Civitai and HuggingFace. However, model owners may overlook the potential risks of data leakage by releasing their fine-tuned checkpoints. Moreover, concerns regarding copyright violations arise when unauthorized data is used during fine-tuning.  In this paper, we ask *\"Can training data be extracted from these fine-tuned DMs shared online?”* A successful extraction would present not only data leakage threats but also offer tangible evidence of copyright infringement. To answer this, we propose FineXtract, a framework for extracting fine-tuning data.  Our method approximates fine-tuning as a gradual shift in the model's learned distribution---from the original pretrained DM toward the fine-tuning data. By extrapolating the models before and after fine-tuning, we guide the generation toward high-probability regions within the fine-tuned data distribution. We then apply a clustering algorithm to extract the most probable images from those generated using this extrapolated guidance. Experiments on DMs fine-tuned with datasets such as WikiArt, DreamBooth, and real-world checkpoints posted online validate the effectiveness of our method, extracting approximately 20\\% of fine-tuning data in most cases, significantly surpassing baseline performance."
 }
 </script>
 
@@ -935,18 +938,25 @@
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
   
-  
+
+
 <div class="article-container pt-3">
   <h1>Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -990,19 +1000,74 @@
 
 </div>
 
-    
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
 
 
 
 
 
   
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="/publication/finextract/finextract.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/Nicholas0228/FineXtract" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 286px;">
+  <div style="position: relative">
+    <img src="/publication/finextract/featured_hu39d38b36ebe6d5816a438f6f9dff1137_1635545_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="286" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
 
   <div class="article-container">
 
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Diffusion Models (DMs) have evolved into advanced image generation tools, especially for few-shot fine-tuning where a pretrained DM is fine-tuned on a small set of images to capture specific styles or objects. Many people upload these personalized checkpoints online, fostering communities such as Civitai and HuggingFace. However, model owners may overlook the potential risks of data leakage by releasing their fine-tuned checkpoints. Moreover, concerns regarding copyright violations arise when unauthorized data is used during fine-tuning.  In this paper, we ask <em>&ldquo;Can training data be extracted from these fine-tuned DMs shared online?”</em> A successful extraction would present not only data leakage threats but also offer tangible evidence of copyright infringement. To answer this, we propose FineXtract, a framework for extracting fine-tuning data.  Our method approximates fine-tuning as a gradual shift in the model&rsquo;s learned distribution&mdash;from the original pretrained DM toward the fine-tuning data. By extrapolating the models before and after fine-tuning, we guide the generation toward high-probability regions within the fine-tuned data distribution. We then apply a clustering algorithm to extract the most probable images from those generated using this extrapolated guidance. Experiments on DMs fine-tuned with datasets such as WikiArt, DreamBooth, and real-world checkpoints posted online validate the effectiveness of our method, extracting approximately 20% of fine-tuning data in most cases, significantly surpassing baseline performance.</p>
     
 
     

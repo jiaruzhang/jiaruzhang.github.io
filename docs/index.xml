@@ -5,12 +5,28 @@
     <link>https://lan-qing.github.io/</link>
       <atom:link href="https://lan-qing.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiaru Zhang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Jiaru Zhang</title>
       <link>https://lan-qing.github.io/</link>
     </image>
+    
+    <item>
+      <title>Stealthy Backdoor Attack in Federated Learning via Adaptive Layer-wise Gradient Alignment</title>
+      <link>https://lan-qing.github.io/publication/layer-wise-attack/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/layer-wise-attack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inference Acceleration of Autoregressive Normalizing Flows by Selective Jacobi Decoding</title>
+      <link>https://lan-qing.github.io/publication/sejd/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/sejd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models</title>
@@ -364,7 +380,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-947162358&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-632817594&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -374,7 +390,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-947162358&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-632817594&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

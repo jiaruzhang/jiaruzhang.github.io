@@ -1,30 +1,23 @@
 ---
-title: 'THOR: A Generic Energy Estimation Approach for On-Device Training'
+title: 'Inference Acceleration of Autoregressive Normalizing Flows by Selective Jacobi Decoding'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Zesong Wang
-  - Hao Wang
-  - Tao Song
-  - Huai-an Su
-  - Rui Chen
-  - Yang Hua
-  - Xiangwei Zhou
-  - Ruhui Ma
-  - Miao Pan
-  - Haibing Guan
+  - Juanwu Lu
+  - Ziran Wang
+  - Ruqi Zhang
 
 # Author notes (optional)
 author_notes:
 
-date: '2025-01-27T00:00:00Z'
+date: '2025-05-30T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-27T00:00:00Z'
+publishDate: '2025-06-01T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -49,7 +42,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2501.16397'
+url_pdf: 'https://arxiv.org/pdf/2505.24791'
 url_code: ''
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 #url_poster: ''

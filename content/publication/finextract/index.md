@@ -1,40 +1,32 @@
 ---
-title: 'THOR: A Generic Energy Estimation Approach for On-Device Training'
+title: "Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Xiaoyu Wu
   - admin
-  - Zesong Wang
-  - Hao Wang
-  - Tao Song
-  - Huai-an Su
-  - Rui Chen
-  - Yang Hua
-  - Xiangwei Zhou
-  - Ruhui Ma
-  - Miao Pan
-  - Haibing Guan
+  - Steven Wu
 
 # Author notes (optional)
 author_notes:
 
-date: '2025-01-27T00:00:00Z'
+date: '2025-05-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-27T00:00:00Z'
+publishDate:  '2025-05-01T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In Submission
-publication_short: In Submission
+publication: In *Proceedings of the 42th International Conference on Machine Learning*
+publication_short: In *ICML*
 
 #abstract: Supervised Causal Learning (SCL) aims to obtain causal relations from observational data, leveraging the model learned from prior datasets with ground truth causal relations. Deep Neural Network (DNN) based SCL, which learns DNNs as causal models, has gained significant attention with its numerous advantages. A recently proposed transformer-based architecture employs sample-wise and node-wise attention mechanisms to capture representations of individual variables. In the inference stage, the trained model takes the test data as input and outputs a Directed Acyclic Graph (DAG) represented as a weighted adjacency matrix. However, this paper identifies two limitations of these approaches. First, using the adjacency matrix as a learning target yield inconsistent results w.r.t. structure identifiability. Second, current network architecture does not adequately encode the essential characteristics for learning causal structures. To address these issues, we propose a novel DNN-based SCL approach, PAIRE, which incorporates a unique pairwise encoder module with a unidirectional attention layer. By taking both node features and pairwise features as layer input, it can model the internal and external relationships of variable pairs. In addition, we use a skeleton matrix along with a v-tensor, a third-order tensor representing v-structures, as our output, so as to represent the Markov Equivalence Class (MEC), which resolves identifiability inconsistency. Empirical evidence indicates PAIRE significantly outperforms other DNN-based SCL approaches.
 ## Summary. An optional shortened abstract.
@@ -49,7 +41,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2501.16397'
+url_pdf: ''
 url_code: ''
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 #url_poster: ''
