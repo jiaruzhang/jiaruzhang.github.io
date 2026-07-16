@@ -133,14 +133,6 @@
     </item>
     
     <item>
-      <title>All Frequency Components Matter: A Learnable Frequency Component Compression Framework for Adversarial Defense</title>
-      <link>https://lan-qing.github.io/publication/frequency/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/frequency/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples</title>
       <link>https://lan-qing.github.io/publication/aedg/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
@@ -428,7 +420,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-451329678&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-261834579&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -438,7 +430,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-451329678&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-261834579&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
