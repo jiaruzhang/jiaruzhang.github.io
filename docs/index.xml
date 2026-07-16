@@ -5,7 +5,7 @@
     <link>https://lan-qing.github.io/</link>
       <atom:link href="https://lan-qing.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiaru Zhang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Jiaru Zhang</title>
@@ -13,18 +13,74 @@
     </image>
     
     <item>
-      <title>Stealthy Backdoor Attack in Federated Learning via Adaptive Layer-wise Gradient Alignment</title>
-      <link>https://lan-qing.github.io/publication/layer-wise-attack/</link>
-      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/layer-wise-attack/</guid>
+      <title>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</title>
+      <link>https://lan-qing.github.io/publication/mvlad-ad/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/mvlad-ad/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Inference Acceleration of Autoregressive Normalizing Flows by Selective Jacobi Decoding</title>
+      <title>ViLaD: A Large Vision Language Diffusion Framework for End-to-End Autonomous Driving</title>
+      <link>https://lan-qing.github.io/publication/vilad/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/vilad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
+      <link>https://lan-qing.github.io/publication/bfm/</link>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/bfm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accelerating Inference of Discrete Autoregressive Normalizing Flows by Selective Jacobi Decoding</title>
       <link>https://lan-qing.github.io/publication/sejd/</link>
-      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/publication/sejd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>One-Step Diffusion Samplers via Self-Distillation and Deterministic Flow</title>
+      <link>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends</title>
+      <link>https://lan-qing.github.io/publication/llm4ad/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/llm4ad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative Diffusion Language Model for End-to-End Autonomous Driving: Parallel Planning and Explainable Action</title>
+      <link>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 -0500</pubDate>
+      <guid>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMPERE: A Generic Energy Estimation Approach for On-Device Training</title>
+      <link>https://lan-qing.github.io/publication/thor/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/thor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stealthy Backdoor Attack in Federated Learning via Adaptive Layer-wise Gradient Alignment</title>
+      <link>https://lan-qing.github.io/publication/layer-wise-attack/</link>
+      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/layer-wise-attack/</guid>
       <description></description>
     </item>
     
@@ -37,26 +93,10 @@
     </item>
     
     <item>
-      <title>THOR: A Generic Energy Estimation Approach for On-Device Training</title>
-      <link>https://lan-qing.github.io/publication/thor/</link>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/thor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Learning Identifiable Structures Helps Avoid Bias in DNN-based Supervised Causal Learning</title>
       <link>https://lan-qing.github.io/publication/paire/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/publication/paire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/publication/bfm/</link>
-      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/bfm/</guid>
       <description></description>
     </item>
     
@@ -169,6 +209,14 @@
       <link>https://lan-qing.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</link>
       <pubDate>Thu, 11 Mar 2021 19:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SiCL</title>
+      <link>https://lan-qing.github.io/post/sicl/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/post/sicl/</guid>
       <description></description>
     </item>
     
@@ -380,7 +428,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-162347895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-451329678&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -390,7 +438,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-162347895&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-451329678&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

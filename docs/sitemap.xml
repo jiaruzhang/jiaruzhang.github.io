@@ -3,47 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lan-qing.github.io/</loc>
-    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication-type/1/</loc>
-    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/mvlad-ad/</loc>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication_types/</loc>
-    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/</loc>
-    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/vilad/</loc>
+    <lastmod>2026-09-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/bfm/</loc>
+    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication-type/2/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/sejd/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</loc>
+    <lastmod>2026-05-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/llm4ad/</loc>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</loc>
+    <lastmod>2026-02-03T00:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/event/</loc>
+    <lastmod>2026-02-03T00:00:00-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/publication/thor/</loc>
+    <lastmod>2025-08-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/layer-wise-attack/</loc>
     <lastmod>2025-06-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lan-qing.github.io/publication-type/3/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication/sejd/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://lan-qing.github.io/publication/finextract/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lan-qing.github.io/publication/thor/</loc>
-    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://lan-qing.github.io/publication/paire/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication/bfm/</loc>
-    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/cgi-dm/</loc>
@@ -62,8 +86,8 @@
     <lastmod>2023-07-27T18:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lan-qing.github.io/event/</loc>
-    <lastmod>2023-07-27T18:00:00+00:00</lastmod>
+    <loc>https://lan-qing.github.io/publication-type/3/</loc>
+    <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/frequency/</loc>
@@ -80,10 +104,6 @@
   </url><url>
     <loc>https://lan-qing.github.io/talk/learning-to-confuse-generating-training-time-adversarial-data-with-auto-encoder/</loc>
     <lastmod>2022-03-08T19:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lan-qing.github.io/publication-type/2/</loc>
-    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/publication/journal-article/</loc>
@@ -131,6 +151,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lan-qing.github.io/post/</loc>
+    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lan-qing.github.io/post/sicl/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

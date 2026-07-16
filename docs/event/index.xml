@@ -5,12 +5,20 @@
     <link>https://lan-qing.github.io/event/</link>
       <atom:link href="https://lan-qing.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 27 Jul 2023 18:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Feb 2026 00:00:00 -0500</lastBuildDate>
     <image>
       <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://lan-qing.github.io/event/</link>
     </image>
+    
+    <item>
+      <title>Generative Diffusion Language Model for End-to-End Autonomous Driving: Parallel Planning and Explainable Action</title>
+      <link>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 -0500</pubDate>
+      <guid>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How to read and write scientific paper?</title>

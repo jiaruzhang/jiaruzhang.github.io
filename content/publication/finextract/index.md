@@ -28,7 +28,8 @@ publication_types: ['1']
 publication: In *Proceedings of the 42th International Conference on Machine Learning*
 publication_short: In *ICML*
 
-#abstract: Supervised Causal Learning (SCL) aims to obtain causal relations from observational data, leveraging the model learned from prior datasets with ground truth causal relations. Deep Neural Network (DNN) based SCL, which learns DNNs as causal models, has gained significant attention with its numerous advantages. A recently proposed transformer-based architecture employs sample-wise and node-wise attention mechanisms to capture representations of individual variables. In the inference stage, the trained model takes the test data as input and outputs a Directed Acyclic Graph (DAG) represented as a weighted adjacency matrix. However, this paper identifies two limitations of these approaches. First, using the adjacency matrix as a learning target yield inconsistent results w.r.t. structure identifiability. Second, current network architecture does not adequately encode the essential characteristics for learning causal structures. To address these issues, we propose a novel DNN-based SCL approach, PAIRE, which incorporates a unique pairwise encoder module with a unidirectional attention layer. By taking both node features and pairwise features as layer input, it can model the internal and external relationships of variable pairs. In addition, we use a skeleton matrix along with a v-tensor, a third-order tensor representing v-structures, as our output, so as to represent the Markov Equivalence Class (MEC), which resolves identifiability inconsistency. Empirical evidence indicates PAIRE significantly outperforms other DNN-based SCL approaches.
+abstract: Diffusion Models (DMs) have evolved into advanced image generation tools, especially for few-shot fine-tuning where a pretrained DM is fine-tuned on a small set of images to capture specific styles or objects. Many people upload these personalized checkpoints online, fostering communities such as Civitai and HuggingFace. However, model owners may overlook the potential risks of data leakage by releasing their fine-tuned checkpoints. Moreover, concerns regarding copyright violations arise when unauthorized data is used during fine-tuning.  In this paper, we ask *"Can training data be extracted from these fine-tuned DMs shared online?”* A successful extraction would present not only data leakage threats but also offer tangible evidence of copyright infringement. To answer this, we propose FineXtract, a framework for extracting fine-tuning data.  Our method approximates fine-tuning as a gradual shift in the model's learned distribution---from the original pretrained DM toward the fine-tuning data. By extrapolating the models before and after fine-tuning, we guide the generation toward high-probability regions within the fine-tuned data distribution. We then apply a clustering algorithm to extract the most probable images from those generated using this extrapolated guidance. Experiments on DMs fine-tuned with datasets such as WikiArt, DreamBooth, and real-world checkpoints posted online validate the effectiveness of our method, extracting approximately 20\% of fine-tuning data in most cases, significantly surpassing baseline performance.
+
 ## Summary. An optional shortened abstract.
 #summary:  we propose a novel DNN-based SCL approach, PAIRE, which incorporates a unique pairwise encoder module with a unidirectional attention layer. By taking both node features and pairwise features as layer input, it can model the internal and external relationships of variable pairs. In addition, we use a skeleton matrix along with a v-tensor, a third-order tensor representing v-structures, as our output, so as to represent the Markov Equivalence Class (MEC), which resolves identifiability inconsistency.
 tags: []
@@ -41,10 +42,10 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
+url_pdf: 'finextract'
+url_code: 'https://github.com/Nicholas0228/FineXtract'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-#url_poster: ''
+url_poster: 'poster.pdf'
 #url_project: ''
 url_slides: ''
 #url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'

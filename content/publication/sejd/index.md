@@ -1,5 +1,5 @@
 ---
-title: 'Inference Acceleration of Autoregressive Normalizing Flows by Selective Jacobi Decoding'
+title: 'Accelerating Inference of Discrete Autoregressive Normalizing Flows by Selective Jacobi Decoding'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -7,27 +7,25 @@ title: 'Inference Acceleration of Autoregressive Normalizing Flows by Selective 
 authors:
   - admin
   - Juanwu Lu
+  - Xiaoyu Wu
   - Ziran Wang
   - Ruqi Zhang
 
-# Author notes (optional)
-author_notes:
-
-date: '2025-05-30T00:00:00Z'
+date: '2026-05-13T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-06-01T00:00:00Z'
+publishDate: '2026-05-13T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In Submission
-publication_short: In Submission
+publication: In *Transactions on Machine Learning Research* (**Featured Certification**)
+publication_short: In *TMLR* (**Featured Certification**)
 
 #abstract: Supervised Causal Learning (SCL) aims to obtain causal relations from observational data, leveraging the model learned from prior datasets with ground truth causal relations. Deep Neural Network (DNN) based SCL, which learns DNNs as causal models, has gained significant attention with its numerous advantages. A recently proposed transformer-based architecture employs sample-wise and node-wise attention mechanisms to capture representations of individual variables. In the inference stage, the trained model takes the test data as input and outputs a Directed Acyclic Graph (DAG) represented as a weighted adjacency matrix. However, this paper identifies two limitations of these approaches. First, using the adjacency matrix as a learning target yield inconsistent results w.r.t. structure identifiability. Second, current network architecture does not adequately encode the essential characteristics for learning causal structures. To address these issues, we propose a novel DNN-based SCL approach, PAIRE, which incorporates a unique pairwise encoder module with a unidirectional attention layer. By taking both node features and pairwise features as layer input, it can model the internal and external relationships of variable pairs. In addition, we use a skeleton matrix along with a v-tensor, a third-order tensor representing v-structures, as our output, so as to represent the Markov Equivalence Class (MEC), which resolves identifiability inconsistency. Empirical evidence indicates PAIRE significantly outperforms other DNN-based SCL approaches.
 ## Summary. An optional shortened abstract.
@@ -38,12 +36,12 @@ tags: []
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+  - name: OpenReview
+    url: 'https://openreview.net/forum?id=xYATz9HpE7'
 
-url_pdf: 'https://arxiv.org/pdf/2505.24791'
-url_code: ''
+url_pdf: 'https://openreview.net/pdf?id=xYATz9HpE7'
+url_code: 'https://github.com/lan-qing/SJD'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 #url_poster: ''
 #url_project: ''

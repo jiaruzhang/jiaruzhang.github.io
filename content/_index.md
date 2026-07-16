@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2023-9-20
+date: 2024-8-27
 type: landing
 
 sections:
@@ -58,17 +58,7 @@ sections:
   #          icon: camera-retro
   #          icon_pack: fas
   - block: collection
-    id: featured
-    content:
-      title: Selected Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
+    id: publications
     content:
       count: 4
       title: Publication List
@@ -169,11 +159,7 @@ sections:
           location: Beijing
           date_start: '2022-11-18'
           date_end: '2023-08-01'
-          description: |2-
-              Mentor: [Justin Ding](https://www.microsoft.com/en-us/research/people/juding/). Responsibilities include:
-
-              * Solve supervised causal discovery problem based on transformer neural network architecture.
-              * Explore better solutions and submit two papers to a top conference as first author and co-author separately.
+          description: 'Mentor: [Justin Ding](https://www.microsoft.com/en-us/research/people/juding/).'
         - title: Research Intern
           company: China International Capital Corporation Limited
           company_url: ''
@@ -181,10 +167,6 @@ sections:
           location: Shanghai
           date_start: '2023-08-08'
           date_end: '2023-09-12'
-          description: |2-
-              Responsibilities include:
-              * Reproduce factor mining techniques based on deep neural networks.
-              * Use Bayesian neural networks to model factor uncertainty and self-attention mechanisms to model relationships between stocks.
     design:
       columns: '2'
   #  - block: portfolio
@@ -222,6 +204,18 @@ sections:
   #        {{< gallery album="demo" >}}
   #    design:
   #      columns: '1'
+  - block: contact
+    id: service
+    content:
+      title: Academic Service
+      subtitle:
+      text: |-
+        - Organizer: 5th [LLVM-AD Workshop](https://llvm-ad.github.io/WACV_2026/) @ [IEEE/CVF WACV 2026](https://wacv.thecvf.com/Conferences/2026)
+        - Organizer: 4th [LLVM-AD Workshop](https://llvm-ad.github.io/) @ [IEEE ITSC 2025](https://ieee-itsc.org/2025/)
+        - Conference reviewer: ACL ARR May 2026, NeurIPS 2026, ICML 2026, IROS 2026, CVPR 2026, AISTATS 2026, SIGKDD 2026, AAAI 2026, NeurIPS 2025, ICCV 2025, ACMMM 2025, KDD 2025, ICML 2025, CVPR 2025, AAAI 2025, ICPR 2024, NeurIPS 2024, CVPR 2024, ICML 2024, ICLR 2023, NeurIPS 2023, EAI CollaborateCom 2022.
+        - Journal reviewer: *Transactions on Intelligent Transportation Systems*, *Software: Practice and Experience*, *IEEE Computational Intelligence Magazine*, *IEEE Internet of Things Journal*.
+    design:
+      columns: '2'
   - block: collection
     id: talks
     content:
@@ -272,6 +266,7 @@ sections:
       title: Awards
       subtitle:
       text: |-
+        - Commendable reviewer, KDD (2025)
         - Stars of Tomorrow (Award of Excellent Intern of Microsoft Research Asia) (2023)
         - CETC The 14TH Research Institute Glarun Scholarship (2021)
         - Three Good Student of SJTU (2018, 2020, 2021)
@@ -280,16 +275,16 @@ sections:
         - Excellent Student Cadre of SJTU (2016)
     design:
       columns: '2'
-  - block: contact
-    id: others
-    content:
-      title: Others
-      subtitle:
-      text: |-
-        - I serve as a network manager of students' dormitory in SJTU from 2019, as a core member of [SJTU Network & Information Management Oragnization (SJTU-NIMO)](https://nimo.sjtu.edu.cn).
-        - I enjoy learning to tune virtual singers. Check [bilibili page](https://space.bilibili.com/33129609) to see my creations!
-    design:
-      columns: '2'
+#  - block: contact
+#    id: others
+#    content:
+#      title: Others
+#      subtitle:
+#      text: |-
+#        - I serve as a network manager of students' dormitory in SJTU from 2019, as a core member of [SJTU Network & Information Management Oragnization (SJTU-NIMO)](https://nimo.sjtu.edu.cn).
+#        - I enjoy learning to tune virtual singers. Check [bilibili page](https://space.bilibili.com/33129609) to see my creations!
+#    design:
+#      columns: '2'
   - block: contact
     id: contact
     content:
@@ -298,17 +293,17 @@ sections:
       text: |-
       #        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: jiaruzhang AT sjtu DOT edu DOT cn
+      email: jiaru AT purdue DOT edu
       #      phone: 888 888 88 88
       #      appointment_url: 'https://calendly.com'
       address:
-        street: Dongchuan Rd 800
-        city: Shanghai
+        street: Purdue Digital Twin Lab
+        city: West Lafayette
         #        region: CA
-        postcode: '200240'
-        country: China
-        country_code: CN
-      directions: SEIEE, 3-East 309
+        postcode: '47906'
+        country: U.S.
+        country_code: US
+      directions:
       #      office_hours:
       #        - 'Monday 10:00 to 13:00'
       #        - 'Wednesday 09:00 to 10:00'

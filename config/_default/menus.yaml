@@ -7,22 +7,22 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Publictions
-    url: '#featured'
+  - name: Publications
+    url: '#publications'
     weight: 20
   - name: Experience
     url: '#experience'
     weight: 30
+  - name: Service
+    url: '#service'
+    weight: 40
   - name: Talks
     url: '#talks'
-    weight: 40
+    weight: 50
   - name: Contests
     url: '#contests'
-    weight: 50
-  - name: Awards
-    url: '#awards'
     weight: 60
-  - name: Others
+  - name: Awards
     url: '#awards'
     weight: 70
   - name: Contact

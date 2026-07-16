@@ -14,28 +14,28 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D Candidate at Shanghai Jiao Tong University
+role: Postdoc researcher at Purdue University
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Shanghai Jiao Tong University
-    url: https://en.sjtu.edu.cn
+  - name: Purdue University
+    url: https://purdue.edu
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Bayesian Neural Networks, Adversarial Attack and Defense, and Causal Discovery.
+bio:
 
 # Interests to show in About widget
 interests:
-  - Bayesian Neural Networks
-  - Adversarial Attack and Defense
-  - Causal Discovery
+  - Generative AI
+  - Bayesian Deep Learning
+  - Autonomous Driving
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD in Computer Science and Technology
       institution: Shanghai Jiao Tong University
-      year: 2019.9 - 2024.6 (expected)
+      year: 2019.9 - 2024.6
 #    - course: MEng in Artificial Intelligence
 #      institution: Massachusetts Institute of Technology
 #      year: 2009
@@ -82,11 +82,11 @@ email: ''
 highlight_name: true
 ---
 
-I am a 25-year-old Ph.D. Candidate of Computer Science at Shanghai Jiao Tong University, supervised by [Prof. Haibing Guan](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102), and 
+I am a postdoc researcher at Purdue university, directed by [Prof. Ziran Wang](https://ziranw.github.io/) and [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I received my Ph.D. degree of Computer Science at Shanghai Jiao Tong University in June 2024, supervised by [Prof. Haibing Guan](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102), and
 co-supervised by [Prof. Yang Hua](https://pure.qub.ac.uk/en/persons/yang-hua/), [Prof. Tao Song](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=424), and [Prof. Ruhui Ma](https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=328). 
-My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Causal Discovery. 
 
-I am looking for a postdoc position now.
+[//]: # (My research interests include Bayesian Neural Networks, Adversarial Attack and Defense and Causal Discovery. )
+
 
 [//]: # (She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.)
 {style="text-align: justify;"}
