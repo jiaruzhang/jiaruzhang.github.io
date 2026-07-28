@@ -38,6 +38,17 @@ summary: >-
 tags: []
 featured: false
 
+# Custom links
+links:
+  - name: Full Text
+    url: '/publication/mvlad-ad/en/'
+    icon_pack: fas
+    icon: book-open
+  - name: 中文全文
+    url: '/publication/mvlad-ad/cn/'
+    icon_pack: fas
+    icon: language
+
 url_pdf: 'mvlad-ad.pdf'
 url_code: 'https://github.com/lan-qing/MVLAD-AD'
 url_slides: ''

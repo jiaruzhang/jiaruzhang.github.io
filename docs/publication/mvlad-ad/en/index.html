@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: July 28, 2026 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.42b156a799ace9005267369a12552956.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Jiaru Zhang" />
+
+
+
+
+
+  
+
+<meta name="description" content="Web transcription of the full text of Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion (IROS 2026), with all equations, tables and figures." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://lan-qing.github.io/publication/mvlad-ad/en/" />
+<link rel="canonical" href="https://lan-qing.github.io/publication/mvlad-ad/en/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Jiaru Zhang" />
+<meta property="og:url" content="https://lan-qing.github.io/publication/mvlad-ad/en/" />
+<meta property="og:title" content="Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion | Jiaru Zhang" />
+<meta property="og:description" content="Web transcription of the full text of Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion (IROS 2026), with all equations, tables and figures." /><meta property="og:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2026-07-16T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2026-09-27T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion | Jiaru Zhang</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="74c900f497ba97a729b7886e0554dbab" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Jiaru Zhang</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Jiaru Zhang</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#service"><span>Service</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contests"><span>Contests</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#awards"><span>Awards</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</h1>
+
+  
+  <p class="page-subtitle">Full text — web transcription</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <div class="alert alert-note">
+  <div>
+    This page is a web transcription of the full text of <strong>“Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion”</strong> (IROS 2026), reproduced here for easier reading, searching and linking.
+It is provided <strong>for reference only</strong>; please read and cite the <a href="/publication/mvlad-ad/mvlad-ad.pdf">original PDF</a>, which is authoritative. A <a href="/publication/mvlad-ad/cn/">Chinese translation</a> is also available.
+  </div>
+</div>
+
+
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#i-introduction">I. Introduction</a></li>
+    <li><a href="#ii-related-work">II. Related Work</a>
+      <ul>
+        <li><a href="#ii-a-large-language-model-based-end-to-end-autonomous-driving">II-A. Large Language Model-Based End-to-End Autonomous Driving</a></li>
+        <li><a href="#ii-b-explainable-autonomous-driving">II-B. Explainable Autonomous Driving</a></li>
+      </ul>
+    </li>
+    <li><a href="#iii-methodology">III. Methodology</a>
+      <ul>
+        <li><a href="#iii-a-framework-overview">III-A. Framework Overview</a></li>
+        <li><a href="#iii-b-driving-action-tokenization">III-B. Driving Action Tokenization</a></li>
+        <li><a href="#iii-c-geometry-aware-embedding-learning">III-C. Geometry-Aware Embedding Learning</a></li>
+        <li><a href="#iii-d-training-process">III-D. Training Process</a></li>
+        <li><a href="#iii-e-inference-process">III-E. Inference Process</a></li>
+      </ul>
+    </li>
+    <li><a href="#iv-experiments">IV. Experiments</a>
+      <ul>
+        <li><a href="#iv-a-planning-comparison">IV-A. Planning Comparison</a></li>
+        <li><a href="#iv-b-reasoning-comparison">IV-B. Reasoning Comparison</a></li>
+        <li><a href="#iv-c-ablation-study">IV-C. Ablation Study</a></li>
+      </ul>
+    </li>
+    <li><a href="#v-conclusion">V. Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#about-this-page">About this page</a></li>
+  </ul>
+</nav>
+</details>
+
+<p>Jiaru Zhang, Manav Gagvani, Can Cui, Juntong Peng, Ruqi Zhang, and Ziran Wang</p>
+<blockquote>
+<p>J. Zhang, M. Gagvani and C. Cui contributed equally to this work.</p>
+<p>The authors are with Purdue University, West Lafayette, IN 47907, USA.
+Corresponding author: Jiaru Zhang, e-mail: <a href="mailto:jiaru@purdue.edu">jiaru@purdue.edu</a>.</p>
+<p>This work used Anvil <a href="#ref-1">[1]</a> at Purdue University through allocation CIS251316 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS) program <a href="#ref-2">[2]</a>, which is supported by National Science Foundation grants #2138259, #2138286, #2138307, #2137603, and #2138296.</p>
+</blockquote>
+<h2 id="abstract">Abstract</h2>
+<p>Large Language Models (LLMs) and Vision-Language Models (VLMs) have emerged as promising candidates for end-to-end autonomous driving. However, these models typically face challenges in inference latency, action precision, and explainability.
+Existing autoregressive approaches struggle with slow token-by-token generation, while prior diffusion-based planners often rely on verbose, general-purpose language tokens that lack explicit geometric structure.
+In this work, we propose Masked Vision-Language-Action Diffusion for Autonomous Driving (MVLAD-AD), a novel framework designed to bridge the gap between efficient planning and semantic explainability via a masked vision-language-action diffusion model.
+Unlike methods that force actions into the language space, we introduce a discrete action tokenization strategy that constructs a compact codebook of kinematically feasible waypoints from real-world driving distributions.
+Moreover, we propose geometry-aware embedding learning to ensure that embeddings in the latent space approximate physical geometric metrics.
+Finally, an action-priority decoding strategy is introduced to prioritize trajectory generation.
+Extensive experiments on nuScenes and derived benchmarks demonstrate that MVLAD-AD achieves superior efficiency and outperforms state-of-the-art autoregressive and diffusion baselines in planning precision, while providing high-fidelity and explainable reasoning.
+The code is available at <a href="https://github.com/lan-qing/MVLAD-AD" target="_blank" rel="noopener">https://github.com/lan-qing/MVLAD-AD</a>.</p>
+<h2 id="i-introduction">I. Introduction</h2>
+<p>The paradigm of autonomous driving is shifting from modular pipelines to end-to-end learning systems, where a unified model directly maps raw sensor inputs to driving decisions.
+However, traditional end-to-end models often function as black boxes, suffering from limited explainability and poor generalization in complex scenarios.
+Recently, Large Language Models (LLMs) and Vision-Language Models (VLMs) have emerged as promising candidates for autonomous driving, enabling reasoning over complex traffic scenarios and human interaction.
+By formulating driving as a language modeling problem, these models leverage rich world knowledge from pretraining and improve autonomous driving performance <a href="#ref-3">[3]</a>, <a href="#ref-4">[4]</a>, <a href="#ref-5">[5]</a>.</p>
+<p>Despite their promise, current LLM/VLM models for autonomous driving face three main challenges: inference latency, action precision, and explainability.
+Most existing approaches rely on autoregressive generation.
+While powerful, as illustrated in Figure 1(A), token-by-token inference is prohibitively slow for the latency-critical nature of autonomous driving.
+Moreover, processing continuous actions in the language space results in verbose token representations, where describing precise trajectories requires excessive sequence lengths, limiting the inference efficiency of the planning framework.
+Finally, existing models often struggle to produce plans together with coherent reasoning. Reliance on separate, post-hoc explanation modules often fails to align semantic reasoning with driving actions.</p>
+<p>Diffusion language models have emerged as a powerful non-autoregressive alternative, enabling parallel decoding to address the inference latency bottleneck <a href="#ref-6">[6]</a>.
+In autonomous driving, ViLaD <a href="#ref-7">[7]</a> pioneered this paradigm for efficient planning and achieved substantial improvements in both planning accuracy and inference speed. However, as shown in Figure 1(B), ViLaD relies on verbose language tokens to represent continuous trajectories, introducing representation redundancy.
+Moreover, it only predicts the driving decisions without any semantic reasoning explanations.
+These limit both the planning performance and the transparency of current diffusion language model-based planners.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/mvlad-ad/vilad-vla-motivation_hub90ff2a3be657675407af90fc44a4d92_499057_16da3e72d2eb5bc40d2100e5a56126f0.webp"
+                   srcset="/media/mvlad-ad/vilad-vla-motivation_hub90ff2a3be657675407af90fc44a4d92_499057_16da3e72d2eb5bc40d2100e5a56126f0.webp 700w, /media/mvlad-ad/vilad-vla-motivation_hub90ff2a3be657675407af90fc44a4d92_499057_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="913"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 1</strong>: Motivation. Comparison of paradigms for LLM/VLM-based autonomous driving. (A) Autoregressive VLMs suffer from high latency due to token-by-token sequential generation. (B) Standard diffusion language models enable parallel generation but operate in a verbose language space. (C) Our proposed Vision-Language-Action Diffusion Model incorporates an expressive codebook to map continuous actions into compact discrete tokens. This design enables simultaneous parallel generation in both action and language spaces, significantly reducing sequence length and achieving the fastest inference speed.</figcaption></figure>
+
+<p>Concurrently, Vision-Language-Action (VLA) models <a href="#ref-8">[8]</a>, <a href="#ref-9">[9]</a> have demonstrated remarkable success by unifying perception, reasoning, and control within a single backbone for embodied AI.
+By integrating control signals as specialized tokens within the language vocabulary, VLAs facilitate deep semantic grounding, enabling the alignment of physical maneuvers with high-level linguistic reasoning.
+However, standard VLA architectures are predominantly tailored for robotic manipulation tasks, and the best way to leverage VLA modeling for end-to-end autonomous driving remains an open question.
+Naively discretizing the driving action space results in an explosion of action tokens, rendering the search space intractable and hindering efficient learning.</p>
+<p>In this work, we propose Masked Vision-Language-Action Diffusion for Autonomous Driving (MVLAD-AD), a novel framework designed to achieve both efficient planning and semantic explainability.
+Compared with approaches that force continuous actions into verbose language spaces, we introduce a discrete action tokenization strategy that constructs a compact codebook of kinematically feasible waypoints derived from real-world driving distributions, thereby effectively compressing the action search space.
+We further propose geometry-aware embedding learning, which aligns the latent embedding space with geometric metrics.
+These components are integrated into a masked VLA diffusion transformer to model the joint probability of driving actions and linguistic explanations.
+To resolve the conflict between latency and explainability, we utilize an action-priority decoding strategy that prioritizes trajectory generation during inference.
+Extensive experiments on the nuScenes and derived reasoning datasets, including Nu-X and nuScenes-QA, demonstrate that MVLAD-AD achieves strong planning performance among VLM-based planners while providing high-fidelity, explainable reasoning.</p>
+<p>In summary, our contributions are as follows:</p>
+<ul>
+<li>We propose MVLAD-AD, a novel end-to-end masked VLA diffusion framework that achieves highly efficient end-to-end autonomous driving while retaining semantic reasoning ability.</li>
+<li>We develop discrete action tokenization to map trajectories to compact action tokens, and geometry-aware embedding learning to enforce metric consistency in the embedding space. We further introduce an action-priority decoding strategy to enable low-latency planning.</li>
+<li>We conduct extensive experiments demonstrating that MVLAD-AD outperforms baseline methods on the nuScenes planning benchmark while maintaining superior inference speed and generating coherent, physically aligned linguistic explanations.</li>
+</ul>
+<h2 id="ii-related-work">II. Related Work</h2>
+<h3 id="ii-a-large-language-model-based-end-to-end-autonomous-driving">II-A. Large Language Model-Based End-to-End Autonomous Driving</h3>
+<p>End-to-end systems are a newly emerging paradigm in autonomous driving that directly maps sensory inputs and ego-vehicle states to planning trajectories and/or low-level control actions <a href="#ref-10">[10]</a>. Motivated by the remarkable progress of LLMs, recent studies have explored generative and autoregressive formulations for end-to-end autonomous driving. Chen et al. <a href="#ref-11">[11]</a> adopted an autoregressive generation strategy to sequentially predict future scene representations along with corresponding control actions. Following this paradigm, Huang et al. <a href="#ref-12">[12]</a> further extended autoregressive modeling to a GPT-style architecture, where future driving scenes are represented and predicted as token sequences.</p>
+<p>With the rapid advancement of multimodal foundation models (typically VLMs), their adoption in end-to-end autonomous driving accelerated significantly. Early efforts demonstrated the feasibility of directly incorporating language-centric models into closed-loop driving systems. Shao et al. <a href="#ref-13">[13]</a> presented one of the first multimodal LLM-driven end-to-end driving frameworks operating in closed-loop settings. Their system takes navigation goals, multimodal sensory observations, and auxiliary textual instructions as input and directly outputs low-level control commands. Similarly, Wang et al. <a href="#ref-14">[14]</a> explored the integration of LLMs into autonomous driving pipelines by aligning language-based decision-making with high-level vehicle control, enabling multimodal inputs and providing interpretable decision rationales.</p>
+<p>Beyond direct control generation, a parallel research direction focuses on exploiting the reasoning capabilities of foundation models for decision support and scene understanding. Xu et al. <a href="#ref-5">[5]</a> introduced a question–answering-based driving framework that formulates driving decisions as structured queries. Extending this, Sima et al. <a href="#ref-15">[15]</a> proposed a graph-based visual question answering (VQA) paradigm, where logically dependent QA pairs capture complex relational reasoning in traffic scenarios. To further enhance explicit reasoning supervision, Wang et al. <a href="#ref-16">[16]</a> constructed a chain-of-thought (CoT) driving dataset, annotating both intermediate reasoning steps and final decisions, and proposed a baseline that injects multiple task-specific learnable queries into the reasoning process. More comprehensive multimodal reasoning systems were later introduced by Hwang et al. <a href="#ref-17">[17]</a> and Xing et al. <a href="#ref-18">[18]</a>, which demonstrated strong generalization, robustness, and scalability across diverse driving environments. However, most methods are built upon the autoregressive generation paradigm, resulting in relatively slow inference due to sequential decoding and a left-to-right generation pattern, while primarily modeling short-term dynamics by predicting only the next-step actions or frames.</p>
+<h3 id="ii-b-explainable-autonomous-driving">II-B. Explainable Autonomous Driving</h3>
+<p>Explainability has long been recognized as a critical challenge for learning-based autonomous driving systems. As deep neural networks are increasingly adopted for perception, decision-making, and control, their “black box” nature makes it difficult to understand why specific driving actions are produced. This lack of transparency directly affects system verification, safety assurance, trust building, and human–machine collaboration, motivating extensive research on explainable artificial intelligence (XAI) methods for autonomous driving <a href="#ref-19">[19]</a>, <a href="#ref-20">[20]</a>.</p>
+<p>A broad class of explainability approaches focuses on model-agnostic explanation techniques <a href="#ref-21">[21]</a>, <a href="#ref-22">[22]</a>, <a href="#ref-23">[23]</a>. These methods aim to explain individual predictions by estimating feature relevance or attribution without requiring access to the internal structure of the model. In parallel, model-specific techniques have been proposed to analyze internal representations, including gradient-based attribution <a href="#ref-24">[24]</a>, saliency visualization <a href="#ref-25">[25]</a>, and attention-based explanations <a href="#ref-26">[26]</a>.</p>
+<p>Within the autonomous driving domain, attention mechanisms have been widely adopted to visualize spatial regions in driving scenes that have a strong influence on control decisions <a href="#ref-27">[27]</a>. To further enhance explainability, attention-based driving models have been combined with natural language generation, enabling systems to output both control actions and corresponding textual explanations grounded in visual observations <a href="#ref-28">[28]</a>. This line of work was later extended by incorporating linguistic structure and decoding constraints, leading to more coherent and informative textual commentaries for driving behavior <a href="#ref-29">[29]</a>. However, attention-based explanations alone have been shown to be insufficient for faithfully reflecting model reasoning <a href="#ref-30">[30]</a>. This limitation motivated hybrid explainability strategies that jointly leverage attention weights, encoded features, gradients, and class activation signals to better approximate the underlying decision logic of transformer-based architectures <a href="#ref-31">[31]</a>.</p>
+<p>Recently, LLMs and VLMs introduced a paradigm shift in explainability for autonomous driving, using language as an explicit medium for expressing perception, reasoning, and decision rationales. For example, language-driven driving systems such as DriveLM <a href="#ref-15">[15]</a> and LLM-based closed-loop driving frameworks <a href="#ref-13">[13]</a>, <a href="#ref-14">[14]</a>, <a href="#ref-32">[32]</a>, <a href="#ref-33">[33]</a>, <a href="#ref-34">[34]</a> provide textual explanations that articulate what the vehicle observes and why specific actions are taken. Question–answering–based formulations further enable interactive explainability by allowing models to respond to structured queries about driving scenes and decisions <a href="#ref-5">[5]</a>. More comprehensive multimodal reasoning frameworks, including EMMA <a href="#ref-17">[17]</a> and OpenEMMA <a href="#ref-18">[18]</a>, demonstrate that language-centric explanations can generalize across diverse driving scenarios while improving robustness and transparency.</p>
+<h2 id="iii-methodology">III. Methodology</h2>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/mvlad-ad/vilad-vla-new_hu86d3b8fac1e0f3e287336a1a404cbe2b_494860_a6e23f0665d9b50d67522315aaeda952.webp"
+                   srcset="/media/mvlad-ad/vilad-vla-new_hu86d3b8fac1e0f3e287336a1a404cbe2b_494860_a6e23f0665d9b50d67522315aaeda952.webp 700w, /media/mvlad-ad/vilad-vla-new_hu86d3b8fac1e0f3e287336a1a404cbe2b_494860_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="608"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 2</strong>: An overview of MVLAD-AD. (A) Discrete Action Tokenization and Geometry-Aware Embedding Learning: We construct a compact codebook of driving actions from real-world data and learn a geometry-aware embedding space via soft-assignment and geometric consistency objectives. (B) Unified Masked VLA Diffusion: Visual, instruction, action, and reasoning tokens are unified into a single sequence for masked generative modeling. “[M]” indicates masked tokens. (C) Optimized Training &amp; Inference: In training, we employ a two-stage learning strategy. In inference, an action-priority decoding strategy is introduced to prioritize trajectory generation for low latency, ensuring the reasoning explanation is highly faithful to the driving actions.</figcaption></figure>
+
+<h3 id="iii-a-framework-overview">III-A. Framework Overview</h3>
+<p>As illustrated in Figure 2, MVLAD-AD formulates end-to-end autonomous driving as a <em>conditional masked generative modeling</em> problem.
+We construct a unified sequence of discrete tokens, 
+
+$\mathbf{x} = [\mathbf{x}^c; \mathbf{x}^g]$, from heterogeneous modalities.
+The conditioning part, 
+
+$\mathbf{x}^c$, aggregates multi-view visual tokens 
+
+$\mathbf{x}^v$ and textual instruction tokens 
+
+$\mathbf{x}^i$.
+The target generation part, 
+
+$\mathbf{x}^g$, concatenates discrete action tokens 
+
+$\mathbf{x}^a$ representing the future trajectory and reasoning tokens 
+
+$\mathbf{x}^r$ explaining the decision.
+Our objective is to learn the conditional distribution 
+
+$p_\theta(\mathbf{x}^g \mid \mathbf{x}^c)$ by reversing a parallel masking process <a href="#ref-6">[6]</a>.</p>
+<p><strong>Multimodal Input Encoding.</strong>
+To process the heterogeneous inputs, we employ specialized encoders to project all signals into a shared embedding space, ensuring semantic alignment across modalities:</p>
+<ul>
+<li><strong>Vision:</strong> Multi-view camera images are encoded by a pre-trained vision encoder and mapped to the transformer&rsquo;s dimension via a learnable MLP Projector.</li>
+<li><strong>Instruction:</strong> The text instruction is tokenized using a standard text tokenizer and converted into an embedding to condition the model on a specific driving task.</li>
+<li><strong>Action:</strong> We use our proposed Discrete Action Tokenizer detailed in Section III-B to map continuous waypoints into discrete action tokens, and use our proposed Geometry-Aware Embedding Learning detailed in Section III-C to obtain their embeddings.</li>
+<li><strong>Reasoning:</strong> Similar to the instruction, the reasoning is tokenized and embedded as text.</li>
+</ul>
+<p><strong>Unified Sequence Modeling.</strong>
+Unlike modular pipelines that isolate planning from explanation, MVLAD-AD concatenates these embeddings into a single sequence, 
+
+$\mathbf{X} = [\mathbf{X}^v; \mathbf{X}^i; \mathbf{X}^a; \mathbf{X}^r]$, where 
+
+$\mathbf{X}^v$, 
+
+$\mathbf{X}^i$, 
+
+$\mathbf{X}^a$, and 
+
+$\mathbf{X}^r$ correspond to the embeddings of visual features, textual instructions, action tokens, and reasoning tokens, respectively.
+This unified representation enables the model to leverage bidirectional attention mechanisms and capture the interdependencies among visual observations, text instructions, vehicle actions, and semantic reasoning in a global context.</p>
+<p><strong>Masked Generative Transformer.</strong>
+The core of MVLAD-AD is a Transformer-based predictor for masked diffusion generative modeling.
+As detailed in Section III-D, with a training strategy that jointly learns action and reasoning, the transformer takes the unified sequence as input, with parts of 
+
+$\mathbf{x}^a$ and 
+
+$\mathbf{x}^r$ masked, and learns to reconstruct the masked tokens.
+This architecture effectively models the joint distribution 
+
+$p_\theta(\mathbf{x}^a, \mathbf{x}^r \mid \mathbf{x}^v, \mathbf{x}^i)$, providing the flexibility to support both efficient parallel planning and reasoning generation, as detailed in Section III-E.</p>
+<h3 id="iii-b-driving-action-tokenization">III-B. Driving Action Tokenization</h3>
+<p>To bridge the modality gap between continuous trajectory planning and discrete language generation, we propose a Discrete Action Tokenization strategy.
+In this strategy, the trajectories are modeled as sequences of discrete driving action tokens.
+Concretely, we represent the trajectory as a series of waypoints in the local ego-coordinate system.
+Let 
+
+$\mathbf{w} = (x, y) \in \mathbb{R}^2$ denote a single waypoint representing the vehicle&rsquo;s position relative to the ego-vehicle at a specific future timestamp, and
+let 
+
+$\mathcal{D} = \{\mathbf{w}_1, \mathbf{w}_2, \dots, \mathbf{w}_M\}$ represent a set of all valid waypoints collected from the real-world driving dataset, where M is the total number of waypoints in the training corpus across all time horizons. Our objective is to construct a compact codebook 
+
+$\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2, \dots, \mathbf{c}_N\}$ consisting of N representative waypoints, such that any continuous waypoint 
+
+$\mathbf{w} \in \mathcal{D}$ can be approximated by a representative centroid 
+
+$\mathbf{c} \in \mathcal{C}$ with minimal error. This is formulated as an optimization problem to minimize the within-cluster sum of squares, i.e., 
+
+$\mathcal{J} = \sum_{i=1}^{M} \min_{\mathbf{c} \in \mathcal{C}} \| \mathbf{w}_i - \mathbf{c} \|_2^2$,</p>
+<p>where 
+
+$\| \cdot \|_2$ denotes the Euclidean distance. Utilizing a standard K-Means solver, we obtain the optimal set of spatial centroids 
+
+$\mathcal{C}$, which serve as our discrete action tokens.</p>
+<p>During training and inference, a quantizer 
+
+$Q(\cdot)$ is employed to map any continuous predicted waypoint 
+
+$\hat{\mathbf{w}}$ to the index of its nearest centroid in the codebook:</p>
+
+
+
+$$
+k = \arg\min_{j \in \{1, \dots, N\}} \| \hat{\mathbf{w}} - \mathbf{c}_j \|_2. \tag{1}
+$$
+
+<p>This discretization transforms the trajectory generation into a sequence of N-way classification task, constraining the output space to physically feasible spatial primitives.</p>
+<h3 id="iii-c-geometry-aware-embedding-learning">III-C. Geometry-Aware Embedding Learning</h3>
+<p>While the action tokenization provides a compact codebook of tokens, treating these tokens as independent categorical indices and using randomly initialized embeddings discards the rich metric information inherent in the trajectory space.
+To enable the diffusion language model to reason about the physical properties of actions, we propose a pre-training stage to learn a geometry-aware embedding space.
+Let 
+
+$\mathbf{E} \in \mathbb{R}^{N \times D}$ denote the learnable embedding matrix for our N action tokens. We aim to optimize 
+
+$\mathbf{E}$ such that the Euclidean distance in the latent space approximates the geometric distance in the physical space.</p>
+<p><strong>Soft-Assignment and Reconstruction.</strong>
+To stabilize the optimization and bridge the gap between continuous inputs and discrete tokens, we employ a temperature-scaled soft-assignment mechanism during training. Given a ground-truth waypoint 
+
+$\mathbf{w}$, instead of performing a hard lookup, we compute a weighted embedding 
+
+$\mathbf{z}$ based on the distances to the top-K nearest centroids in the codebook 
+
+$\mathcal{C}$:</p>
+
+
+
+$$
+\mathbf{z} = \sum_{j \in \mathcal{N}_K(\mathbf{w})} \frac{\exp(-\|\mathbf{w} - \mathbf{c}_j\|_2 / \tau)}{\sum_{l \in \mathcal{N}_K(\mathbf{w})} \exp(-\|\mathbf{w} - \mathbf{c}_l\|_2 / \tau)} \mathbf{E}_j, \tag{2}
+$$
+
+<p>where 
+
+$\mathcal{N}_K(\mathbf{w})$ denotes the set of indices of the K nearest centroids, and 
+
+$\tau$ is a temperature parameter.
+We then use a lightweight MLP decoder 
+
+$D_\phi: \mathbb{R}^D \to \mathbb{R}^2$ to reconstruct the original coordinates, minimizing the reconstruction loss 
+
+$\mathcal{L}_{\text{recon}} = \| D_\phi(\mathbf{z}) - \mathbf{w} \|_2^2$.</p>
+<p><strong>Metric Alignment Objectives.</strong>
+To explicitly enforce the geometric structure, we introduce two auxiliary losses:</p>
+<ol>
+<li>
+<p><strong>Geometry Consistency Loss.</strong> We enforce that pairwise distances in the embedding space correlate with physical distances. For a batch of pairs 
+
+$(\mathbf{w}_i, \mathbf{w}_j)$, we minimize the discrepancy between their normalized distances:</p>
+
+
+
+   $$
+   \mathcal{L}_{\text{geom}} = \mathbb{E}_{i,j} \left[ \left( \frac{\| \mathbf{z}_i - \mathbf{z}_j \|_2}{\bar{d}_z} - \frac{\| \mathbf{w}_i - \mathbf{w}_j \|_2}{\bar{d}_w} \right)^2 \right], \tag{3}
+   $$
+   
+<p>where 
+
+$\bar{d}_z$ and 
+
+$\bar{d}_w$ are the median pairwise distances in the batch, serving as robust scaling factors.</p>
+</li>
+<li>
+<p><strong>Contrastive Clustering Loss.</strong> We apply a supervised contrastive loss to structure the latent space. For an anchor point i with normalized embedding 
+
+$\tilde{\mathbf{z}}_i$, let 
+
+$P(i)$ be the set of other points in the batch assigned to the same centroid index. The loss pulls positive pairs together while pushing apart negatives:</p>
+
+
+
+   $$
+   \begin{aligned}
+   \mathcal{L}_{\text{contra}} = \sum_{i \in \mathcal{B}} \frac{-1}{|P(i)|} \sum_{p \in P(i)} \log \frac{\exp(\tilde{\mathbf{z}}_i \cdot \tilde{\mathbf{z}}_p / \tau_{\text{con}})}{\sum\limits_{a \in A(i)} \exp(\tilde{\mathbf{z}}_i \cdot \tilde{\mathbf{z}}_a / \tau_{\text{con}})},
+   \end{aligned}
+   \tag{4}
+   $$
+   
+<p>where 
+
+$A(i)$ is the set of all other indices in the batch, and 
+
+$\tau_{\text{con}}$ is a contrastive temperature.</p>
+</li>
+</ol>
+<p><strong>Optimization and Curriculum.</strong>
+The final objective is a weighted sum of the three losses.
+We employ a curriculum learning strategy to ease the transition from continuous to discrete representation. The parameter K decays from 16 to 1 over the course of training. This allows the model to capture the local manifold structure via soft interpolation in the early stages, eventually converging to a hard discrete mapping that yields the embedding matrix 
+
+$\mathbf{E}$.</p>
+<h3 id="iii-d-training-process">III-D. Training Process</h3>
+<p>Training a unified VLA model involves learning two distinct capabilities of precise planning and high-level semantic reasoning.
+Following the standard masked diffusion formulation <a href="#ref-6">[6]</a>, the base training objective is the negative log-likelihood computed on the masked tokens:</p>
+
+
+
+$$
+\mathcal{L}_{\text{diff}} = \mathbb{E}_{t, \mathbf{x}_0} \left[ - \sum_{i \in \mathcal{M}_t} \log p_\theta(x_{0,i} | \mathbf{x}_t) \right], \tag{5}
+$$
+
+<p>where 
+
+$\mathcal{M}_t$ denotes the set of masked indices at step 
+
+$t$.
+Since the discrete action tokens introduced in Section III-B represent a new modality with no pre-trained knowledge base, learning their distributions is more challenging than standard language modeling. To address this, we use a two-stage learning strategy.</p>
+<p><strong>Stage 1: Action-Centric Warm-up.</strong>
+In the first stage, we isolate the trajectory generation task to initialize the learning of the novel action modality.
+Concretely, we exclude the reasoning token subsequence 
+
+$\mathbf{X}^r$ from the input sequence entirely, constructing a shortened sequence 
+
+$\mathbf{X}_{\text{stage1}} = [\mathbf{X}^v; \mathbf{X}^i; \mathbf{X}^a]$.
+We mask a portion of the action-token indices and train the model to reconstruct them conditioned solely on visual and instructional contexts.
+This focused objective forces the model to learn about the physical dynamics and the geometric structure of the action codebook, establishing a robust motion prior without the distraction of the language generation task.</p>
+<p><strong>Stage 2: Joint VLA Fine-tuning.</strong> In the second stage, we introduce the reasoning task where the unified sequence contains both the action-token subsequence 
+
+$\mathbf{X}^a$ and the reasoning-token subsequence 
+
+$\mathbf{X}^r$. We mask both action-token indices and reasoning-token indices, training the model to generate the full output sequence. This stage aligns the physical actions with semantic explanations, leveraging the motion priors established in Stage 1.</p>
+<h3 id="iii-e-inference-process">III-E. Inference Process</h3>
+<p>To balance the conflicting requirements of low-latency planning and semantic explainability, we utilize an action-priority decoding strategy.
+Standard masked diffusion methods typically employ a global confidence-based sampling schedule, where the tokens with the highest confidence scores across the <em>entire</em> sequence are unmasked first. However, this unconstrained approach might generate text tokens and action tokens in a mixed order, delaying the availability of actions.</p>
+<p>Instead, we enforce a modality-constrained unmasking policy that prioritizes the resolution of the trajectory.
+Let 
+
+$\mathbf{x}_t$ denote the sequence at diffusion step 
+
+$t$, containing both action-token positions and reasoning-token positions. In each iteration, the transformer predictor outputs the probability distribution 
+
+$p_\theta(\mathbf{x}_0 \mid \mathbf{x}_t)$ for <em>all</em> masked tokens.
+Although the model predicts the entire sequence simultaneously, we restrict the unmasking candidate set exclusively to the action indices until planning is fully determined.
+Specifically, we compute the confidence score 
+
+$u_j = \max_{k} p_\theta(x_j = k \mid \mathbf{x}_t)$ for all masked action-token positions 
+
+$j$. We then select the subset of action tokens with the highest confidence scores to demask, i.e., replace 
+
+$[\texttt{M}]$ with the predicted token ID, while keeping all reasoning tokens in the masked state.</p>
+<p>This strategy yields two critical benefits. By focusing the decoding budget solely on the 
+
+$N_a$ action tokens (where 
+
+$N_a$ is much smaller than the text length) in the initial steps, the trajectory is finalized and ready for execution significantly faster than waiting for the full sequence to converge. On the other hand, once the action tokens are fully unmasked, they serve as fixed, fully-observed conditions for the subsequent generation of reasoning tokens. This implicitly enforces semantic consistency, as the generated explanation is conditioned on a deterministic future plan.</p>
+<h2 id="iv-experiments">IV. Experiments</h2>
+<p>We evaluate the proposed MVLAD-AD framework across both efficient planning and linguistic reasoning. To ensure a comprehensive comparison, we compare against a wide range of baselines, including both open-source state-of-the-art models and representative commercial large language models.</p>
+<p><strong>Datasets and Metrics.</strong>
+We primarily utilize the nuScenes dataset <a href="#ref-35">[35]</a> for planning evaluation.
+Specifically, we conduct all experiments and baseline comparisons under a single-frame setting for efficiency.
+Following standard protocols, we report the L2 displacement error at 1 s, 2 s, and 3 s horizons, along with the average L2 error. For the reasoning tasks, we leverage two specialized datasets: Nu-X <a href="#ref-36">[36]</a>, a dataset focused on explaining driving decisions, and nuScenes-QA <a href="#ref-37">[37]</a>, a large-scale visual question-answering benchmark for autonomous driving scenarios.
+For Nu-X, we employ standard natural language generation metrics, including BLEU-4, METEOR, ROUGE-L, and CIDEr, to measure the semantic alignment between generated explanations and ground truths.
+For nuScenes-QA, following the literature <a href="#ref-36">[36]</a>, <a href="#ref-38">[38]</a>, we report accuracy across zero-hop (H0), one-hop (H1), and overall questions (All).</p>
+<p><strong>Baselines.</strong>
+We categorize our baselines based on the task and model architecture:</p>
+<p><em>1) Planning Baselines:</em> We compare MVLAD-AD with a series of representative VLM-based end-to-end driving methods. For autoregressive VLMs, we include models fine-tuned on different backbones: LLaVA-1.6-Mistral-7B, Llama-3.2-11B-Vision-Instruct, and Qwen2-VL-7B-Instruct. We also compare against the best models from the DriveLM <a href="#ref-15">[15]</a>, OpenEMMA <a href="#ref-18">[18]</a>, and LightEMMA <a href="#ref-39">[39]</a> frameworks. For diffusion VLMs, we include ViLaD <a href="#ref-7">[7]</a>, which serves as the direct baseline for demonstrating the advantages of our joint VLA modeling and discrete action tokenization. Additionally, we evaluate against UniAD <a href="#ref-40">[40]</a>, a representative end-to-end autonomous driving model. For a fair comparison, the reported UniAD results are derived from its single-frame version, as evaluated in <a href="#ref-15">[15]</a>.</p>
+<p><em>2) Explanation Baselines:</em> For reasoning tasks, we compare with a series of specialized models, including Hint-AD <a href="#ref-36">[36]</a>, ALN-P3 <a href="#ref-38">[38]</a>, and TOD3Cap <a href="#ref-41">[41]</a>, which are specifically designed for driving reasoning. We also benchmark against some representative closed-source foundation models, GPT-4o and Gemini-1.5, to estimate how our specialized 7B model compares against general models in industry.</p>
+<p><strong>Implementation Details.</strong>
+MVLAD-AD is implemented using the PyTorch framework.
+We initialize our model weights from the pre-trained LLaDA checkpoint <a href="#ref-6">[6]</a>.
+To improve parameter efficiency, we employ Low-Rank Adaptation (LoRA) with a rank of r = 256.
+Training is distributed across 4 NVIDIA H100 GPUs using <code>bfloat16</code> precision, with a global batch size of 32.
+Each training stage consists of 8 epochs, requiring approximately 9 h to complete.
+For evaluation, all inference experiments are conducted on a single NVIDIA A100 GPU.</p>
+<p><strong>Table I</strong>: Planning Errors (m) at Different Horizons and Planning Failure Rate (FR). Dashes indicate that the method does not report the corresponding results.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>1 s (↓)</th>
+<th>2 s (↓)</th>
+<th>3 s (↓)</th>
+<th>Avg (↓)</th>
+<th>FR (↓)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLaVA-1.6</td>
+<td>0.91</td>
+<td>2.50</td>
+<td>3.44</td>
+<td>2.28</td>
+<td>55.25%</td>
+</tr>
+<tr>
+<td>Llama-3.2</td>
+<td>0.80</td>
+<td>2.31</td>
+<td>3.10</td>
+<td>2.07</td>
+<td>0.06%</td>
+</tr>
+<tr>
+<td>Qwen2-VL</td>
+<td>1.32</td>
+<td>2.94</td>
+<td>3.98</td>
+<td>2.74</td>
+<td>0.03%</td>
+</tr>
+<tr>
+<td>OpenEMMA</td>
+<td>1.45</td>
+<td>3.21</td>
+<td>3.76</td>
+<td>2.81</td>
+<td>16.11%</td>
+</tr>
+<tr>
+<td>LightEMMA</td>
+<td>-</td>
+<td>-</td>
+<td>2.90</td>
+<td>1.45</td>
+<td><strong>0.00%</strong></td>
+</tr>
+<tr>
+<td>UniAD-Single</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1.80</td>
+<td>-</td>
+</tr>
+<tr>
+<td>DriveLM</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1.39</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ViLaD</td>
+<td>0.81</td>
+<td>1.93</td>
+<td>2.69</td>
+<td>1.81</td>
+<td><strong>0.00%</strong></td>
+</tr>
+<tr>
+<td>MVLAD-AD</td>
+<td><strong>0.70</strong></td>
+<td><strong>1.31</strong></td>
+<td><strong>2.34</strong></td>
+<td><strong>1.28</strong></td>
+<td><strong>0.00%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="iv-a-planning-comparison">IV-A. Planning Comparison</h3>
+<p><strong>Superiority of Diffusion Language Modeling.</strong> First, we compare diffusion-based architectures, MVLAD-AD and ViLaD, against standard autoregressive VLM baselines. As shown in Table I, diffusion-based methods consistently outperform other baselines across all time horizons. Specifically, MVLAD-AD achieves an average L2 error of 1.28 m, significantly reducing the error compared to the baselines. We attribute this gap to the inherent advantage of diffusion modeling for the planning task, where diffusion-based approaches (MVLAD-AD and ViLaD) allow the model to better capture the nature of driving behaviors without the limitations of sequential prediction.</p>
+<p><strong>Benefits of VLA Modeling.</strong> Within the diffusion framework, MVLAD-AD further surpasses the previous state-of-the-art method ViLaD, reducing the average L2 error from 1.81 m to 1.28 m. This performance gain verifies the effectiveness of the discrete action tokenization. Unlike ViLaD, which operates only in language space, our framework projects the action space into a compact codebook of N = 256 representative action tokens. Therefore, MVLAD-AD performs a classification task over a set of driving actions learned from real-world data. This reduces the complexity of the prediction space, allowing the model to lock onto the optimal trajectory with higher precision and stability.</p>
+<p><strong>Systematic Robustness.</strong> Reliability is a prerequisite for robotic deployment. We observe that general-purpose VLMs like LLaVA-1.6 suffer from a high failure rate (55.25%), largely due to format hallucinations where the model fails to adhere to the rigid output syntax required for planning. In contrast, MVLAD-AD maintains the zero-failure advantage of LightEMMA and ViLaD, demonstrating a 0.00% failure rate. By mapping the action space to a fixed codebook of valid trajectory centroids and employing a structured decoding process, it structurally guarantees that every generated output corresponds to a valid trajectory. This structural constraint eliminates the risk of format errors inherent in text-based planners, ensuring the system&rsquo;s robustness for downstream execution.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/mvlad-ad/inference_time_zoomed_hu7ca4d2cca10ca19534e4f9d7b3a7cbf8_75658_97f5acc2badfae25c271046a8226aa5e.webp"
+                   srcset="/media/mvlad-ad/inference_time_zoomed_hu7ca4d2cca10ca19534e4f9d7b3a7cbf8_75658_97f5acc2badfae25c271046a8226aa5e.webp 700w, /media/mvlad-ad/inference_time_zoomed_hu7ca4d2cca10ca19534e4f9d7b3a7cbf8_75658_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="631"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 3</strong>: Planning inference time comparison among autoregressive and diffusion-based methods on a single NVIDIA A100 GPU.</figcaption></figure>
+
+<p><strong>Inference Efficiency.</strong> Figure 3 presents the inference latency comparison. Diffusion-based architectures inherently outperform autoregressive baselines by leveraging parallel decoding. MVLAD-AD achieves a further acceleration by introducing a compact VLA modeling scheme.
+Instead of predicting trajectories via redundant text tokens, our discrete action tokenization compresses complex motion into a minimal sequence of motion primitives. This effectively shortens the sequence length required for planning, significantly reducing the computational workload for the diffusion denoiser.
+Consequently, MVLAD-AD achieves an inference time of 1.72 s. This represents a 1.6× speedup over the diffusion baseline ViLaD, and a 1.84× speedup over LLaVA-1.6, establishing MVLAD-AD as an efficient solution for end-to-end autonomous driving.</p>
+<h3 id="iv-b-reasoning-comparison">IV-B. Reasoning Comparison</h3>
+<p><strong>Table II</strong>: Performance Comparison on Nu-X</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Nu-X CIDEr (↑)</th>
+<th>Nu-X BLEU-4 (↑)</th>
+<th>Nu-X METEOR (↑)</th>
+<th>Nu-X ROUGE-L (↑)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TOD3Cap</td>
+<td>14.5</td>
+<td>2.45</td>
+<td>10.5</td>
+<td>23.0</td>
+</tr>
+<tr>
+<td>GPT-4o</td>
+<td>19.0</td>
+<td>3.95</td>
+<td>10.3</td>
+<td>24.9</td>
+</tr>
+<tr>
+<td>Gemini-1.5</td>
+<td>17.6</td>
+<td>3.43</td>
+<td>9.3</td>
+<td>23.4</td>
+</tr>
+<tr>
+<td>Hint-AD</td>
+<td>22.4</td>
+<td>4.18</td>
+<td>13.2</td>
+<td>27.6</td>
+</tr>
+<tr>
+<td>ALN-P3</td>
+<td><strong>28.6</strong></td>
+<td>5.59</td>
+<td>14.7</td>
+<td>35.2</td>
+</tr>
+<tr>
+<td>MVLAD-AD</td>
+<td>19.5</td>
+<td><strong>13.0</strong></td>
+<td><strong>36.8</strong></td>
+<td><strong>37.3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table III</strong>: Performance Comparison on nuScenes-QA</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>nuScenes-QA H0 (↑)</th>
+<th>nuScenes-QA H1 (↑)</th>
+<th>nuScenes-QA All (↑)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TOD3Cap</td>
+<td>53.0</td>
+<td>45.1</td>
+<td>49.0</td>
+</tr>
+<tr>
+<td>GPT-4o</td>
+<td>42.0</td>
+<td>34.7</td>
+<td>37.1</td>
+</tr>
+<tr>
+<td>Gemini-1.5</td>
+<td>40.5</td>
+<td>32.9</td>
+<td>35.4</td>
+</tr>
+<tr>
+<td>Hint-AD</td>
+<td>55.4</td>
+<td>48.0</td>
+<td>50.5</td>
+</tr>
+<tr>
+<td>ALN-P3</td>
+<td>57.1</td>
+<td>50.9</td>
+<td>52.9</td>
+</tr>
+<tr>
+<td>MVLAD-AD</td>
+<td><strong>58.5</strong></td>
+<td><strong>54.3</strong></td>
+<td><strong>55.7</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Driving Explanation on Nu-X.</strong> Table II presents the quantitative results on the Nu-X dataset. MVLAD-AD demonstrates superior performance across most metrics compared to both general-purpose LVLMs, e.g., GPT-4o and Gemini-1.5, and specialized autonomous driving models, including Hint-AD and ALN-P3. Notably, our method achieves a BLEU-4 score of 13.0 and a METEOR score of 36.8, surpassing the previous state-of-the-art method ALN-P3 by a significant margin.
+Although ALN-P3 yields a higher CIDEr score, MVLAD-AD aligns with the general models like GPT-4o, which also report lower CIDEr scores due to generating more diverse explanations.
+Furthermore, our substantial lead in BLEU-4 and ROUGE-L indicates that MVLAD-AD generates descriptions that are both semantically richer and more precisely aligned with reference captions in terms of n-gram overlap.
+It confirms that our model can effectively generate high-quality reasoning texts for complex driving scenarios.</p>
+<p><strong>Visual Question Answering on nuScenes-QA.</strong> Table III details the evaluation results on the nuScenes-QA benchmark. MVLAD-AD achieves an accuracy of 55.7% on the overall split, consistently outperforming both large-scale commercial models and specialized driving agents.</p>
+<p>The performance leap indicates that MVLAD-AD captures complex dependencies in driving scenes, enabling the model to answer intricate questions about traffic dynamics with higher precision.</p>
+<h3 id="iv-c-ablation-study">IV-C. Ablation Study</h3>
+<p><strong>Impact of Action Vocabulary Size N.</strong>
+The size of the discrete codebook N introduces a fundamental trade-off between the planning precision and the learning complexity of the classification task.
+Because our framework formulates trajectory planning as a discrete token prediction task, the training loss primarily reflects the classification difficulty, whereas the L2 error measures the final planning performance.
+Theoretically, a larger N reduces the quantization error, i.e., the spatial distance between a continuous waypoint and its nearest centroid, thereby raising the upper bound of reconstruction fidelity.
+However, an excessive number of tokens increases the complexity of the classification task.</p>
+<p>We investigate this trade-off by training MVLAD-AD with vocabulary sizes 
+
+$N \in \{128, 256, 384\}$, as reported in Table IV. We observe that N = 256 strikes the optimal balance, achieving the lowest planning error of 1.28 m. Crucially, increasing N to 384 leads to a performance degradation to 2.76 m with an obvious increase in final training loss from 0.36 to 0.53. This indicates that, despite higher theoretical precision, the model struggles to converge due to the optimization difficulty in distinguishing between dense action tokens. Conversely, reducing N to 128 yields the lowest training loss of 0.32, suggesting an easier classification task, but the planning error rises to 1.73 m. This confirms that further reducing the codebook size creates a quantization bottleneck that limits physical precision, regardless of stable training convergence.</p>
+<p><strong>Table IV</strong>: Ablation on Action Vocabulary Size N</p>
+<table>
+<thead>
+<tr>
+<th>Number of Action Tokens N</th>
+<th>Final Training Loss (↓)</th>
+<th>L2 (m) Avg. (↓)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>128</td>
+<td>0.32</td>
+<td>1.73</td>
+</tr>
+<tr>
+<td>256 (Default)</td>
+<td>0.36</td>
+<td><strong>1.28</strong></td>
+</tr>
+<tr>
+<td>384</td>
+<td>0.53</td>
+<td>2.76</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Effectiveness of Geometry-Aware Embedding Learning.</strong>
+We investigate the impact of geometry-aware embedding learning on the planning metrics of the model.
+As a comparison, we remove this module and train the model with random embeddings. This causes a substantial performance degradation, increasing the average L2 error from 1.28 m to 2.39 m.
+This comparison confirms that treating action tokens as independent categorical indices discards useful metric information, making it difficult for the model to learn effective planning.
+By enforcing geometric consistency, our method ensures that the distance between tokens in the latent space correlates with their physical displacement, enabling the model to generate accurate trajectories.</p>
+<p><strong>Action Representation: Waypoints vs. Displacements.</strong>
+We compare modeling trajectories as absolute waypoints versus relative displacements <a href="#ref-42">[42]</a>. As shown in Table V, while displacements barely impact planning accuracy (L2 error rises slightly from 1.28 m to 1.30 m), they cause a collapse in reasoning. The displacement model fails to generate coherent explanations, dropping the CIDEr score to 0.08 and reducing BLEU-4. This validates our use of absolute waypoints.
+Although displacements provide enough local detail for short-term planning, they lack the global spatial context required for semantic alignment.
+Since diffusion generates in parallel, the model struggles to aggregate isolated displacements to understand the overall maneuver. Without explicit spatial anchors, it cannot map physical actions to high-level concepts, leading to an obvious breakdown in explainability.</p>
+<p><strong>Table V</strong>: Ablation on Action Representation. C: CIDEr, B: BLEU-4, M: METEOR, R: ROUGE-L.</p>
+<table>
+<thead>
+<tr>
+<th>Modeling</th>
+<th>Planning L2 (m) Avg. (↓)</th>
+<th>Nu-X C (↑)</th>
+<th>Nu-X B (↑)</th>
+<th>Nu-X M (↑)</th>
+<th>Nu-X R (↑)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Displacement</td>
+<td>1.30</td>
+<td>0.08</td>
+<td>5.66</td>
+<td>23.1</td>
+<td>26.4</td>
+</tr>
+<tr>
+<td>Waypoint</td>
+<td><strong>1.28</strong></td>
+<td><strong>19.5</strong></td>
+<td><strong>13.0</strong></td>
+<td><strong>36.8</strong></td>
+<td><strong>37.3</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="v-conclusion">V. Conclusion</h2>
+<p>In this work, we introduced MVLAD-AD, a unified framework for end-to-end autonomous driving that balances low-latency, high-precision planning with semantic explainability.
+Instead of regular language space representations, our discrete action tokenization strategy successfully transforms continuous trajectory planning into a robust classification task over kinematically feasible motion primitives.
+Moreover, our geometry-aware embedding bridges the gap between semantic reasoning and physical dynamics, enabling the system to generate high-fidelity trajectories with physically grounded explanations.
+Our action-priority decoding strategy further reduces the planning latency in inference.
+Extensive evaluations demonstrate that MVLAD-AD establishes strong performance on nuScenes planning and related language benchmarks, significantly outperforming autoregressive baselines in both planning precision and inference speed, while also providing high-quality explainable reasoning.</p>
+<h2 id="references">References</h2>
+<p><span id="ref-1"></span>[1] X. C. Song, P. Smith, R. Kalyanam, X. Zhu, E. Adams, K. Colby, P. Finnegan, E. Gough, E. Hillery, R. Irvine, <em>et al.</em>, “Anvil - System Architecture and Experiences from Deployment and Early User Operations,” in <em>PEARC</em>, 2022.</p>
+<p><span id="ref-2"></span>[2] T. J. Boerner, S. Deems, T. R. Furlani, S. L. Knuth, and J. Towns, “ACCESS: Advancing Innovation: NSF’s Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support,” in <em>PEARC</em>, 2023.</p>
+<p><span id="ref-3"></span>[3] J. Mao, Y. Qian, J. Ye, H. Zhao, and Y. Wang, “GPT-Driver: Learning to Drive with GPT,” <em>arXiv preprint arXiv:2310.01415</em>, 2023.</p>
+<p><span id="ref-4"></span>[4] L. Wen, D. Fu, X. Li, X. Cai, T. MA, P. Cai, M. Dou, B. Shi, L. He, and Y. Qiao, “DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models,” in <em>ICLR</em>, 2024.</p>
+<p><span id="ref-5"></span>[5] Z. Xu, Y. Zhang, E. Xie, Z. Zhao, Y. Guo, K.-Y. K. Wong, Z. Li, and H. Zhao, “DriveGPT4: Interpretable End-to-end Autonomous Driving via Large Language Model,” <em>IEEE Robotics and Automation Letters</em>, vol. 9, no. 10, 2024.</p>
+<p><span id="ref-6"></span>[6] S. Nie, F. Zhu, Z. You, X. Zhang, J. Ou, J. Hu, J. ZHOU, Y. Lin, J.-R. Wen, and C. Li, “Large Language Diffusion Models,” in <em>NeurIPS</em>, 2025.</p>
+<p><span id="ref-7"></span>[7] C. Cui, Y. Zhou, J. Peng, S.-Y. Park, Z. Yang, P. Sankaranarayanan, J. Zhang, R. Zhang, and Z. Wang, “ViLaD: A Large Vision Language Diffusion Framework for End-to-End Autonomous Driving,” <em>arXiv preprint arXiv:2508.12603</em>, 2025.</p>
+<p><span id="ref-8"></span>[8] M. J. Kim, K. Pertsch, S. Karamcheti, T. Xiao, A. Balakrishna, S. Nair, R. Rafailov, E. P. Foster, P. R. Sanketi, Q. Vuong, <em>et al.</em>, “OpenVLA: An Open-Source Vision-Language-Action Model,” in <em>CoRL</em>, 2024.</p>
+<p><span id="ref-9"></span>[9] B. Zitkovich, T. Yu, S. Xu, P. Xu, T. Xiao, F. Xia, J. Wu, P. Wohlhart, S. Welker, A. Wahid, <em>et al.</em>, “RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control,” in <em>CoRL</em>, 2023.</p>
+<p><span id="ref-10"></span>[10] L. Chen, P. Wu, K. Chitta, B. Jaeger, A. Geiger, and H. Li, “End-to-end Autonomous Driving: Challenges and Frontiers,” <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 46, no. 12, 2024.</p>
+<p><span id="ref-11"></span>[11] Y. Chen, Y. Wang, and Z. Zhang, “DrivingGPT: Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers,” in <em>ICCV</em>, 2025.</p>
+<p><span id="ref-12"></span>[12] X. Huang, E. M. Wolff, P. Vernaza, T. Phan-Minh, H. Chen, D. S. Hayden, M. Edmonds, B. Pierce, X. Chen, P. E. Jacob, <em>et al.</em>, “DriveGPT: Scaling Autoregressive Behavior Models for Driving,” <em>arXiv preprint arXiv:2412.14415</em>, 2024.</p>
+<p><span id="ref-13"></span>[13] H. Shao, Y. Hu, L. Wang, G. Song, S. L. Waslander, Y. Liu, and H. Li, “LMDrive: Closed-Loop End-to-End Driving with Large Language Models,” in <em>CVPR</em>, 2024.</p>
+<p><span id="ref-14"></span>[14] E. Cui, W. Wang, Z. Li, J. Xie, H. Zou, H. Deng, G. Luo, L. Lu, X. Zhu, and J. Dai, “DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving,” <em>Visual Intelligence</em>, vol. 3, no. 1, p. 22, 2025.</p>
+<p><span id="ref-15"></span>[15] C. Sima, K. Renz, K. Chitta, L. Chen, H. Zhang, C. Xie, J. Beißwenger, P. Luo, A. Geiger, and H. Li, “DriveLM: Driving with Graph Visual Question Answering,” in <em>ECCV</em>, 2024.</p>
+<p><span id="ref-16"></span>[16] T. Wang, E. Xie, R. Chu, Z. Li, and P. Luo, “DriveCoT: Integrating Chain-of-Thought Reasoning with End-to-End Driving,” <em>arXiv preprint arXiv:2403.16996</em>, 2024.</p>
+<p><span id="ref-17"></span>[17] J.-J. Hwang, R. Xu, H. Lin, W.-C. Hung, J. Ji, K. Choi, D. Huang, T. He, P. Covington, B. Sapp, Y. Zhou, J. Guo, D. Anguelov, and M. Tan, “EMMA: End-to-End Multimodal Model for Autonomous Driving,” <em>Transactions on Machine Learning Research</em>, 2025.</p>
+<p><span id="ref-18"></span>[18] S. Xing, C. Qian, Y. Wang, H. Hua, K. Tian, Y. Zhou, and Z. Tu, “OpenEMMA: Open-Source Multimodal Model for End-to-End Autonomous Driving,” in <em>WACV Workshops</em>, 2025.</p>
+<p><span id="ref-19"></span>[19] A. B. Arrieta, N. Díaz-Rodríguez, J. Del Ser, A. Bennetot, S. Tabik, A. Barbado, S. García, S. Gil-López, D. Molina, R. Benjamins, <em>et al.</em>, “Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI,” <em>Information fusion</em>, vol. 58, pp. 82–115, 2020.</p>
+<p><span id="ref-20"></span>[20] D. Omeiza, H. Webb, M. Jirotka, and L. Kunze, “Explanations in Autonomous Driving: A Survey,” <em>IEEE Transactions on Intelligent Transportation Systems</em>, vol. 23, no. 8, pp. 10 142–10 162, 2021.</p>
+<p><span id="ref-21"></span>[21] S. M. Lundberg and S.-I. Lee, “A Unified Approach to Interpreting Model Predictions,” in <em>NIPS</em>, 2017.</p>
+<p><span id="ref-22"></span>[22] A. Shrikumar, P. Greenside, and A. Kundaje, “Learning Important Features Through Propagating Activation Differences,” in <em>ICML</em>, 2017.</p>
+<p><span id="ref-23"></span>[23] M. T. Ribeiro, S. Singh, and C. Guestrin, “&lsquo;Why Should I Trust You?&rsquo;: Explaining the Predictions of Any Classifier,” in <em>SIGKDD</em>, 2016.</p>
+<p><span id="ref-24"></span>[24] R. R. Selvaraju, M. Cogswell, A. Das, R. Vedantam, D. Parikh, and D. Batra, “Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization,” in <em>ICCV</em>, 2017.</p>
+<p><span id="ref-25"></span>[25] K. Simonyan, A. Vedaldi, and A. Zisserman, “Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps,” <em>arXiv preprint arXiv:1312.6034</em>, 2013.</p>
+<p><span id="ref-26"></span>[26] K. Xu, J. Ba, R. Kiros, K. Cho, A. Courville, R. Salakhudinov, R. Zemel, and Y. Bengio, “Show, Attend and Tell: Neural Image Caption Generation with Visual Attention,” in <em>ICML</em>, 2015.</p>
+<p><span id="ref-27"></span>[27] J. Kim and J. Canny, “Interpretable Learning for Self-Driving Cars by Visualizing Causal Attention,” in <em>ICCV</em>, 2017.</p>
+<p><span id="ref-28"></span>[28] J. Kim, A. Rohrbach, T. Darrell, J. Canny, and Z. Akata, “Textual Explanations for Self-Driving Vehicles,” in <em>ECCV</em>, 2018.</p>
+<p><span id="ref-29"></span>[29] M. A. Kühn, D. Omeiza, and L. Kunze, “Textual Explanations for Automated Commentary Driving,” in <em>IV</em>, 2023.</p>
+<p><span id="ref-30"></span>[30] S. Jain and B. C. Wallace, “Attention is not explanation,” in <em>NAACL</em>, 2019.</p>
+<p><span id="ref-31"></span>[31] Y. Qiang, D. Pan, C. Li, X. Li, R. Jang, and D. Zhu, “AttCAT: Explaining Transformers via Attentive Class Activation Tokens,” in <em>NeurIPS</em>, 2022.</p>
+<p><span id="ref-32"></span>[32] L. Chen, O. Sinavski, J. Hünermann, A. Karnsund, A. J. Willmott, D. Birch, D. Maund, and J. Shotton, “Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving,” in <em>ICRA</em>, 2024.</p>
+<p><span id="ref-33"></span>[33] C. Cui, Z. Yang, Y. Zhou, Y. Ma, J. Lu, L. Li, Y. Chen, J. Panchal, and Z. Wang, “Personalized Autonomous Driving with Large Language Models: Field Experiments,” in <em>ITSC</em>, 2024.</p>
+<p><span id="ref-34"></span>[34] C. Cui, Y. Ma, S.-Y. Park, Z. Yang, Y. Zhou, P. Liu, J. Lu, J. Peng, J. Zhang, R. Zhang, <em>et al.</em>, “LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends,” <em>Proceedings of the IEEE</em>, 2026.</p>
+<p><span id="ref-35"></span>[35] H. Caesar, V. Bankiti, A. H. Lang, S. Vora, V. E. Liong, Q. Xu, A. Krishnan, Y. Pan, G. Baldan, and O. Beijbom, “nuScenes: A Multimodal Dataset for Autonomous Driving,” in <em>CVPR</em>, 2020.</p>
+<p><span id="ref-36"></span>[36] K. Ding, B. Chen, Y. Su, H.-a. Gao, B. Jin, C. Sima, X. Li, W. Zhang, P. Barsch, H. Li, <em>et al.</em>, “Hint-AD: Holistically Aligned Interpretability in End-to-End Autonomous Driving,” in <em>CoRL</em>, 2024.</p>
+<p><span id="ref-37"></span>[37] T. Qian, J. Chen, L. Zhuo, Y. Jiao, and Y.-G. Jiang, “NuScenes-QA: A Multi-Modal Visual Question Answering Benchmark for Autonomous Driving Scenario,” in <em>AAAI</em>, 2024.</p>
+<p><span id="ref-38"></span>[38] Y. Ma, B. Yaman, X. Ye, M. Yurt, J. Luo, A. Mallik, Z. Wang, and L. Ren, “ALN-P3: Unified Language Alignment for Perception, Prediction, and Planning in Autonomous Driving,” <em>arXiv preprint arXiv:2505.15158</em>, 2025.</p>
+<p><span id="ref-39"></span>[39] Z. Qiao, H. Li, Z. Cao, and H. X. Liu, “LightEMMA: Lightweight End-to-End Multimodal Model for Autonomous Driving,” <em>arXiv preprint arXiv:2505.00284</em>, 2025.</p>
+<p><span id="ref-40"></span>[40] Y. Hu, J. Yang, L. Chen, K. Li, C. Sima, X. Zhu, S. Chai, S. Du, T. Lin, W. Wang, <em>et al.</em>, “Planning-Oriented Autonomous Driving,” in <em>CVPR</em>, 2023.</p>
+<p><span id="ref-41"></span>[41] B. Jin, Y. Zheng, P. Li, W. Li, Y. Zheng, S. Hu, X. Liu, J. Zhu, Z. Yan, H. Sun, <em>et al.</em>, “TOD3Cap: Towards 3D Dense Captioning in Outdoor Scenes,” in <em>ECCV</em>, 2024.</p>
+<p><span id="ref-42"></span>[42] W. Tang, J. You, J. Liu, Z. Wang, R. Gan, Z. Huang, F. Wei, and B. Ran, “HERMES: A Holistic End-to-End Risk-Aware Multimodal Embodied System with Vision-Language Models for Long-Tail Autonomous Driving,” <em>arXiv preprint arXiv:2602.00993</em>, 2026.</p>
+<hr>
+<h2 id="about-this-page">About this page</h2>
+<p>This is a web transcription of the paper&rsquo;s full text, produced with <strong>Claude Opus 5 + ultracode</strong>. The prose follows the original word for word; equations, tables, figures and numbers are reproduced as published. <strong>It is provided for reference only, with no guarantee of accuracy — the original PDF is authoritative.</strong> Where this page and the PDF disagree, the PDF is correct.</p>
+<ul>
+<li>Original PDF: <a href="/publication/mvlad-ad/mvlad-ad.pdf">/publication/mvlad-ad/mvlad-ad.pdf</a></li>
+<li>Paper page: <a href="/publication/mvlad-ad/">Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</a></li>
+<li>Chinese translation: <a href="/publication/mvlad-ad/cn/">基于掩码视觉-语言-动作扩散的高效可解释端到端自动驾驶</a></li>
+<li>Code: <a href="https://github.com/lan-qing/MVLAD-AD" target="_blank" rel="noopener">https://github.com/lan-qing/MVLAD-AD</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.3322c0d94f0e691b0b24c63f4c41064b.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

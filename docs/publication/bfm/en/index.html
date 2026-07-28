@@ -1,0 +1,3180 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: July 28, 2026 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.42b156a799ace9005267369a12552956.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Jiaru Zhang" />
+
+
+
+
+
+  
+
+<meta name="description" content="Web transcription of the full text of Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks (SIGKDD 2026), with all equations, tables and figures." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://lan-qing.github.io/publication/bfm/en/" />
+<link rel="canonical" href="https://lan-qing.github.io/publication/bfm/en/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Jiaru Zhang" />
+<meta property="og:url" content="https://lan-qing.github.io/publication/bfm/en/" />
+<meta property="og:title" content="Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks | Jiaru Zhang" />
+<meta property="og:description" content="Web transcription of the full text of Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks (SIGKDD 2026), with all equations, tables and figures." /><meta property="og:image" content="https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-05-26T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2026-08-09T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks | Jiaru Zhang</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="173853620a402db97e819b14b9dadfd6" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Jiaru Zhang</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Jiaru Zhang</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#service"><span>Service</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contests"><span>Contests</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#awards"><span>Awards</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</h1>
+
+  
+  <p class="page-subtitle">Full text — web transcription</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <div class="alert alert-note">
+  <div>
+    This page is a web transcription of the full text of <strong>“Exploring Diffusion Models&rsquo; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks”</strong> (SIGKDD 2026), reproduced here for easier reading, searching and linking.
+It is provided <strong>for reference only</strong>; please read and cite the <a href="https://arxiv.org/pdf/2405.19931" target="_blank" rel="noopener">original PDF</a>, which is authoritative. A <a href="/publication/bfm/cn/">Chinese translation</a> is also available.
+  </div>
+</div>
+
+
+<details class="toc-inpage d-print-none  " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-related-works">2. Related Works</a>
+      <ul>
+        <li><a href="#21-diffusion-models-and-few-shot-fine-tuning">2.1. Diffusion Models and Few-shot Fine-tuning</a></li>
+        <li><a href="#22-bayesian-neural-networks">2.2. Bayesian Neural Networks</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-corruption-stage-in-few-shot-fine-tuning">3. Corruption Stage in Few-shot Fine-tuning</a>
+      <ul>
+        <li><a href="#31-observation">3.1. Observation</a></li>
+        <li><a href="#32-heuristic-modeling-on-few-shot-fine-tuning">3.2. Heuristic Modeling on Few-shot Fine-tuning</a></li>
+        <li><a href="#33-explanation-of-the-corruption-stage">3.3. Explanation of the Corruption Stage</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-applying-bnns-to-few-shot-fine-tuning">4. Applying BNNs to Few-shot Fine-tuning</a>
+      <ul>
+        <li><a href="#41-motivation">4.1. Motivation</a></li>
+        <li><a href="#42-formulation">4.2. Formulation</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-experiments">5. Experiments</a>
+      <ul>
+        <li><a href="#51-quantitative-and-visualized-comparisons">5.1. Quantitative and Visualized Comparisons</a></li>
+        <li><a href="#52-generalization">5.2. Generalization</a></li>
+        <li><a href="#53-ablation-study">5.3. Ablation Study</a></li>
+        <li><a href="#54-user-study">5.4. User Study</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#a1-drivation-of-eq-2">A1. Drivation of Eq. (2)</a></li>
+    <li><a href="#a2-proof-for-the-error-term-approaches-zero-during-fine-tuning">A2. Proof for the Error term Approaches Zero during Fine-tuning</a></li>
+    <li><a href="#a3-details-of-applying-bnns">A3. Details of Applying BNNs</a></li>
+    <li><a href="#a4-applying-bnns-on-different-few-shot-fine-tuning-methods">A4. Applying BNNs on Different Few-shot Fine-tuning Methods</a></li>
+    <li><a href="#a5-details-of-the-validation-experiments">A5. Details of the Validation Experiments</a></li>
+    <li><a href="#a6-additional-support-for-our-modeling">A6. Additional Support for Our Modeling</a></li>
+    <li><a href="#a7-metrics">A7. Metrics</a></li>
+    <li><a href="#a8-settings-of-fine-tuning">A8. Settings of Fine-tuning</a>
+      <ul>
+        <li><a href="#a81-few-shot-fine-tuning-hyper-parameters">A8.1. Few-shot Fine-tuning Hyper-parameters</a></li>
+        <li><a href="#a82-training-setting-for-dms-with-different-architectures">A8.2. Training Setting for DMs with Different Architectures</a></li>
+      </ul>
+    </li>
+    <li><a href="#a9-best-case-vs-average-case-generation">A9. Best-case vs. Average-case Generation</a></li>
+    <li><a href="#a10-limitations-and-future-work">A10. Limitations and Future Work</a></li>
+    <li><a href="#a11-broader-impact">A11. Broader Impact</a></li>
+    <li><a href="#a12-more-visualizations">A12. More Visualizations</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#about-this-page">About this page</a></li>
+  </ul>
+</nav>
+</details>
+
+<p>Xiaoyu Wu, Jiaru Zhang, Yang Hua, Bohan Lyu, Hao Wang, Tao Song, and Haibing Guan</p>
+<blockquote>
+<p>Xiaoyu Wu (<a href="mailto:wuxiaoyu2000@sjtu.edu.cn">wuxiaoyu2000@sjtu.edu.cn</a>) and Jiaru Zhang (<a href="mailto:jiaruzhang@sjtu.edu.cn">jiaruzhang@sjtu.edu.cn</a>), Shanghai Jiao Tong University, Shanghai, China. Both authors contributed equally to this research.
+Yang Hua (<a href="mailto:Y.Hua@qub.ac.uk">Y.Hua@qub.ac.uk</a>), Queen’s University Belfast, Belfast, United Kingdom.
+Bohan Lyu (<a href="mailto:lvbh22@mails.tsinghua.edu.cn">lvbh22@mails.tsinghua.edu.cn</a>), Tsinghua University, Beijing, China.
+Hao Wang (<a href="mailto:hwang9@stevens.edu">hwang9@stevens.edu</a>), Department of Electrical and Computer Engineering, Stevens Institute of Technology, Hoboken, New Jersey, United States.
+Tao Song (<a href="mailto:songt333@sjtu.edu.cn">songt333@sjtu.edu.cn</a>), Shanghai Jiao Tong University, Shanghai, China. Corresponding author.
+Haibing Guan (<a href="mailto:hbguan@sjtu.edu.cn">hbguan@sjtu.edu.cn</a>), Shanghai Jiao Tong University, Shanghai, China.</p>
+</blockquote>
+<h2 id="abstract">Abstract</h2>
+<p>Few-shot fine-tuning of Diffusion Models (DMs) is a key advancement, significantly reducing training costs and enabling personalized AI applications. However, we explore the training dynamics of DMs and observe an unanticipated phenomenon: during the training process, image fidelity initially improves, then unexpectedly deteriorates with the emergence of noisy patterns, only to recover later with severe overfitting. We term the stage with generated noisy patterns as <em>corruption stage</em>. To understand this corruption stage, we begin by heuristically modeling the one-shot fine-tuning scenario, and then extend this modeling to more general cases. Through this modeling, we identify the primary cause of this corruption stage: a narrowed learning distribution inherent in the nature of few-shot fine-tuning. To tackle this, we apply Bayesian Neural Networks (BNNs) on DMs with variational inference to implicitly broaden the learned distribution, and present that the learning target of the BNNs can be naturally regarded as an expectation of the diffusion loss and a further regularization with the pretrained DMs. This approach is highly compatible with current few-shot fine-tuning methods in DMs and does not introduce any extra inference costs. Experimental results demonstrate that our method significantly mitigates corruption, and improves the fidelity, quality and diversity of the generated images in both object-driven and subject-driven generation tasks.</p>
+<p><strong>CCS Concepts:</strong> • Computing methodologies → Machine learning; • Computing methodologies → Bayesian networks; • Computing methodologies → Neural networks.</p>
+<p><strong>Keywords:</strong> Few-shot Fine-tuning; Diffusion Models; Bayesian Neural Networks</p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Recent years have witnessed a surge in the development of Diffusion Models (DMs). These models have showcased extraordinary capabilities in various applications, such as image editing <a href="#ref-14">[14]</a> and video editing <a href="#ref-31">[31]</a>, among others. Particularly noteworthy is the advent of few-shot fine-tuning methods <a href="#ref-11">[11]</a>, <a href="#ref-22">[22]</a>, <a href="#ref-18">[18]</a>, in which a pretrained model is fine-tuned to personalize generation based on a small set of training images. These approaches have significantly reduced both memory and time costs in training. Moreover, these techniques offer powerful tools for adaptively generating images based on specific subjects or objects, embodying personalized AI and making AI accessible to everyone. In recent years, this innovation has even fostered the emergence of several communities, such as &lt;civitai.com&gt;, which boasts tens of thousands of checkpoints and millions of downloads.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/baseline_motivation_hud55a25a97fcd976e0c67895386d1f55c_686173_f03a62c88436b2f3ca02e7d10e1144ee.webp"
+                   srcset="/media/bfm/baseline_motivation_hud55a25a97fcd976e0c67895386d1f55c_686173_f03a62c88436b2f3ca02e7d10e1144ee.webp 700w, /media/bfm/baseline_motivation_hud55a25a97fcd976e0c67895386d1f55c_686173_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="900"
+                   loading="lazy" data-zoomable alt="(a) Few-shot fine-tuning process without BNNs." /><figcaption class="figgrid-sub"><strong>(a)</strong> Few-shot fine-tuning process without BNNs.</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/bayes_motivation_hue2c61c03ec1934b0c94ab8b64753e266_528355_cfef792c0febe037859de1028023c27f.webp"
+                   srcset="/media/bfm/bayes_motivation_hue2c61c03ec1934b0c94ab8b64753e266_528355_cfef792c0febe037859de1028023c27f.webp 700w, /media/bfm/bayes_motivation_hue2c61c03ec1934b0c94ab8b64753e266_528355_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="900"
+                   loading="lazy" data-zoomable alt="(b) Few-shot fine-tuning process with BNNs." /><figcaption class="figgrid-sub"><strong>(b)</strong> Few-shot fine-tuning process with BNNs.</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure 1</strong>: Image fidelity variation during fine-tuning with and without BNNs. Zero training iteration indicates pretrained DMs. We fine-tune Stable Diffusion v1.5 with DreamBooth for 5 runs.</figcaption></figure>
+
+<p><strong>Figure 1</strong>: Image fidelity variation during fine-tuning with and without BNNs. Zero training iteration indicates pretrained DMs. We fine-tune Stable Diffusion v1.5 with DreamBooth for 5 runs.</p>
+<p>Despite the importance and widespread usage of few-shot fine-tuning methods in DMs, these methods often struggle or even fail when transferring from a large distribution (i.e., pretrained DMs&rsquo; learned distribution) to a much smaller one (i.e., fine-tuned DMs&rsquo; learned distribution) using limited data <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>.
+We are the first to identify when and how these failures occur, and find that they are related to an unusual phenomenon:
+As shown in Fig. 1, the similarity between the generated images and the training images initially increases during fine-tuning, but then unexpectedly decreases, before increasing once more.
+Ultimately, the DMs are only capable of generating images identical to the training images.
+Notably, on the stage with decreasing similarity, we observe there appear some unexpected noisy patterns on the generated images, therefore we name it as <em>corruption stage</em>.</p>
+<p>To understand this corruption stage, we carry out further analysis on the few-shot fine-tuning process.
+Specifically, we start from heuristic modeling a one-shot case, i.e.,
+using only one training image during fine-tuning, and then extend the modeling to more general cases.
+The modeling provides an estimation of the error scale remaining in the generated images.
+We further show how corruption stages emerge due to
+the limited learned distribution inherent in few-shot tasks with this modeling.</p>
+<p>Based on the analysis above,
+the solution to corruption should concentrate on expanding the learned distribution.
+However, this expansion remains challenging in few-shot fine-tuning.
+Traditional data augmentation methods, often face significant problems such as leakage <a href="#ref-13">[13]</a> and a reduction in generation quality <a href="#ref-6">[6]</a> when applied to generative models. Inspired by advancements in Bayesian Neural Networks (BNNs) <a href="#ref-3">[3]</a>, we propose to incorporate BNNs as a straightforward yet potent strategy to implicitly broaden the learned distribution.
+We further present that its learning target can be decomposed into an expectation of the diffusion loss and an extra regularization term related to the pretrained model.
+They can be adjusted to reach a trade-off between image fidelity and diversity.
+Our method does not introduce any extra inference costs, and has good compatibility with existing few-shot fine-tuning methods in DMs, including DreamBooth <a href="#ref-22">[22]</a>, LoRA <a href="#ref-11">[11]</a>, and OFT <a href="#ref-18">[18]</a>.
+Experiments demonstrate that our method significantly alleviates the corruption issues and substantially enhances the performance across various few-shot fine-tuning methods on diverse datasets under different metrics.</p>
+<p>In summary, our main contributions are as follows:</p>
+<ul>
+<li>We observe an abnormal phenomenon during few-shot fine-tuning process on DMs: The image fidelity  first enhances, then unexpectedly worsens with the appearance of noisy patterns, before improving again but with severe overfitting. We refer to the phase where noisy patterns appear as the corruption stage.  We hope this observation could inform future research on DMs.</li>
+<li>We provide a heuristic modeling for few-shot fine-tuning process on DMs, explaining the emergence and disappearance of the corruption stage. With this modeling, we pinpoint that the main issue stems from the constrained learned distribution of DMs inherent in few-shot fine-tuning process.</li>
+<li>We innovatively incorporate BNNs to broaden the learned distribution, hence relieving such corruption. Experiments confirm its effectiveness in improving on different metrics, including text prompt fidelity, image fidelity, generation diversity, and image quality.</li>
+</ul>
+<p><strong>Open-source and Full Version.</strong> The code is available at GitHub (Note: <a href="https://github.com/Nicholas0228/BNN-Finetuning-DMs" target="_blank" rel="noopener">https://github.com/Nicholas0228/BNN-Finetuning-DMs</a>). We also maintain an extended version of this paper on arXiv <a href="#ref-29">[29]</a> with additional experiments and discussions.</p>
+<h2 id="2-related-works">2. Related Works</h2>
+<h3 id="21-diffusion-models-and-few-shot-fine-tuning">2.1. Diffusion Models and Few-shot Fine-tuning</h3>
+<p>Diffusion Models (DMs) <a href="#ref-10">[10]</a>, <a href="#ref-24">[24]</a>, <a href="#ref-25">[25]</a>, <a href="#ref-26">[26]</a> are generative models that approximate a data distribution through the gradual denoising of a variable initially sampled from a Gaussian distribution. These models involve a forward diffusion process and a backward denoising process. In the forward process, the extent of the addition of a noise 
+
+$\varepsilon$ increases over time 
+
+$t$, as described by the equation 
+
+$x_t = \sqrt{\alpha_t}x_{0} + \sqrt{1-\alpha_t}\varepsilon$, where 
+
+$x_{0}$ is a given original image and the range of time 
+
+$t$ is 
+
+$\left\{1, \dots, 1000\right\}$ in general cases. Conversely, in the backward process, the DMs aim to estimate the noise with a noise-prediction module 
+
+$\epsilon_{\theta}$ and subsequently remove it from the noisy image 
+
+$x_t$. The discrepancy between the actual and predicted noise serves as the training loss, denoted as diffusion loss 
+
+$\mathcal{L}_{DM}:= \mathbb{E}_{\varepsilon\sim \mathcal{N}(0,1), t}\left||\epsilon_{\theta}(x_{t}, t) - \varepsilon|\right|_{2}^{2}.$</p>
+<p>Few-shot fine-tuning in DMs <a href="#ref-7">[7]</a>, <a href="#ref-11">[11]</a>, <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a> aims at personalizing DMs with a limited set of images, facilitating the creation of tailored content.
+Gal <em>et. al.</em> introduced a technique that leverages new tokens within the embedding space of a frozen text-to-image model to capture the concepts presented in provided images <a href="#ref-7">[7]</a>.
+Ruiz <em>et. al.</em> further proposed DreamBooth, which fine-tunes most parameters in DMs leveraging a reconstruction loss that captures more precise details of the input images, with a class-specific preservation loss ensuring the alignment with the textual prompts <a href="#ref-22">[22]</a>.
+Additionally, Hu <em>et. al.</em> proposed LoRA, a lightweight fine-tuning approach that inserts low-rank layers to be learned while keeping other parameters frozen <a href="#ref-11">[11]</a>.
+Qiu <em>et. al.</em> presented OFT, a method that employs orthogonal transformations to enhance the quality of generation <a href="#ref-18">[18]</a>. Although these methods generally succeed in capturing the details of training images, they suffer from the corruption stage observed in this paper.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 32%; max-width: 32%"><img src="/media/bfm/baseline_05_huaeff440732d56cfc45caedfd51240bb8_418293_3b96a0c9f3b9054ed9d4005812bdab70.webp"
+                   srcset="/media/bfm/baseline_05_huaeff440732d56cfc45caedfd51240bb8_418293_3b96a0c9f3b9054ed9d4005812bdab70.webp 700w, /media/bfm/baseline_05_huaeff440732d56cfc45caedfd51240bb8_418293_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1182"
+                   loading="lazy" data-zoomable alt="(a) Fine-tuning on 1 image." /><figcaption class="figgrid-sub"><strong>(a)</strong> Fine-tuning on 1 image.</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 32%; max-width: 32%"><img src="/media/bfm/baseline_0105_hub8b2037be84ae306c58f23ea9e70026f_397043_c4b3278f16a9e78074575d65f0b032f6.webp"
+                   srcset="/media/bfm/baseline_0105_hub8b2037be84ae306c58f23ea9e70026f_397043_c4b3278f16a9e78074575d65f0b032f6.webp 700w, /media/bfm/baseline_0105_hub8b2037be84ae306c58f23ea9e70026f_397043_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1182"
+                   loading="lazy" data-zoomable alt="(b) Fine-tuning on 2 images." /><figcaption class="figgrid-sub"><strong>(b)</strong> Fine-tuning on 2 images.</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 32%; max-width: 32%"><img src="/media/bfm/baseline_allimages_hueab87f5857ae340cd06b1a40673b7fec_378147_7161a95c8b2af259e60cf708dd5dfda8.webp"
+                   srcset="/media/bfm/baseline_allimages_hueab87f5857ae340cd06b1a40673b7fec_378147_7161a95c8b2af259e60cf708dd5dfda8.webp 700w, /media/bfm/baseline_allimages_hueab87f5857ae340cd06b1a40673b7fec_378147_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1182"
+                   loading="lazy" data-zoomable alt="(c) Fine-tuning on 6 images." /><figcaption class="figgrid-sub"><strong>(c)</strong> Fine-tuning on 6 images.</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure 2</strong>: Illustration of image fidelity variation in few-shot fine-tuning under different numbers of training images measured by Dino similarity. Higher Dino similarity indicates better image fidelity. As the number of training images increases, the corruption occurs later, and its severity is reduced.</figcaption></figure>
+
+<p><strong>Figure 2</strong>: Illustration of image fidelity variation in few-shot fine-tuning under different numbers of training images measured by Dino similarity. Higher Dino similarity indicates better image fidelity. As the number of training images increases, the corruption occurs later, and its severity is reduced.</p>
+<h3 id="22-bayesian-neural-networks">2.2. Bayesian Neural Networks</h3>
+<p>Bayesian Neural Networks (BNNs) are a type of stochastic neural networks characterized by treating the parameters as random variables rather than fixed values <a href="#ref-3">[3]</a>, <a href="#ref-4">[4]</a>, <a href="#ref-17">[17]</a>.
+The objective is to infer the posterior distribution 
+
+$P(\theta|\mathcal{D})$ for the parameters 
+
+$\theta$ given a dataset 
+
+$\mathcal{D}$.
+It endows BNNs with several distinct advantages, such as the capability to model the distributions for output, to mitigate overfitting, and to enhance model interpretability <a href="#ref-1">[1]</a>, <a href="#ref-12">[12]</a>.
+One prevalent variant of BNNs is the mean-field variational BNN, also known as <em>Bayes by Backprop</em>, where the mean-field variational inference is applied to obtain the variational distribution 
+
+$Q_W(\theta)$ to approximate the posterior distribution 
+
+$P(\theta|\mathcal{D})$ <a href="#ref-3">[3]</a>.
+Recent studies demonstrated that even a BNN module, which treats only a subset of parameters as random variables while maintaining the rest as fixed, can retain the benefits associated with full BNNs <a href="#ref-8">[8]</a>, <a href="#ref-15">[15]</a>, <a href="#ref-23">[23]</a>.
+Our proposed method can be regarded as a natural progression of BNN principles applied to few-shot fine-tuning in DMs.</p>
+<h2 id="3-corruption-stage-in-few-shot-fine-tuning">3. Corruption Stage in Few-shot Fine-tuning</h2>
+<p>In Sec. 3.1, we first present the observation on the corruption stage during few-shot fine-tuning of DMs. In Sec. 3.2, to better observe and understand the issues and fine-tuning dynamics with the corruption stage, we propose a heuristic modeling that uses Gaussian distribution as an approximation.</p>
+<p>To address the challenges of modeling the dynamics of DMs during fine-tuning, we adopt reasonable simplifications, supported by evidence from a specific case. In Sec. 3.3, we explain the emergence and vanishing of the corruption stage by our modeling, and reveal the limited learned distribution is the root cause of the corruption stage.</p>
+<h3 id="31-observation">3.1. Observation</h3>
+<p>In this section, we explore the performance variation during the few-shot fine-tuning process of DMs. Concretely, we fine-tune Stable Diffusion (SD) v1.5 (Note: <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5" target="_blank" rel="noopener">https://huggingface.co/runwayml/stable-diffusion-v1-5</a>) <a href="#ref-20">[20]</a> with DreamBooth <a href="#ref-22">[22]</a> on different number of training images, and record the average Dino similarity between the generated images and training images as a measure of the image fidelity <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>.</p>
+<p>As shown in Fig. 2, the variation of the image fidelity is not monotonous during fine-tuning.</p>
+<p>Specifically, the few-shot fine-tuning process can be approximately divided into the following phases:</p>
+<ol>
+<li>
+<p>In the first a few iterations, the image fidelity improves quickly.</p>
+</li>
+<li>
+<p>Later, there is an <strong>abnormal decrease</strong> in the image fidelity.</p>
+<p>We observe the generated images in this phase present with increasing noisy patterns, i.e., the gradual emergence of the corruption stage.</p>
+</li>
+<li>
+<p>Subsequently, the generation fidelity recovers, and we observe the corruption patterns on generated images progressively diminish, i.e. the gradual disappearance of the corruption stage. Once corruption completely diminishes in this phase, the model enters a state close to <em>overfitting</em>, where it can only generate images identical to the training images. As a result, it loses the ability to produce diverse images.</p>
+</li>
+</ol>
+<p>Through the comparisons between Fig. 2a, Fig. 2b and Fig. 2c, it is worth noting that when the number of training images increases, the onset of corruption is delayed and its severity is lessened.</p>
+<h3 id="32-heuristic-modeling-on-few-shot-fine-tuning">3.2. Heuristic Modeling on Few-shot Fine-tuning</h3>
+<p>In this section, we begin by heuristically modeling one-shot fine-tuning scenarios and then extend it to more general cases. This modeling is supported by an evidence on a specific case.</p>
+<p><strong>Heuristic Modeling for One-shot Fine-tuning on DMs.</strong> We start with a representative condition where the dataset 
+
+$\mathcal{D}$ contains only one training image 
+
+$x'$. Under this condition, we suppose the fine-tuned DMs with parameter 
+
+$\theta$ model the joint distribution of any original image 
+
+$x_0$ and any noisy image at time 
+
+$t$, i.e., 
+
+$x_t$, as a multivariate Gaussian distribution 
+
+$P_\theta(x_0, x_t)$. Concretely, its marginal distribution of 
+
+$x_0$ is approximated as 
+
+$P_\theta(x_0) \approx \mathcal{N}(x', \sigma_1^2)$ when the model is fine-tuned with only one image 
+
+$x'$.</p>
+<p>Additionally, as the noisy image 
+
+$x_t$ is obtained by a linear combination 
+
+$x_t = \sqrt{\alpha_t} x_0 + \sqrt{1 - \alpha_t} \epsilon$ between 
+
+$x_0$ and a unit Gaussian noise 
+
+$\epsilon$, the marginal distribution of 
+
+$x_t$ should approximate 
+
+$P_\theta(x_t) \approx \mathcal{N}(\sqrt{\alpha_t}x', \alpha_t \sigma_1^2 + (1 - \alpha_t))$. Notably, the fine-tuning process in fact narrows the KL divergence between 
+
+$P_\theta(x_t \mid x_0=x')$ and 
+
+$\mathcal{N}(\sqrt{\alpha_t} x', (1 - \alpha_t))$, thus these distributions should be increasingly close during fine-tuning <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>.</p>
+<p>With this modeling, the main focus of the DMs, predicting the original image 
+
+$x_0$ based on a noisy image 
+
+$x_t$, is represented as 
+
+$P_\theta(x_0|x_t)$. We find that it in fact approximates a Gaussian distribution related to both 
+
+$x_{t}$ and the training image 
+
+$x'$:</p>
+
+
+
+$$
+\begin{aligned}
+    P_\theta(x_0|x_t) \approx \mathcal{N}(x' + \delta_t(x_t, x'), \frac{(1-\alpha_t)}{\alpha_t \sigma_1^2 + (1 - \alpha_t)}), \\ \text{ where } \delta_t(x_t, x') =\frac{\sqrt{\alpha_t} \sigma_1^2}{\alpha_t \sigma_1^2 + (1 - \alpha_t)} (x_t - \sqrt{\alpha_t} x').
+\end{aligned}
+\tag{1}
+$$
+
+<p>The most possible 
+
+$x_0$ in the view of the DMs, 
+
+$\hat{x}_{0}$, is:</p>
+
+
+
+$$
+\hat{x}_{0} = \arg\max_{x_{0}}P_\theta(x_0|x_t) \approx x' + \delta_t(x_t, x').
+\tag{2}
+$$
+
+<p>The derivation is provided at the Appendix Sec. A1. Notably, the error term 
+
+$\delta_t(x_t, x')$ represents the difference between the predicted original image 
+
+$\hat{x}_0$ and the training image 
+
+$x'$. Intuitively, 
+
+$\sigma_{1}$ can be treated as the “confidence” of the fine-tuned DM regenerating the training sample 
+
+$x'$.</p>
+<p>The accuracy of the above modeling is influenced by the number of training iterations. As fine-tuning progresses, the approximation 
+
+$P_\theta(x_0) \approx \mathcal{N}(x', \sigma_1^2)$ becomes more precise, and the formulation more closely reflects real scenarios. To illustrate an extreme case in this modeling, we consider a scenario where 
+
+$\sigma_1 = 0$, i.e., 
+
+$\delta_t = 0$. Under this condition, for any input 
+
+$x_t$, the DMs consistently reproduce the training image 
+
+$x'$ as described by Eq. (2). This indicates that the DMs fully lose the intrinsic denoising ability in this extreme scenario, only regenerating the training image instead.</p>
+<p>In the opposite extreme, where 
+
+$\sigma_1 = +\infty$, i.e., 
+
+$\delta_t = \frac{1}{\sqrt{\alpha_t}}x_t - x'$, the model&rsquo;s prediction for 
+
+$x_0$ is exactly 
+
+$\frac{1}{\sqrt{\alpha_t}}x_t$. This indicates that the DMs entirely lose the ability to generate images. Instead, DMs only rescale 
+
+$x_{t}$ based on the factor 
+
+$\alpha_t$ at the time step 
+
+$t$, leading to any noise in 
+
+$x_{t}$ is also remaining in the generated image.</p>
+<p><strong>Extension to More General Cases.</strong> We further extend our modeling to the case where 
+
+$\mathcal{D}$ contains multiple training samples. In specific, we assume the learned distribution of the original image 
+
+$x_0$ of the DMs, i.e., 
+
+$P_\theta(x_0)$, is centered with an image set 
+
+$\mathcal{I}_{\theta}$. Under few-shot fine-tuning, as the training continues, 
+
+$\mathcal{I}_{\theta}$ gradually approximates the training dataset 
+
+$\mathcal{D}$. On the other hand, for the pretrained DMs, they typically learn a much larger manifold, which can be interpreted as learning with a sufficiently large 
+
+$\mathcal{I}_{\theta}$. For all these DMs facing with noisy image 
+
+$x_{t}$, we simplify their behavior as firstly finding a sample 
+
+$x^{*} \in \mathcal{I}_{\theta}$ to minimize the error term 
+
+$\delta_t(x_{t}, x^{*})$, and then estimating the corresponding 
+
+$\hat{x}_0$ according to Eq. (2). With this simplification, the sufficiently large 
+
+$\mathcal{I}_{\theta}$ of pretrained DMs enables them to find an 
+
+$x^{}$ such that the error term 
+
+$\delta_t(x_t, x^{})$ approaches zero, thereby preventing corruption in most instances.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/bfm/zero_input_2.0_hu190fc56513e4ee628cafca09af9aef49_662696_0aa6a7b4b6e79a2e1d7d1ed22b7ca266.webp"
+                   srcset="/media/bfm/zero_input_2.0_hu190fc56513e4ee628cafca09af9aef49_662696_0aa6a7b4b6e79a2e1d7d1ed22b7ca266.webp 700w, /media/bfm/zero_input_2.0_hu190fc56513e4ee628cafca09af9aef49_662696_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="537"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 3</strong>: Denoised images from pretrained and fine-tuned DMs using x<sub>t</sub> = 0 and t = 1000. The pretrained DMs do not largely change x<sub>t</sub> as it is free of noise. In contrast, both DMs fine-tuned on 1 and 5 images transform x<sub>t</sub> to make it closely resembles one sample within the training dataset 𝒟.</figcaption></figure>
+
+<p><strong>Support for the Modeling.</strong> To support the above modeling closely approximates the practical scenarios, we present a specific example where we set the “noisy” image 
+
+$x_{t}=0$, and then make both the pretrained and fine-tuned DMs denoise this image 
+
+$x_{t}$ which is entirely free of noise. This is a special case as 
+
+$x_{t}$ is free of noise and the typical DM should leave it unchanged to function effectively as a denoiser. According to our modeling, both DMs should first find one sample 
+
+$x^{*}$ within their own 
+
+$\mathcal{I}_{\theta}$. Naturally, 
+
+$x_{t} = 0$ is within 
+
+$\mathcal{I}_{\theta}$ of the pretrained DMs (See Appendix Sec. A5 for more evidence). Therefore, the pretrained DMs should leave this 
+
+$x_{t}=0$ almost unchanged during denoising.</p>
+<p>In comparison, the 
+
+$\mathcal{I}_{\theta}$ of the fine-tuned DMs should gradually approximate the training dataset 
+
+$\mathcal{D}$. Therefore, the fine-tuned DMs should first find one sample 
+
+$x^{*} \in \mathcal{D}$, and then predict the original image 
+
+$x_0$ as proportional to 
+
+$x^{*}$ according to Eq. (2).</p>
+<p>Experimental results provided in Fig. 3 support our analysis, where we can observe the pretrained DMs do not largely change this 
+
+$x_{t} =0$, but the fine-tuned DMs transform this 
+
+$x_{t}$ to one of the samples in its training dataset 
+
+$\mathcal{D}$. This supports that our modeling aligns with real-world scenarios during few-shot fine-tuning.</p>
+<h3 id="33-explanation-of-the-corruption-stage">3.3. Explanation of the Corruption Stage</h3>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 60%; max-width: 60%"><img src="/media/bfm/1_hud6113b2ecfa736c2831add1d731df46a_66095_9e07dfb2fc1194788e8f0a32eee99693.webp"
+                   srcset="/media/bfm/1_hud6113b2ecfa736c2831add1d731df46a_66095_9e07dfb2fc1194788e8f0a32eee99693.webp 700w, /media/bfm/1_hud6113b2ecfa736c2831add1d731df46a_66095_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1050"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 4</strong>: Estimated σ<sub>1</sub> under different training iterations for DreamBooth.</figcaption></figure>
+
+<p>In this section, we explain the corruption stage according to our heuristic modeling about few-shot fine-tuning process on DMs. We first present the reason for the emergence of the corruption stage, with an example showing the severity of such problem. We further demonstrate why the corruption stage gradually disappears, resulting in “overfitting” as the fine-tuning process continues.</p>
+<p><strong>Emergence of the Corruption Stage.</strong> As stated in Eq. (2), given any noisy image 
+
+$x_{t}$, the fine-tuned DMs would predict the original image 
+
+$\hat{x}_0=x^{*} + \delta_{t}$, where 
+
+$x^{*} \in  \mathcal{I}_{\theta} \approx\mathcal{D}$ after certain training iterations. The scale of the error term 
+
+$\delta_{t}$ is related to 
+
+$\left\|x_t - \sqrt{\alpha_t} x^{*}\right\|_{2}$ and 
+
+$\sigma_{1}$. We estimate 
+
+$\sigma_{1}$ based on 
+
+$x_{t}$ sampled from 
+
+$\mathcal{N}(0, 1-\alpha_{t})$ and present the average 
+
+$\sigma_{1,t}$ among different 
+
+$t$s in Fig. 4. It shows that the 
+
+$\sigma_{1}$ remains relatively high under moderate iterations, resulting in a significant 
+
+$\delta_{t}$ once 
+
+$x_{t}$ is not identical to 
+
+$\sqrt{\alpha_t} x^{*}$.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/bfm/additional_noise_2.0_huee25110f4ef6930f4ef6dd3e419a4273_245844_88ff7816f8fef49bedf40949235209af.webp"
+                   srcset="/media/bfm/additional_noise_2.0_huee25110f4ef6930f4ef6dd3e419a4273_245844_88ff7816f8fef49bedf40949235209af.webp 700w, /media/bfm/additional_noise_2.0_huee25110f4ef6930f4ef6dd3e419a4273_245844_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="537"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 5</strong>: Experimental results for pretrained and fine-tuned DMs with an additional noise δ′ in a small region of the noisy image x<sub>t</sub> at t = 100. The pretrained DMs effectively remove δ′, producing high-quality images. Conversely, the fine-tuned DMs fail to eliminate δ′, with output images showing corruption patterns.</figcaption></figure>
+
+<p>Concretely, for the case with only one training image, i.e., 
+
+$\mathcal{D} = \left\{ x' \right\}$, we set the noisy image 
+
+$x_{t} = \sqrt{\alpha_{t}}x' + \sqrt{1-\alpha_{t}}\varepsilon$ + 
+
+$\delta'$, where 
+
+$\varepsilon\in\mathcal{N}(0,1)$ and 
+
+$\delta'$ is an additional noise introduced to a small region of the image. This 
+
+$\delta'$ simulates the case where the generating process of DMs is inaccurate in some 
+
+$t$s. We further set the time variable 
+
+$t=100$, and fine-tune DMs with 1000 iterations, with the estimated 
+
+$\sigma_{1}\approx4.8$ as shown in Fig. 4.
+According to Eq. (2) and the analysis above, we can compute 
+
+$\left\|\delta_{100}\right\|_{2}^{2}\approx 2.65\left\|\delta'\right\|_{2}^{2}$. It means the additional noise 
+
+$\delta'$ introduced is even expanded in this case, leading to a significant error term 
+
+$\delta_{t}$. Fig. 5 shows the experimental results under this setting, where we observe a significant error term 
+
+$\delta_{t}$, resembling a corruption pattern, and consisting with the above analysis.</p>
+<p><strong>Vanishing of the Corruption Stage.</strong> However, with the fine-tuning continues, 
+
+$\sigma_{1}$ drops as shown in Fig. 4, leading to a decreasing prediction error 
+
+$\delta_{t}$. This indicates that the corruption stage vanishes, and the fine-tuned DMs gradually move to the state where they only strictly regenerate the training image 
+
+$x' \in \mathcal{D}$. This is a classic case of “overfitting”, where the fine-tuned DMs lose their ability to generate diverse outputs and thus become unusable.</p>
+<p>In conclusion, the analysis in this Sec. 3.3 shows how the corruption stage happens when the learned distribution of DMs is highly limited with small 
+
+$\mathcal{I}_{\theta}$ and a high standard deviation 
+
+$\sigma_{1}$.</p>
+<h2 id="4-applying-bnns-to-few-shot-fine-tuning">4. Applying BNNs to Few-shot Fine-tuning</h2>
+<h3 id="41-motivation">4.1. Motivation</h3>
+<p>Based on our analysis, the corruption stage primarily arises from a limited learned distribution with a small 
+
+$\mathcal{I}_{\theta}$. Motivated by recent work on BNNs <a href="#ref-3">[3]</a>, <a href="#ref-8">[8]</a>, <a href="#ref-15">[15]</a>, <a href="#ref-23">[23]</a>, which model the parameters 
+
+$\theta$ as random variables, we propose to apply BNNs in the few-shot fine-tuning process on DMs as a simple yet effective method to expand 
+
+$\mathcal{I}_\theta$. Intuitively, the modeling of BNNs hinders the DMs to learn the exact distribution of the training dataset 
+
+$\mathcal{D}$. Without BNNs, the model outputs images with high probability, focusing on high-confidence cases. However, DMs trained with BNNs inherently generate some lower-probability images, compelling the model to handle lower-confidence cases, thereby hindering the DMs from learning the exact distribution. Therefore, the DMs are encouraged to learn a larger and more robust distribution to counter the randomness.</p>
+<p>Moreover, the sampling randomness during the fine-tuning process can be regarded as an inherent data augmentation, For instance, in a encoder-decoder view structure, BNNs in the encoder introduce perturbations within the encoding space. This acts as encoding-space level augmentation, ultimately influencing final decoded images by enhancing robustness and generalization without diminishing image quality, hence implicitly expanding the corresponding 
+
+$\mathcal{I}_\theta$.</p>
+<h3 id="42-formulation">4.2. Formulation</h3>
+<p><strong>Modeling.</strong> BNNs model the parameters 
+
+$\theta$ as random variables. Therefore, the learned distribution of DMs with BNN is 
+
+$P(x|\mathcal{D}) = \int P(x|\theta) P(\theta|\mathcal{D}) d\theta$. Concretely, 
+
+$P(x|\theta)$ is the image distribution modeled by the DMs, and 
+
+$P(\theta|\mathcal{D})$ is the posterior parameter distribution with a given dataset 
+
+$\mathcal{D}$. As the posterior distribution 
+
+$P(\theta|\mathcal{D})$ is intractable, a variational distribution 
+
+$Q_W (\theta)$ is applied to approximate it. We model the variational distribution of each parameter 
+
+$\theta$ as a Gaussian distribution: 
+
+$\theta \sim \mathcal{N}(\mu_{\theta}, \sigma_{\theta}^2)$, where 
+
+$W = \left\{\mu_{\theta}, \sigma_{\theta}\right\}$ are trainable parameters. Considering the fine-tuning process, we initialize the expectation term 
+
+$\mu_{\theta}$ from the corresponding parameter of the pretrained DMs, denoted as 
+
+$\theta_0$. Following previous work <a href="#ref-3">[3]</a>, we apply the re-parameterization trick to obtain the gradients of the parameters, as detailed in Appendix Sec. A3.</p>
+<p><strong>Table 1</strong>: Performance of fine-tuning with BNNs under object-driven and subject-driven generation. The averages are reported here, and the standard deviations among 5 different seeds are provided in Table A6.</p>
+<table>
+<thead>
+<tr>
+<th>Method (Object-Driven Generation: DreamBooth Dataset)</th>
+<th>Clip-T ↑</th>
+<th>Dino ↑</th>
+<th>Clip-I ↑</th>
+<th>Lpips ↑</th>
+<th>Clip-IQA ↑</th>
+<th>Method (Subject-Driven Generation: CelebA Dataset)</th>
+<th>Clip-T ↑</th>
+<th>Dino ↑</th>
+<th>Clip-I ↑</th>
+<th>Lpips ↑</th>
+<th>Clip-IQA ↑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DreamBooth</td>
+<td>0.246</td>
+<td>0.614</td>
+<td>0.771</td>
+<td>0.611</td>
+<td>0.875</td>
+<td>DreamBooth</td>
+<td>0.186</td>
+<td>0.642</td>
+<td>0.723</td>
+<td>0.511</td>
+<td>0.789</td>
+</tr>
+<tr>
+<td>DreamBooth w/ BNNs</td>
+<td><strong>0.256</strong></td>
+<td><strong>0.633</strong></td>
+<td><strong>0.785</strong></td>
+<td><strong>0.640</strong></td>
+<td><strong>0.893</strong></td>
+<td>DreamBooth w/ BNNs</td>
+<td><strong>0.205</strong></td>
+<td><strong>0.696</strong></td>
+<td><strong>0.757</strong></td>
+<td><strong>0.515</strong></td>
+<td><strong>0.811</strong></td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>0.252</td>
+<td>0.542</td>
+<td>0.722</td>
+<td>0.650</td>
+<td>0.864</td>
+<td>LoRA</td>
+<td>0.216</td>
+<td>0.602</td>
+<td>0.656</td>
+<td>0.644</td>
+<td>0.804</td>
+</tr>
+<tr>
+<td>LoRA w/ BNNs</td>
+<td><strong>0.261</strong></td>
+<td><strong>0.618</strong></td>
+<td><strong>0.769</strong></td>
+<td><strong>0.678</strong></td>
+<td><strong>0.890</strong></td>
+<td>LoRA w/ BNNs</td>
+<td><strong>0.227</strong></td>
+<td><strong>0.604</strong></td>
+<td><strong>0.663</strong></td>
+<td><strong>0.688</strong></td>
+<td><strong>0.824</strong></td>
+</tr>
+<tr>
+<td>OFT</td>
+<td>0.233</td>
+<td>0.649</td>
+<td>0.786</td>
+<td>0.629</td>
+<td>0.861</td>
+<td>OFT</td>
+<td>0.164</td>
+<td>0.675</td>
+<td>0.728</td>
+<td>0.549</td>
+<td>0.784</td>
+</tr>
+<tr>
+<td>OFT w/ BNNs</td>
+<td><strong>0.242</strong></td>
+<td><strong>0.661</strong></td>
+<td><strong>0.791</strong></td>
+<td><strong>0.646</strong></td>
+<td><strong>0.884</strong></td>
+<td>OFT w/ BNNs</td>
+<td><strong>0.185</strong></td>
+<td><strong>0.696</strong></td>
+<td><strong>0.743</strong></td>
+<td><strong>0.570</strong></td>
+<td><strong>0.798</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Training.</strong> During the fine-tuning process, the DMs are trained by minimizing the Kullback–Leibler (KL) divergence 
+
+$\mathrm{KL}(Q_W(\theta)|| P(\theta|\mathcal{D}))$, which is equivalent to minimizing</p>
+
+
+
+$$
+\begin{aligned}
+    \mathcal{L} &= - \int Q_W(\theta)\log \frac{P(\theta, \mathcal{D})}{Q_W(\theta)}  d\theta    \\ 
+        &=  \mathbb{E}_{\theta\sim Q_W(\theta)} \underbrace{ -\log P(\mathcal{D}|\theta)}_{\mathcal{L}_{DM}}+\underbrace{\mathrm{KL}(Q_W(\theta) ||P(\theta))}_{\mathcal{L}_r}.
+\end{aligned}
+\tag{3}
+$$
+
+<p>Following previous work <a href="#ref-33">[33]</a>, the above loss 
+
+$\mathcal{L}$ can be divided into two terms. In DMs, the first term can be seen as the modeled probability for the training dataset 
+
+$\mathcal{D}$, and is equivalent to the expectation of the diffusion loss 
+
+$\mathcal{L}_{DM}$ shown in Sec. 2.1 on the parameters 
+
+$\theta$. The second term can be seen as a regularization restricting the discrepancy between the variational distribution 
+
+$Q_W(\theta)$ and the prior distribution 
+
+$P(\theta)$. We name it as the regularization loss 
+
+$\mathcal{L}_r$. In few-shot fine-tuning, we regard the pretrained DMs naturally represent the prior information, so we set the prior distribution 
+
+$P(\theta)$ from the pretrained DMs, i.e., 
+
+$P(\theta) = \mathcal{N}(\theta_0, \sigma^2)$, where 
+
+$\sigma$ is a hyperparameter which represents the parameter randomness.</p>
+<p>In practice, we formulate our learning target as a linear combination of 
+
+$\mathcal{L}_{DM}$ and 
+
+$\mathcal{L}_r$ with a hyperparameter 
+
+$\lambda$, i.e.,</p>
+
+
+
+$$
+W^* = \arg \min\limits_{W} \mathbb{E}_{\theta\sim Q_W(\theta)} \mathcal{L}_{DM} + \lambda \mathcal{L}_r. \tag{4}
+$$
+
+<p>The training process is summarized in Appendix Alg. 1. Empirically, we find that using only 
+
+$\mathbb{E}_{\theta\sim Q_W(\theta)} \mathcal{L}_{DM}$, i.e., setting 
+
+$\lambda$ as 0, is enough to improve few-shot fine-tuning. Nevertheless, we can reach a further trade-off between the generation diversity and image fidelity by adjusting 
+
+$\lambda$.</p>
+<p><strong>Inference.</strong> During the inference, we explicitly replace each parameter 
+
+$\theta$ with its mean value 
+
+$\mu_\theta$ and perform inference just as DMs without BNNs. It guarantees that we do not introduce any additional costs compared to fine-tuned DMs without BNNs when deployed in production.</p>
+<p>Motivated by previous approaches on BNN modules <a href="#ref-8">[8]</a>, <a href="#ref-15">[15]</a>, <a href="#ref-23">[23]</a>, we only model a subset of parameters as random variables in practice, which reduces the computational costs. Fine-tuning DMs with BNNs is compatible with existing few-shot fine-tuning methods, including DreamBooth <a href="#ref-22">[22]</a>, LoRA <a href="#ref-11">[11]</a>, and OFT <a href="#ref-18">[18]</a>. More details are presented in Appendix Sec. A4.</p>
+<h2 id="5-experiments">5. Experiments</h2>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 99%; max-width: 99%"><img src="/media/bfm/visualization_0_hu9fd0c722a46ee5b42ffb8c8ad557717e_363982_ba10624f898f1915db8cfce9c37e143f.webp"
+                   srcset="/media/bfm/visualization_0_hu9fd0c722a46ee5b42ffb8c8ad557717e_363982_ba10624f898f1915db8cfce9c37e143f.webp 700w, /media/bfm/visualization_0_hu9fd0c722a46ee5b42ffb8c8ad557717e_363982_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="1008"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure 6</strong>: Comparison of few-shot fine-tuning methods with and without BNNs across subject-driven and object-driven scenarios. We show both best-case and average-case generated images measured by Clip-I, Dino and Clip-IQA. See Appendix Sec. A9 and A12 for the selection criterion and more visualized results.</figcaption></figure>
+
+<p>We apply BNNs to different few-shot fine-tuning methods across different tasks.
+For object-driven generation, where the fine-tuned DMs synthesize images with the details of given objects, we use all the 30 classes from DreamBooth <a href="#ref-22">[22]</a> dataset, each containing 4-6 images.
+For subject-driven generation, where the fine-tuned DMs synthesize images with the identities of given people, we follow previous research <a href="#ref-27">[27]</a>, randomly selecting 30 classes of images from CelebA-HQ <a href="#ref-16">[16]</a>, each containing 5 images.
+Most training settings follow previous approaches <a href="#ref-11">[11]</a>, <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>, <a href="#ref-27">[27]</a>. All experiments are conducted with 5 different seeds by default and we report the average performance here.
+We use Stable Diffusion v1.5 (Note: <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5" target="_blank" rel="noopener">https://huggingface.co/runwayml/stable-diffusion-v1-5</a>) (SD v1.5) as the default model for fine-tuning.</p>
+<p>As for the BNNs, we set the default initialized standard deviation 
+
+$\sigma_{\theta}$ and prior standard deviation 
+
+$\sigma$ as 0.01.
+The 
+
+$\lambda$ is set as 0 by default.
+We show more details in Appendix Sec. A8.1.</p>
+<p>Following previous approaches <a href="#ref-11">[11]</a>, <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>, for each class, we fine-tune one DM and generate 100 images with various prompts.
+These generated images are used to measure the performance of different few-shot fine-tuning methods.
+In specific, we use Clip-T <a href="#ref-19">[19]</a> to measure the text prompt fidelity, Clip-I <a href="#ref-9">[9]</a> and Dino <a href="#ref-5">[5]</a> to assess image fidelity, and Lpips <a href="#ref-34">[34]</a> to evaluate generation diversity. Additionally, we apply Clip-IQA <a href="#ref-28">[28]</a> to measure no-reference image quality.
+We show more details about these metrics in Appendix Sec. A7.</p>
+<h3 id="51-quantitative-and-visualized-comparisons">5.1. Quantitative and Visualized Comparisons</h3>
+<p>We apply BNNs on different few-shot fine-tuning methods under both object-driven and subject-driven generation tasks.
+As shown in Tab. 1 and Fig. 6, BNNs bring considerable improvements on all few-shot fine-tuning methods across text prompt fidelity (Clip-T) and image fidelity (Dino and Clip-I).
+These improvements arise from the expanded learned distribution contributed by BNNs, which makes the DMs more capable to generate reasonable images about the learned objects/subjects based on different prompts. BNNs also largely enhance the no-reference image quality (Clip-IQA).
+It is mainly because BNNs largely reduce the corruption phenomenon, which also partially improve the image fidelity (Dino and Clip-I) as the corrupted images are semantically distant to training images.
+Additionally, we observe BNNs boost the generation diversity (Lpips).
+We believe it naturally comes from the randomness introduced by BNNs.</p>
+<p><strong>Table 2</strong>: Performance under different DMs. All DMs are fine-tuned with DreamBooth on DreamBooth dataset.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Clip-T ↑</th>
+<th>Dino ↑</th>
+<th>Clip-I ↑</th>
+<th>Lpips ↑</th>
+<th>Clip-IQA ↑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SD v1.5</td>
+<td>w/o BNNs</td>
+<td>0.246</td>
+<td>0.614</td>
+<td>0.771</td>
+<td>0.611</td>
+<td>0.875</td>
+</tr>
+<tr>
+<td>SD v1.5</td>
+<td>w/ BNNs</td>
+<td><strong>0.256</strong></td>
+<td><strong>0.633</strong></td>
+<td><strong>0.785</strong></td>
+<td><strong>0.640</strong></td>
+<td><strong>0.893</strong></td>
+</tr>
+<tr>
+<td>SD v1.4</td>
+<td>w/o BNNs</td>
+<td>0.248</td>
+<td>0.594</td>
+<td>0.762</td>
+<td>0.618</td>
+<td>0.872</td>
+</tr>
+<tr>
+<td>SD v1.4</td>
+<td>w/ BNNs</td>
+<td><strong>0.249</strong></td>
+<td><strong>0.620</strong></td>
+<td><strong>0.777</strong></td>
+<td><strong>0.656</strong></td>
+<td><strong>0.895</strong></td>
+</tr>
+<tr>
+<td>SD v2.0</td>
+<td>w/o BNNs</td>
+<td>0.240</td>
+<td>0.563</td>
+<td>0.739</td>
+<td>0.604</td>
+<td>0.875</td>
+</tr>
+<tr>
+<td>SD v2.0</td>
+<td>w/ BNNs</td>
+<td><strong>0.248</strong></td>
+<td><strong>0.610</strong></td>
+<td><strong>0.764</strong></td>
+<td><strong>0.649</strong></td>
+<td><strong>0.925</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-generalization">5.2. Generalization</h3>
+<p>In this section, we further demonstrate BNNs can be applied to broader scenarios with notable performance improvement, including different DMs, varying training steps and a different number of training images.
+By default, we experiment on DreamBooth with BNNs for fine-tuning.</p>
+<p><strong>Different DMs.</strong> Following previous work <a href="#ref-32">[32]</a>, we experiment on different DMs. Concretely, besides default SD v1.5, we also experiment on SD v1.4 and v2.0 <a href="#ref-20">[20]</a>. We provide training details in Appendix Sec. A8.2. Tab. 2 indicates that applying BNNs on different DMs of SD consistently improves few-shot fine-tuning across multiple metrics.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/generalization_on_training_steps_dino_hub262d535c3354a9caf06da52d0cdae90_105436_fb7788c5df3159cbcab5c10c88c410b5.webp"
+                   srcset="/media/bfm/generalization_on_training_steps_dino_hub262d535c3354a9caf06da52d0cdae90_105436_fb7788c5df3159cbcab5c10c88c410b5.webp 700w, /media/bfm/generalization_on_training_steps_dino_hub262d535c3354a9caf06da52d0cdae90_105436_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(a) Dino" /><figcaption class="figgrid-sub"><strong>(a)</strong> Dino</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/generalization_on_training_steps_clipiqa_hu42b7bd7159cf43dcf7f3ffff0544cf9e_86985_c9f872e4a1bb5e7c1ba74717049e9689.webp"
+                   srcset="/media/bfm/generalization_on_training_steps_clipiqa_hu42b7bd7159cf43dcf7f3ffff0544cf9e_86985_c9f872e4a1bb5e7c1ba74717049e9689.webp 700w, /media/bfm/generalization_on_training_steps_clipiqa_hu42b7bd7159cf43dcf7f3ffff0544cf9e_86985_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(b) Clip-IQA" /><figcaption class="figgrid-sub"><strong>(b)</strong> Clip-IQA</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure 7</strong>: Comparison of performance with and without BNNs on DreamBooth with different training iterations per image.</figcaption></figure>
+
+<p><strong>Training Iterations.</strong> Fig. 7 shows that our method consistently improves the image quality (Clip-IQA). It also improves the image fidelity (Dino) when the training steps are larger than 
+
+$100\times \rm{Num}$, where 
+
+$\rm{Num}$ represents the number of images utilized during fine-tuning. With fewer iterations, the model suffers from underfitting. In this case, BNNs may make the underfitting problem further severe as BNNs encourage the model to learn a larger distribution. This results in the slightly decreased image fidelity (Dino) observed in 
+
+$100\times \rm{Num}$.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/generalization_on_training_images_dino_hued597981f5b5e72734d61b3eba28e1cd_59662_aaf3e354e046afa7d80e2e8c77eddb1f.webp"
+                   srcset="/media/bfm/generalization_on_training_images_dino_hued597981f5b5e72734d61b3eba28e1cd_59662_aaf3e354e046afa7d80e2e8c77eddb1f.webp 700w, /media/bfm/generalization_on_training_images_dino_hued597981f5b5e72734d61b3eba28e1cd_59662_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(a) Dino" /><figcaption class="figgrid-sub"><strong>(a)</strong> Dino</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/generalization_on_training_images_clipiqa_hu003999e279800b42da51a1755271a56d_63317_e63dc690079882e325dbdb10fb84475d.webp"
+                   srcset="/media/bfm/generalization_on_training_images_clipiqa_hu003999e279800b42da51a1755271a56d_63317_e63dc690079882e325dbdb10fb84475d.webp 700w, /media/bfm/generalization_on_training_images_clipiqa_hu003999e279800b42da51a1755271a56d_63317_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(b) Clip-IQA" /><figcaption class="figgrid-sub"><strong>(b)</strong> Clip-IQA</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure 8</strong>: Comparison of the performance with different number of training images.</figcaption></figure>
+
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/ablation_on_sigma_all_huec4a76ea9783ab430eefe208482442ae_80576_63b43a33f8011c9ef5142785689bbbdd.webp"
+                   srcset="/media/bfm/ablation_on_sigma_all_huec4a76ea9783ab430eefe208482442ae_80576_63b43a33f8011c9ef5142785689bbbdd.webp 700w, /media/bfm/ablation_on_sigma_all_huec4a76ea9783ab430eefe208482442ae_80576_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(a) Different Initialized σθ" /><figcaption class="figgrid-sub"><strong>(a)</strong> Different Initialized σ<sub>θ</sub></figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 49%; max-width: 49%"><img src="/media/bfm/ablation_on_lambda_all_hu73da60d05fddbdabc09453e658c666b6_81687_a79011a90980bb84a36b3486da6c8703.webp"
+                   srcset="/media/bfm/ablation_on_lambda_all_hu73da60d05fddbdabc09453e658c666b6_81687_a79011a90980bb84a36b3486da6c8703.webp 700w, /media/bfm/ablation_on_lambda_all_hu73da60d05fddbdabc09453e658c666b6_81687_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="1051"
+                   loading="lazy" data-zoomable alt="(b) Different λ" /><figcaption class="figgrid-sub"><strong>(b)</strong> Different λ</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure 9</strong>: Ablation study on different λ and initialized σ<sub>θ</sub>.</figcaption></figure>
+
+<p><strong>Table 3</strong>: User study results of fine-tuned DMs with and without BNNs across various measurements under both best-case and average-case scenarios. The table depicts the percentage of users favoring generated images from fine-tuned DMs with and without BNNs.</p>
+<table>
+<thead>
+<tr>
+<th>Best-case Generation: Method</th>
+<th>Best-case Generation: Subject Fidelity</th>
+<th>Best-case Generation: Text Alignment</th>
+<th>Best-case Generation: Image Quality</th>
+<th>Average-case Generation: Method</th>
+<th>Average-case Generation: Subject Fidelity</th>
+<th>Average-case Generation: Text alignment</th>
+<th>Average-case Generation: Image Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DreamBooth</td>
+<td>34.4%</td>
+<td>32.3%</td>
+<td>30.2%</td>
+<td>DreamBooth</td>
+<td><strong>50.5%</strong></td>
+<td>35.6%</td>
+<td>28.7%</td>
+</tr>
+<tr>
+<td>DreamBooth w/ BNNs</td>
+<td><strong>65.6%</strong></td>
+<td><strong>67.7%</strong></td>
+<td><strong>69.8%</strong></td>
+<td>DreamBooth w/ BNNs</td>
+<td>49.5%</td>
+<td><strong>64.4%</strong></td>
+<td><strong>71.3%</strong></td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>48.0%</td>
+<td>34.7%</td>
+<td>31.6%</td>
+<td>LoRA</td>
+<td>27.5%</td>
+<td>26.5%</td>
+<td>24.5%</td>
+</tr>
+<tr>
+<td>LoRA w/ BNNs</td>
+<td><strong>52.0%</strong></td>
+<td><strong>65.3%</strong></td>
+<td><strong>68.4%</strong></td>
+<td>LoRA w/ BNNs</td>
+<td><strong>72.5%</strong></td>
+<td><strong>73.5%</strong></td>
+<td><strong>75.5%</strong></td>
+</tr>
+<tr>
+<td>OFT</td>
+<td>30.6%</td>
+<td>34.7%</td>
+<td>40.8%</td>
+<td>OFT</td>
+<td>41.1%</td>
+<td>26.8%</td>
+<td>39.3%</td>
+</tr>
+<tr>
+<td>OFT w/ BNNs</td>
+<td><strong>69.4%</strong></td>
+<td><strong>65.3%</strong></td>
+<td><strong>59.2%</strong></td>
+<td>OFT w/ BNNs</td>
+<td><strong>58.9%</strong></td>
+<td><strong>73.2%</strong></td>
+<td><strong>60.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4</strong>: Comparison of performance when BNNs are applied to different layers in DMs. All experiments are conducted on DreamBooth dataset fine-tuning with DreamBooth. ‘N.A.’ refers to no BNN applied. ‘CA’ refers to BNN applied to cross-attention modules. ‘UB’ refers to only apply BNNs on the up block. We report the GPU memory costs and average time costs during fine-tuning for each class on one A100 GPU.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Clip-T</th>
+<th>Dino</th>
+<th>Clip-I</th>
+<th>Lpips</th>
+<th>Clip-IQA</th>
+<th>Memory</th>
+<th>Time(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N.A.</td>
+<td>0.246</td>
+<td>0.614</td>
+<td>0.771</td>
+<td>0.611</td>
+<td>0.875</td>
+<td>26.6G</td>
+<td>933</td>
+</tr>
+<tr>
+<td>Linear</td>
+<td>0.256</td>
+<td>0.633</td>
+<td>0.785</td>
+<td>0.640</td>
+<td>0.893</td>
+<td>31.2G</td>
+<td>1107</td>
+</tr>
+<tr>
+<td>Linear (UB)</td>
+<td>0.259</td>
+<td>0.614</td>
+<td>0.776</td>
+<td>0.646</td>
+<td>0.890</td>
+<td>29.0G</td>
+<td>1040</td>
+</tr>
+<tr>
+<td>Linear+CA</td>
+<td><strong>0.272</strong></td>
+<td>0.611</td>
+<td>0.760</td>
+<td><strong>0.672</strong></td>
+<td><strong>0.897</strong></td>
+<td>32.5G</td>
+<td>1157</td>
+</tr>
+<tr>
+<td>LN+GN</td>
+<td>0.254</td>
+<td><strong>0.650</strong></td>
+<td><strong>0.792</strong></td>
+<td>0.643</td>
+<td>0.889</td>
+<td>26.6G</td>
+<td>1088</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Numbers of Training Images</strong>. We also experiment under different numbers of training images. Concretely, we use the CelebA-HQ <a href="#ref-16">[16]</a> dataset as it contains enough images per class. We randomly select five classes from the CelebA-HQ dataset and conduct experiments with different numbers of training images. We fix the training iterations to 
+
+$250\times\rm{Num}$.</p>
+<p>Fig. 8 illustrates that our method consistently improves image fidelity and quality under different numbers of training images. Such improvement is more obvious with more training images. This is primarily because the 
+
+$250\times\rm{Num}$ generally results in more severe corruption problems when the training image number 
+
+$\rm{Num}$ is larger, hence BNNs bring in much improvement by expanding the learning distribution and relieving corruptions.</p>
+<h3 id="53-ablation-study">5.3. Ablation Study</h3>
+<p><strong>Scale of Initialized 
+
+$\sigma_{\theta}$.</strong> The initialized standard deviation 
+
+$\sigma_{\theta}$ determines the extent of randomness during fine-tuning. We experiment with applying BNNs under varying initialized 
+
+$\sigma_{\theta}$. Experimental results in Fig. 9a indicate that both the image fidelity (Dino) and quality (Clip-IQA) have been improved with a moderate initialized 
+
+$\sigma_{\theta}$. However, when the initialized 
+
+$\sigma_{\theta}$ is too large, the DMs collapse and the performance rapidly decreases. This indicates the DMs are almost randomly updated because of the too large randomness introduced in this scenario.</p>
+<p><strong>Trade-off Between Diversity and Fidelity with Adjusted 
+
+$\lambda$.</strong> Eq. (4) indicates 
+
+$\lambda$ controls the trade-off between the generation diversity and image fidelity.</p>
+<p>As shown in Fig. 9b, an increasing 
+
+$\lambda$ leads to improving generation diversity (Lpips), albeit at the expense of image fidelity (Dino).</p>
+<p><strong>Where to Apply BNNs.</strong> As mentioned in Sec. 4.2, we could model only a subset of parameters as random variables, i.e., applying BNNs on a part of layers in DMs. By default, we apply BNNs to all linear layers in the U-Net <a href="#ref-21">[21]</a> except the ones in the cross-attention modules and explore how different choices influence the performance and the training costs.</p>
+<p>As Tab. 4 shows, the DM can achieve relatively good performance with only the upblock of the U-Net applied with BNNs, reducing the ratio of the parameters modified to 
+
+$\sim 13.8\%$. We can further decrease the training costs by only applying BNNs on the normalization layers, i.e., Layer Normalization (LN) <a href="#ref-2">[2]</a> and Group Normalization (GN) <a href="#ref-30">[30]</a> layers. This decreases the ratio of the parameters modified to 
+
+$\sim 0.02\%$ with relatively strong performance.</p>
+<p>Additionally, when BNNs are applied to cross-attention modules, there is a significant increase in text prompt fidelity (Clip-T) at the expenses of image fidelity (Dino and Clip-I). Intuitively, this is because the input image aligns with only a limited set of prompts, and the applying of BNNs in cross-attention modules produces a further broader distribution matching more prompts.</p>
+<h3 id="54-user-study">5.4. User Study</h3>
+<p><strong>User Study Setting.</strong> We conduct user study to comprehensively present the superiority of applying BNNs on few-shot fine-tuning DMs. Concretely, we follow previous approaches <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a> and conduct a structured human evaluation for generated images, involving 101 participants. For this purpose, we utilize the DreamBooth dataset and the CelebA-HQ dataset. Subsequently, we generate four images per subject or object using a random prompt selected from 25 prompts across five models trained with different seeds. For comprehensive comparisons, we select both the best and average cases from the generated images (see Appendix Sec. A9 for details).</p>
+<p>Each participant is requested to compare image pairs generated by models that have been fine-tuned with and without BNNs, using three baseline models: DreamBooth, LoRA, and OFT. For each task, there are three binary-selection questions:</p>
+<ul>
+<li><strong>Subject fidelity:</strong> Which of the given two images contains a subject or object that is most similar to the following reference image (one from the training dataset)?</li>
+<li><strong>Text alignment:</strong> Which of the given two images best matches the text description provided below (the prompt used to generate the images)?</li>
+<li><strong>Image quality:</strong> Which of the given two images exhibits the higher image quality?</li>
+</ul>
+<p><strong>Results.</strong> The results are presented in Tab. 3, which shows the percentage of participants favoring each method (with and without BNNs) based on the criteria described above. It is evident that the methods with BNNs are preferred in almost all scenarios for both best-case and average-case generations. This preference is particularly significant in terms of text alignment and overall image quality.</p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>In this paper, we focus on few-shot fine-tuning in DMs, and reveal an unusual “corruption stage” where image fidelity first improves, then deteriorates due to noisy patterns, before recovering. With theoretical modeling, we attribute this phenomenon to the constrained learned distribution inherent in few-shot fine-tuning. By applying BNNs to broaden the learned distribution, we mitigate the corruption. Experiment results across various fine-tuning methods and datasets underscore the versatility of our approach.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This work was supported by the National Key R&amp;D Program of China (2022YFB4402102), and the Shanghai Key Laboratory of Scalable Computing and Systems. (Corresponding author: Tao Song)</p>
+<h2 id="a1-drivation-of-eq-2">A1. Drivation of Eq. (2)</h2>
+<p>We first restate our assumptions formally. For convenience, we use equal signs instead of approximate signs in our assumptions and derivations.</p>
+<ul>
+<li>The joint distribution of 
+
+$x_0$ and 
+
+$x_t$ is modeled by the DM as a multivariate Gaussian distribution</li>
+</ul>
+
+
+
+$$
+\begin{aligned}
+    &P_\theta([x_0, x_t]^T) = \mathcal{N}(\boldsymbol{\mu}, \boldsymbol{\Sigma}) \\&=\mathcal{N}([x', \sqrt{\alpha_t}x']^T, \left[\begin{array}{cc}
+\sigma_1^2 & c \\
+c & \alpha_t \sigma_1^2 + (1 - \alpha_t)
+\end{array}\right]),
+\end{aligned}
+\tag{5}
+$$
+
+<p>where 
+
+$c$ represents the unknown covariance between 
+
+$x_0$ and 
+
+$x_t$.</p>
+<ul>
+<li>The conditional probability of 
+
+$x_t$ given 
+
+$x_0 = x'$ is</li>
+</ul>
+
+
+
+$$
+P_\theta(x_t \mid x_0=x') = \mathcal{N}(\sqrt{\alpha_t} x', (1 - \alpha_t)).
+\tag{6}
+$$
+
+<p>Denote the inverse matrix of 
+
+$\boldsymbol{\Sigma}$ as</p>
+
+
+
+$$
+\boldsymbol{\Sigma}^{-1} = \left[\begin{array}{cc}
+\lambda_{11} & \lambda_{12} \\
+\lambda_{21} & \lambda_{22}
+\end{array}\right]
+= \frac{1}{|\boldsymbol{\Sigma}|}\left[\begin{array}{cc}
+\alpha_t \sigma_1^2 + 1 - \alpha_t & -c \\
+-c & \sigma_1^2
+\end{array}\right],
+\tag{7}
+$$
+
+<p>where 
+
+$|\boldsymbol{\Sigma}| = \sigma_1^2 (\alpha_t \sigma_1^2 + (1 - \alpha_t)) - c^2$ is the determinant of 
+
+$\boldsymbol{\Sigma}$. According to the property of a joint Gaussian distribution, the conditional distribution 
+
+$P(x_t|x_0)$ can be represented as</p>
+
+
+
+$$
+P(x_t|x_0) = \mathcal{N}(\frac{\lambda_{22} \sqrt{\alpha_t x'} + \lambda_{12}x_0 - \lambda_{12}x' }{\lambda_{22}}, \frac{1}{\lambda_{22}}).
+\tag{8}
+$$
+
+<p>According to Eq. (6),</p>
+
+
+
+$$
+\frac{1}{\lambda_{22}} = (1-\alpha_t),
+\tag{9}
+$$
+
+<p>which means 
+
+$c = \pm \sqrt{\alpha_t} \sigma_1^2$. Hence we know the joint distribution is</p>
+
+
+
+$$
+\begin{aligned}
+    &P_\theta([x_0, x_t]^T) = \mathcal{N}(\boldsymbol{\mu}, \boldsymbol{\Sigma}) \\&=\mathcal{N}([x', \sqrt{\alpha_t}x']^T, \left[\begin{array}{cc}
+\sigma_1^2 & \pm \sqrt{\alpha_t} \sigma_1^2 \\
+\pm \sqrt{\alpha_t} \sigma_1^2 & \alpha_t \sigma_1^2 + (1 - \alpha_t)
+\end{array}\right]).
+\end{aligned}
+\tag{10}
+$$
+
+<p>Repeatedly, according to the property of a joint Gaussian distribution, we have</p>
+
+
+
+$$
+P(x_0 | x_t) = \mathcal{N}(x' \pm \frac{ \sqrt{\alpha_t} \sigma_1^2 (y - \sqrt{\alpha_t} x')}{\alpha_t \sigma_1^2 + (1 - \alpha_t)}, \frac{1 - \alpha_t}{\alpha_t \sigma_1^2 + 1 - \alpha_t}).
+\tag{11}
+$$
+
+<p>In practice, the positive sign is more reasonable as it indicates the deviations of the predicted image 
+
+$x_0$ and the input noisy image 
+
+$x_t$ are aligned.</p>
+<p>Therefore,</p>
+
+
+
+$$
+P(x_0 | x_t) = \mathcal{N}(x' + \frac{ \sqrt{\alpha_t} \sigma_1^2 (y - \sqrt{\alpha_t} x')}{\alpha_t \sigma_1^2 + (1 - \alpha_t)}, \frac{1 - \alpha_t}{\alpha_t \sigma_1^2 + 1 - \alpha_t}).
+\tag{12}
+$$
+
+<h2 id="a2-proof-for-the-error-term-approaches-zero-during-fine-tuning">A2. Proof for the Error term Approaches Zero during Fine-tuning</h2>
+<p>In this section, we provide a direct proof for the error term approaching zero when the diffusion loss approaches zero.</p>
+<p><strong>Proof.</strong> As previous work points out <a href="#ref-10">[10]</a>, the probability of a diffusion model on a given distribution is lower bounded by its ELBO:</p>
+
+
+
+$$
+-\log P_{\theta}(x_{0}) \geq \mathbf{E}_{q}(x_{1:T} |x_0) \log \frac{ P_{\theta}(x_{0:T})}{Q(x_{1:T} |x_0)},
+\tag{13}
+$$
+
+<p>and is simplified to diffusion loss:</p>
+
+
+
+$$
+L_{DM}(x_0):=\mathbf{E}_{t, \epsilon\in N(0,1)} \Vert\varepsilon_{\theta} (\sqrt{\alpha_{t}}x_0 + \sqrt{1-\alpha_{t}}\epsilon, t) -\epsilon\Vert^{2}.
+\tag{14}
+$$
+
+<p>The main target loss of fine-tuning methods is to directly minimize the diffusion loss for data within the fine-tuning data distribution. This can be interpreted as minimizing the KL divergence 
+
+$\mathbf{E}_{Q}(x'_{1:T} | x'_0) \log \frac{P_{\theta}(x'_{0:T})}{Q(x'_{1:T} | x'_0)}$, where 
+
+$Q(x'_0)$ represents the fine-tuning data distribution.</p>
+<p>Under optimal conditions where 
+
+$L_{DM}(x'_0) \to 0$, we have 
+
+$P_{\theta}(x'_0) \to 1$ and 
+
+$P_{\theta}(x'_{t+1} | x'_{0}) \to Q(x'_{t+1} | x'_{0})$. This implies the identity of the learned 
+
+$P$ and fine-tuned data distribution 
+
+$Q$, hence we have</p>
+
+
+
+$$
+\arg\max P_\theta(x_0|x_t) = \arg\max Q(x_0|x_t) = x'.
+\tag{15}
+$$
+
+<p>It corresponds to 
+
+$\sigma_{1}=0$ in Eq. (1), leading to 
+
+$\delta_{t}=0$.</p>
+<p>It verifies the correctness of our modeling from another side, hence further supports our theoretical analysis.</p>
+<h2 id="a3-details-of-applying-bnns">A3. Details of Applying BNNs</h2>
+<p>The training process of applying BNNs in fine-tuning is summarized in Alg. 1.
+To obtain the gradients of the variational parameters, i.e., gradients of 
+
+$W = \{\mu_\theta, \sigma_\theta\}$, we apply the commonly used reparameterization trick in BNNs.</p>
+<p>Concretely, we first sample a unit Gaussian variable 
+
+$\varepsilon_\theta$ for each 
+
+$\theta$, and then perform 
+
+$\theta = \mu_\theta + \sigma_\theta \times \varepsilon_\theta$ to obtain a posterior sample of 
+
+$\theta$.
+Hence, the gradients can be calculated by</p>
+
+
+
+$$
+\begin{aligned}
+\frac{\partial}{\partial W} \mathcal{L} &=
+    \frac{\partial}{\partial W} \left[\mathbb{E}_{Q_W(\theta)}\mathcal{L}_{DM} + \mathcal{L}_r\right] \\ &= \mathbb{E}_{\varepsilon_\theta \sim \mathcal{N}(0,I)}\left[ \frac{\partial \mathcal{L}_{DM}}{\partial \theta} \frac{\partial \theta}{\partial W} + \frac{\partial \mathcal{L}_r}{\partial W}\right].
+\end{aligned}
+\tag{16}
+$$
+
+<p>We refer to the Proposition 1 in previous work <a href="#ref-3">[3]</a> for the detailed derivation.</p>
+<p><strong>Algorithm 1</strong>: Fine-tuning DMs with BNNs</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input:  Initialized variational parameters W = {μ_θ, σ_θ}, prior distributions
+</span></span><span class="line"><span class="cl">        P(θ) = N(θ_0, σ²), fine-tuning dataset D, number of fine-tuning
+</span></span><span class="line"><span class="cl">        iterations N, hyperparameter λ
+</span></span><span class="line"><span class="cl">Output: Fine-tuned variational parameters W = {μ_θ, σ_θ}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for i = 0 to N-1 do
+</span></span><span class="line"><span class="cl">    Sample ε_θ ~ N(0, I).
+</span></span><span class="line"><span class="cl">    Compute θ = μ_θ + ε_θ ∘ σ_θ.
+</span></span><span class="line"><span class="cl">    Sample x ∈ D, t ~ U(1, 1000), noise ε_t ~ N(0,1)
+</span></span><span class="line"><span class="cl">    Compute L_DM = ||ε_t - ε_θ(x_t, t)||².
+</span></span><span class="line"><span class="cl">    Compute L_r = KL(P(θ) || N(μ_θ, σ_θ²)).
+</span></span><span class="line"><span class="cl">    Compute L = L_DM + λ L_r
+</span></span><span class="line"><span class="cl">    Backward L and update μ_θ, σ_θ.
+</span></span><span class="line"><span class="cl">end for
+</span></span></code></pre></div><h2 id="a4-applying-bnns-on-different-few-shot-fine-tuning-methods">A4. Applying BNNs on Different Few-shot Fine-tuning Methods</h2>
+<p><strong>Applying BNNs on DreamBooth.</strong> DreamBooth is a full-parameter fine-tuning method, and is one of the mainstream fine-tuning methods <a href="#ref-22">[22]</a>. Therefore, all parameters in DreamBooth can be modeled as the BNNs parameters.</p>
+<p><strong>Applying BNNs on LoRA.</strong> LoRA <a href="#ref-11">[11]</a> is a classic lightweight yet effective method for few-shot fine-tuning. In LoRA layers, the weight matrix 
+
+$\mathbf{W} \in \mathbb{R}^{d \times k}$ is modeled as a sum of fixed weight from the pretrained model and a trainable low-rank decomposition: 
+
+$\mathbf{W} = \mathbf{W}_0 + \mathbf{B} \mathbf{A}$, where 
+
+$\mathbf{W}_0 \in \mathbb{R}^{d \times k}, \mathbf{B} \in \mathbb{R}^{d \times r}, \mathbf{A} \in \mathbb{R}^{r \times k}$ with rank 
+
+$r$ <a href="#ref-11">[11]</a>. In our implementation, we only convert the up matrix 
+
+$\mathbf{A}$ into random variables, and the down matrix 
+
+$\mathbf{B}$ is still kept as usual trainable parameters to make 
+
+$P(\mathbf{W})$ a Gaussian distribution. This design also reduces additional computational costs during training while keeps its effectiveness.</p>
+<p><strong>Applying BNNs on OFT.</strong> OFT is a few-shot fine-tuning method where the weights are tuned only by orthogonal transformations <a href="#ref-18">[18]</a>. In OFT layers, the weight matrix 
+
+$\mathbf{W} \in \mathbb{R}^{d \times k}$ is modeled as 
+
+$ \mathbf{W} = \mathbf{R} \mathbf{W}_0 $, where 
+
+$\mathbf{R}$ is guaranteed to be an orthogonal matrix by 
+
+$    \mathbf{R} = (\boldsymbol{I}+ 0.5 (\mathbf{Q} - \mathbf{Q}^T))(I-0.5 (\mathbf{Q} - \mathbf{Q}^T))^{-1}$, and 
+
+$\mathbf{Q}$ is the trainable parameter in the original OFT method. To guarantee the orthogonality is not destroyed by random sampling in BNNs, we only convert the trainable parameter 
+
+$\mathbf{Q}$ into random variables.</p>
+<p>Therefore, after the above transformation, 
+
+$\mathbf{R}$ is kept as an orthogonal matrix, and 
+
+$\mathbf{W}$ is kept as an orthogonalization transformation of the original pretrained 
+
+$\mathbf{W}_0$.</p>
+<p><strong>Table A5</strong>: Prompts used for evaluation. [V] indicates the special token and [object] indicates the type of the object.</p>
+<table>
+<thead>
+<tr>
+<th>Prompts for object-driven generation</th>
+<th>Prompts for subject-driven generation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a [V] [object] in the jungle</td>
+<td>a photo of a [V] person wearing sunglasses</td>
+</tr>
+<tr>
+<td>a [V] [object] in the snow</td>
+<td>a photo of a [V] person with snowflakes in their hair</td>
+</tr>
+<tr>
+<td>a [V] [object] on the beach</td>
+<td>a photo of a [V] person with beachy hair waves</td>
+</tr>
+<tr>
+<td>a [V] [object] on a cobblestone street</td>
+<td>a photo of a [V] person wearing a beret</td>
+</tr>
+<tr>
+<td>a [V] [object] on top of pink fabric</td>
+<td>a photo of a [V] person with a neutral expression</td>
+</tr>
+<tr>
+<td>a [V] [object] on top of a wooden floor</td>
+<td>a photo of a [V] person with a contemplative look</td>
+</tr>
+<tr>
+<td>a [V] [object] with a city in the background</td>
+<td>a photo of a [V] person laughing heartily</td>
+</tr>
+<tr>
+<td>a [V] [object] with a mountain in the background</td>
+<td>a photo of a [V] person with an amused smile</td>
+</tr>
+<tr>
+<td>a [V] [object] with a blue house in the background</td>
+<td>a photo of a [V] person with forest green eyeshadow</td>
+</tr>
+<tr>
+<td>a [V] [object] on top of a purple rug in a forest</td>
+<td>a photo of a [V] person wearing a red hat</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing a red hat</td>
+<td>a photo of a [V] person with a slight grin</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing a santa hat</td>
+<td>a photo of a [V] person with a thoughtful gaze</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing a rainbow scarf</td>
+<td>a photo of a [V] person wearing a black top hat</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing a black top hat and a monocle</td>
+<td>a photo of a [V] person in a chef hat</td>
+</tr>
+<tr>
+<td>a [V] [object] in a chef outfit</td>
+<td>a photo of a [V] person in a firefighter helmet</td>
+</tr>
+<tr>
+<td>a [V] [object] in a firefighter outfit</td>
+<td>a photo of a [V] person in a police cap</td>
+</tr>
+<tr>
+<td>a [V] [object] in a police outfit</td>
+<td>a photo of a [V] person wearing pink glasses</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing pink glasses</td>
+<td>a photo of a [V] person wearing a yellow headband</td>
+</tr>
+<tr>
+<td>a [V] [object] wearing a yellow shirt</td>
+<td>a photo of a [V] person in a purple wizard hat</td>
+</tr>
+<tr>
+<td>a [V] [object] in a purple wizard outfit</td>
+<td>a photo of a [V] person smiling</td>
+</tr>
+<tr>
+<td>a red [V] [object]</td>
+<td>a photo of a [V] person frowning</td>
+</tr>
+<tr>
+<td>a purple [V] [object]</td>
+<td>a photo of a [V] person looking surprised</td>
+</tr>
+<tr>
+<td>a shiny [V] [object]</td>
+<td>a photo of a [V] person winking</td>
+</tr>
+<tr>
+<td>a wet [V] [object]</td>
+<td>a photo of a [V] person yawning</td>
+</tr>
+<tr>
+<td>a cube shaped [V] [object]</td>
+<td>a photo of a [V] person laughing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a5-details-of-the-validation-experiments">A5. Details of the Validation Experiments</h2>
+<p><strong>Proof for 
+
+$x_{t}=0$ is within the 
+
+$\mathcal{I}_{\theta}$ of the pretrained DMs.</strong> We provide two proofs that 
+
+$x_{t}=0$ is within the 
+
+$\mathcal{I}_{\theta}$ of the pretrained DMs. The SD v1.5 is used as the pretrained DM.</p>
+<ul>
+<li>As shown in Fig. A10a, we use the prompt “a simple, solid gray image with no textures or variations” to generate images, and we observe the pretrained DM is capable of generating such images free of noise.</li>
+<li>We use the Img2Img Pipeline (Note: <a href="https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_img2img.py" target="_blank" rel="noopener">https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_img2img.py</a>) provided by diffusers with no prompt provided, i.e., unconditional generation. Then we set the input image as a blank one and the img2img strength as 0.1, which means input noisy image 
+
+$x_{100}=\alpha_{100}\varepsilon$, where 
+
+$\varepsilon\in \mathcal{N}(0,1)$. As shown in Fig. A10b. we can also observe the denoised result is completely free of noise.</li>
+</ul>
+<p>Both results support our argument that 
+
+$x_{t}=0$ is naturally within 
+
+$\mathcal{I}_{\theta}$ of the pretrained DMs.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 48%; max-width: 48%"><img src="/media/bfm/show_zero_2_hu25ddd3c3e079dbea969b1b33e7b78cb6_97946_fae34402300b1dd02734fbc34406503c.webp"
+                   srcset="/media/bfm/show_zero_2_hu25ddd3c3e079dbea969b1b33e7b78cb6_97946_fae34402300b1dd02734fbc34406503c.webp 700w, /media/bfm/show_zero_2_hu25ddd3c3e079dbea969b1b33e7b78cb6_97946_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="700"
+                   loading="lazy" data-zoomable alt="(a) Generated Images based on a given prompt." /><figcaption class="figgrid-sub"><strong>(a)</strong> Generated Images based on a given prompt.</figcaption></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 48%; max-width: 48%"><img src="/media/bfm/show_zero_1_hua2fbdb98065cfb43b233f80e3b5a2624_125893_27127a2e7637da33b1643d050739e372.webp"
+                   srcset="/media/bfm/show_zero_1_hua2fbdb98065cfb43b233f80e3b5a2624_125893_27127a2e7637da33b1643d050739e372.webp 700w, /media/bfm/show_zero_1_hua2fbdb98065cfb43b233f80e3b5a2624_125893_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="700"
+                   loading="lazy" data-zoomable alt="(b) Img2img result for pure-color image as input." /><figcaption class="figgrid-sub"><strong>(b)</strong> Img2img result for pure-color image as input.</figcaption></div>
+      
+    
+  </div><figcaption><strong>Figure A10</strong>: Proof for x<sub>t</sub> = 0 is within the ℐ<sub>θ</sub> of the pretrained DM.</figcaption></figure>
+
+<p>We fine-tune an SD v1.5 with DreamBooth without PPL loss <a href="#ref-22">[22]</a>. The learning rate is fixed to 
+
+$5\times10^{-6}$ and only the U-Net <a href="#ref-21">[21]</a> is fine-tuned. We use the backpack class in DreamBooth dataset as an example, and use prompt “a [V] backpack” to train where the “[V]” is the special token. We set 
+
+$x_{100}=0$ and show the one-step denoised result using the Img2Img Pipeline provided by diffusers. During denoising, for both pretrained and fine-tuned DMs, the prompt is fixed to “a [V] backpack”. More results are shown in Fig. A11.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/bfm/full_zero_hu4b034fb75529e92bab2229381d6c37a2_363450_eab4f34374b8f50db3d2852b29237043.webp"
+                   srcset="/media/bfm/full_zero_hu4b034fb75529e92bab2229381d6c37a2_363450_eab4f34374b8f50db3d2852b29237043.webp 700w, /media/bfm/full_zero_hu4b034fb75529e92bab2229381d6c37a2_363450_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="1185"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure A11</strong>: More results for generated images when input x<sub>t</sub> = 0 under different DMs and different inference steps.</figcaption></figure>
+
+<h2 id="a6-additional-support-for-our-modeling">A6. Additional Support for Our Modeling</h2>
+<p>To further support our modeling in Sec. 3.2, we present more results with 
+
+$x_t = kx'$ for different 
+
+$k$s.
+When giving the training prompt, according to our modeling in Eq. (2), a fine-tuned DM should predict the original image 
+
+$\hat{x_0} = (1 + \frac{\sqrt{\alpha_t} \sigma_1^2}{\alpha_t \sigma_1^2 + (1 - \alpha_t)} (k - \sqrt{\alpha_t}))x'$, which is a scaling of 
+
+$x'$.</p>
+<p>In comparison, the generated result for the pretrained model should not exhibit a similar correlation with the given training sample 
+
+$kx'$, as 
+
+$kx'$ is not part of the pretrained dataset or its training distribution 
+
+$\mathcal{I}_\theta$.</p>
+<p>Experimental results shown in Fig. A12 support our analysis, hence further confirming the rationality of our modeling.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/bfm/merged_with_labels_hubbc2d9053812c3b31b198bdda88f5a13_326149_ad8712f31f48ecb87168af73d5a35aff.webp"
+                   srcset="/media/bfm/merged_with_labels_hubbc2d9053812c3b31b198bdda88f5a13_326149_ad8712f31f48ecb87168af73d5a35aff.webp 700w, /media/bfm/merged_with_labels_hubbc2d9053812c3b31b198bdda88f5a13_326149_1400x1400_fit_q75_h2_lanczos_3.webp 1400w"
+                   width="1400" height="291"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure A12</strong>: Denoised images from pretrained and fine-tuned DMs using x<sub>t</sub> = kx′ for different ks.</figcaption></figure>
+
+<h2 id="a7-metrics">A7. Metrics</h2>
+<p>We use the following metrics to robustly measure different aspects of the fine-tuned DMs:</p>
+<p><strong>Text prompt fidelity:</strong> Following previous papers <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>, we use the average similarity between the clip <a href="#ref-19">[19]</a> embeddings of the text prompt and generated images, denoted as Clip-T.</p>
+<p><strong>Image fidelity:</strong> Following previous papers <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>, we compute the average similarity between the clip <a href="#ref-19">[19]</a> and dino <a href="#ref-5">[5]</a> embeddings of the generated images and training images, denoted as Clip-I <a href="#ref-9">[9]</a> and Dino.</p>
+<p><strong>Generation Diversity:</strong> We compute the average Lpips <a href="#ref-34">[34]</a> distance between the generated images of the fine-tuned DMs, following previous papers <a href="#ref-18">[18]</a>, <a href="#ref-22">[22]</a>.</p>
+<p><strong>Image quality:</strong> We find that corruption largely decreases the visual quality of the images, making them unusable. However, full-reference images quality measurement cannot fully represent this kind of degradation in image quality. Therefore, we add a no-reference image metric for measurements. We use Clip-IQA <a href="#ref-28">[28]</a> for measurements, which is one of the SOTA no-reference image quality measurements.</p>
+<h2 id="a8-settings-of-fine-tuning">A8. Settings of Fine-tuning</h2>
+<p><strong>Table A6</strong>: Standard deviation of the results shown in Tab. 1.</p>
+<table>
+<thead>
+<tr>
+<th>Method (Object-Driven Generation: DreamBooth Dataset)</th>
+<th>Clip-T</th>
+<th>Dino</th>
+<th>Clip-I</th>
+<th>Lpips</th>
+<th>Clip-IQA</th>
+<th>Method (Subject-Driven Generation: CelebA Dataset)</th>
+<th>Clip-T</th>
+<th>Dino</th>
+<th>Clip-I</th>
+<th>Lpips</th>
+<th>Clip-IQA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DreamBooth</td>
+<td>0.0017</td>
+<td>0.0057</td>
+<td>0.0037</td>
+<td>0.0051</td>
+<td>0.0028</td>
+<td>DreamBooth</td>
+<td>0.0065</td>
+<td>0.0179</td>
+<td>0.0115</td>
+<td>0.0087</td>
+<td>0.0078</td>
+</tr>
+<tr>
+<td>DreamBooth w/ BNNs</td>
+<td>0.0016</td>
+<td>0.0056</td>
+<td>0.0035</td>
+<td>0.0054</td>
+<td>0.0023</td>
+<td>DreamBooth w/ BNNs</td>
+<td>0.0036</td>
+<td>0.0102</td>
+<td>0.0090</td>
+<td>0.0191</td>
+<td>0.0095</td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>0.0018</td>
+<td>0.0087</td>
+<td>0.0045</td>
+<td>0.0048</td>
+<td>0.0084</td>
+<td>LoRA</td>
+<td>0.0034</td>
+<td>0.0085</td>
+<td>0.0059</td>
+<td>0.0060</td>
+<td>0.0068</td>
+</tr>
+<tr>
+<td>LoRA w/ BNNs</td>
+<td>0.0032</td>
+<td>0.0104</td>
+<td>0.0064</td>
+<td>0.0072</td>
+<td>0.0021</td>
+<td>LoRA w/ BNNs</td>
+<td>0.0025</td>
+<td>0.0049</td>
+<td>0.0163</td>
+<td>0.0078</td>
+<td>0.0065</td>
+</tr>
+<tr>
+<td>OFT</td>
+<td>0.0030</td>
+<td>0.0063</td>
+<td>0.0041</td>
+<td>0.0081</td>
+<td>0.0045</td>
+<td>OFT</td>
+<td>0.0026</td>
+<td>0.0194</td>
+<td>0.0141</td>
+<td>0.0130</td>
+<td>0.0115</td>
+</tr>
+<tr>
+<td>OFT w/ BNNs</td>
+<td>0.0010</td>
+<td>0.0028</td>
+<td>0.0026</td>
+<td>0.0062</td>
+<td>0.0068</td>
+<td>OFT w/ BNNs</td>
+<td>0.0024</td>
+<td>0.0078</td>
+<td>0.0066</td>
+<td>0.0061</td>
+<td>0.0094</td>
+</tr>
+</tbody>
+</table>
+<p>We experiment on applying BNNs on different fine-tuning methods with one A100 GPU. All experiments are conducted under all 30 classes with 5 different seeds by default and we report the average performance. The standard deviation of our main result in Tab. 1 is shown in Tab. A6.</p>
+<h3 id="a81-few-shot-fine-tuning-hyper-parameters">A8.1. Few-shot Fine-tuning Hyper-parameters</h3>
+<p>The details of the parameters in the few-shot fine-tuning methods on our default model, i.e., SD v1.5, are presented below. We use 
+
+$\rm{Num}$ to represent the number of images utilized for training.</p>
+<p><strong>Dreambooth</strong>: We use the training script provided by Diffusers (Note: <a href="https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth.py" target="_blank" rel="noopener">https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth.py</a>). Only the U-Net is fine-tuned during the training process. By default, the number of training steps is set to 
+
+$200\times\rm{Num}$ on DreamBooth dataset and 
+
+$250\times\rm{Num}$ on CelebA, with a learning rate of 
+
+$5 \times 10^{-6}$. The batch size is set to 1, and the number of class images used for computing the prior loss is 
+
+$200\times\rm{Num}$ by default. The prior loss weight remains fixed at 1.0. For the DreamBooth dataset, the training instance prompt is “a photo of a [V] {class prompt}”, where{class prompt} refers to the type of the image (such as dog, cat and so on). For the CelebA dataset, the training instance prompt is “a photo of a [V] person”.</p>
+<p><strong>LoRA</strong>: We use the training script provided by Diffusers (Note: <a href="https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth_lora.py" target="_blank" rel="noopener">https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth_lora.py</a>). All default parameters remain consistent with the case in Dreambooth (No Prior), with the exception of the learning rate and training steps, which are adjusted to 
+
+$1 \times 10^{-4}$ and to 
+
+$400\times\rm{Num}$, respectively.</p>
+<p><strong>OFT</strong>: We use the training script provided by the authors (Note: <a href="https://github.com/Zeju1997/oft" target="_blank" rel="noopener">https://github.com/Zeju1997/oft</a>). All default parameters remain consistent with the case in Dreambooth (No Prior), with the exception of the learning rate, which is adjusted to 
+
+$1 \times 10^{-4}$.</p>
+<p>For all experiments involving the applying of BNNs, we maintain the default settings for the number of learning steps, learning rate, training prompts, and other hyper-parameters.</p>
+<p>For evaluation purposes, each training checkpoint generates four images per prompt, resulting in a total of 100 images from 25 different prompts. The prompts used for evaluation are displayed in Tab. A5, encompassing a broad set to thoroughly assess the variety and quality of the DMs.</p>
+<h3 id="a82-training-setting-for-dms-with-different-architectures">A8.2. Training Setting for DMs with Different Architectures</h3>
+<p>In this section, we provide training settings for applying BNNs on different DMs under DreamBooth. The learning rate is fixed to 
+
+$5 \times 10^{-6}$ in all cases. The numbers of training iterations are set as 
+
+$200 \times \mathrm{Num}$ and 
+
+$400 \times \mathrm{Num}$ for SD v1.4 and SD v2.0, respectively.</p>
+<p>For BNNs applying on SD v1.4, we set the hyperparameter 
+
+$\lambda=0.1$. All other hyperparameters are set as default.</p>
+<h2 id="a9-best-case-vs-average-case-generation">A9. Best-case vs. Average-case Generation</h2>
+<p>In practical scenarios, users typically generate multiple images and manually choose the most suitable one for use. Therefore, comparing the best cases essentially evaluates the quality of the chosen images, while the comparison of average cases assesses the difficulty of selecting an adequate image. Conversely, worst-case scenarios may hold less practical relevance, as users may regenerate images until achieving a satisfactory result, effectively bypassing such cases.</p>
+<p>Therefore, we place emphasis on presenting best-case and average-case generation in this paper. Specifically, we first filter the generated images by selecting the top 90% using CLIP-T and Dino to ensure alignment with the prompt and the learned concept. Subsequently, we employ CLIP-IQA to identify both the top-quality and average-quality images. This approach provides a more comprehensive evaluation of the models&rsquo; performance.</p>
+<p>Nonetheless, we also include some comparisons of the worst-case generation results before and after applying BNNs illustrated in Fig. A13 for comprehensiveness. Concretely, we present the images with the lowest image qualities evaluated using CLIP-IQA.
+Our experiments span 10 random classes in the DreamBooth Dataset, with DreamBooth as the baseline fine-tuning method.
+The results show that DMs fine-tuned without BNNs usually present the corruption while BNNs successfully mitigate it, leading to better generation quality.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 100%; max-width: 100%"><img src="/media/bfm/stitched_image_hu8b6d0373a7edd6ddd4d3d60c36874743_167904_b528a4f88483784c3798806e58687319.webp"
+                   srcset="/media/bfm/stitched_image_hu8b6d0373a7edd6ddd4d3d60c36874743_167904_b528a4f88483784c3798806e58687319.webp 700w, /media/bfm/stitched_image_hu8b6d0373a7edd6ddd4d3d60c36874743_167904_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="267"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure A13</strong>: Visualization of worst-case generations measured by CLIP-IQA.</figcaption></figure>
+
+<h2 id="a10-limitations-and-future-work">A10. Limitations and Future Work</h2>
+<p>Even though few-shot fine-tuning DMs with BNNs applied has shown promising improvements, this paper also introduces a few interesting open problems.</p>
+<p>Firstly, the extra randomness may make fine-tuning slower. This may lower the generation quality when the DMs are under-fitting.
+In addition, the ability of learning extremely detailed patterns in the image may be reduced when the number of fine-tuning iterations is insufficient.
+Future work could focus on these problems.</p>
+<h2 id="a11-broader-impact">A11. Broader Impact</h2>
+<p>This paper focuses on advancing few-shot fine-tuning techniques in DMs to provide more effective tools for creating personalized images in various contexts.
+Previous few-shot fine-tuning methods have faced corruption phenomenon, as mentioned in this paper. Our approach, utilizing BNNs, addresses this phenomenon and provides generated images with higher quality.</p>
+<p>However, there is potential for misuse, as malicious entities could exploit these technologies to deceive or misinform. Such challenges underscore the critical need for continuous exploration in this field. The development and ethical application of personalized generative models are not only paramount but also ripe for future research.</p>
+<h2 id="a12-more-visualizations">A12. More Visualizations</h2>
+<p>We show more visualized results in Fig. A14 and Fig. A15.</p>
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 78%; max-width: 78%"><img src="/media/bfm/compress_visualization_1_huf3afc27c89b718b0d2a665c06c97abb7_370322_41d88a1a6d3092a90f19478f2a86398f.webp"
+                   srcset="/media/bfm/compress_visualization_1_huf3afc27c89b718b0d2a665c06c97abb7_370322_41d88a1a6d3092a90f19478f2a86398f.webp 700w, /media/bfm/compress_visualization_1_huf3afc27c89b718b0d2a665c06c97abb7_370322_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="1008"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 78%; max-width: 78%"><img src="/media/bfm/compress_visualization_2_hud0373eb9ec23834d0e64633737012c0b_382164_59922489d75c040f4d822bd0edd9d5cb.webp"
+                   srcset="/media/bfm/compress_visualization_2_hud0373eb9ec23834d0e64633737012c0b_382164_59922489d75c040f4d822bd0edd9d5cb.webp 700w, /media/bfm/compress_visualization_2_hud0373eb9ec23834d0e64633737012c0b_382164_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="1008"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure A14</strong>: More visualizations on subject-driven and object-driven scenarios.</figcaption></figure>
+
+
+
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        <div class="figgrid-item" style="flex-basis: 80%; max-width: 80%"><img src="/media/bfm/compress_visualization_3_hu83b88ed90e3024f0c50503fc84d56697_426428_d25c8564e28b562c0163773a364179bc.webp"
+                   srcset="/media/bfm/compress_visualization_3_hu83b88ed90e3024f0c50503fc84d56697_426428_d25c8564e28b562c0163773a364179bc.webp 700w, /media/bfm/compress_visualization_3_hu83b88ed90e3024f0c50503fc84d56697_426428_1400x1400_fit_q75_h2_lanczos.webp 1400w"
+                   width="1400" height="1008"
+                   loading="lazy" data-zoomable alt="" /></div>
+      
+    
+  </div><figcaption><strong>Figure A15</strong>: More visualizations on subject-driven and object-driven scenarios.</figcaption></figure>
+
+<h2 id="references">References</h2>
+<p><span id="ref-1"></span>[1] Julyan Arbel, Konstantinos Pitas, Mariia Vladimirova, and Vincent Fortuin. 2023. A Primer on Bayesian Neural Networks: Review and Debates. <em>arXiv preprint arXiv:2309.16314</em> (2023).</p>
+<p><span id="ref-2"></span>[2] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer Normalization. <em>arXiv preprint arXiv:1607.06450</em> (2016).</p>
+<p><span id="ref-3"></span>[3] Charles Blundell, Julien Cornebise, Koray Kavukcuoglu, and Daan Wierstra. 2015. Weight Uncertainty in Neural Network. In <em>ICML</em>.</p>
+<p><span id="ref-4"></span>[4] Wray L Buntine. 1991. Bayesian Backpropagation. <em>Complex Systems</em> 5 (1991), 603–643.</p>
+<p><span id="ref-5"></span>[5] Mathilde Caron, Hugo Touvron, Ishan Misra, Hervé Jégou, Julien Mairal, Piotr Bojanowski, and Armand Joulin. 2021. Emerging Properties in Self-supervised Vision Transformers. In <em>ICCV</em>.</p>
+<p><span id="ref-6"></span>[6] Giannis Daras, Kulin Shah, Yuval Dagan, Aravind Gollakota, Alex Dimakis, and Adam Klivans. 2023. Ambient Diffusion: Learning Clean Distributions from Corrupted Data. In <em>NeurIPS</em>.</p>
+<p><span id="ref-7"></span>[7] Rinon Gal, Yuval Alaluf, Yuval Atzmon, Or Patashnik, Amit H Bermano, Gal Chechik, and Daniel Cohen-Or. 2022. An Image Is Worth One Word: Personalizing Text-to-Image Generation Using Textual Inversion. <em>arXiv preprint arXiv:2208.01618</em> (2022).</p>
+<p><span id="ref-8"></span>[8] James Harrison, John Willes, and Jasper Snoek. 2023. Variational Bayesian Last Layers. In <em>AABI</em>.</p>
+<p><span id="ref-9"></span>[9] Jack Hessel, Ari Holtzman, Maxwell Forbes, Ronan Le Bras, and Yejin Choi. 2021. Clipscore: A Reference-free Evaluation Metric for Image Captioning. <em>arXiv preprint arXiv:2104.08718</em> (2021).</p>
+<p><span id="ref-10"></span>[10] Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising Diffusion Probabilistic Models. In <em>NeurIPS</em>.</p>
+<p><span id="ref-11"></span>[11] Edward J Hu, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen, et al. 2021. LoRA: Low-Rank Adaptation of Large Language Models. In <em>ICLR</em>.</p>
+<p><span id="ref-12"></span>[12] Laurent Valentin Jospin, Hamid Laga, Farid Boussaid, Wray Buntine, and Mohammed Bennamoun. 2022. Hands-on Bayesian neural networks—A tutorial for deep learning users. <em>IEEE Computational Intelligence Magazine</em> 17, 2 (2022), 29–48.</p>
+<p><span id="ref-13"></span>[13] Tero Karras, Miika Aittala, Janne Hellsten, Samuli Laine, Jaakko Lehtinen, and Timo Aila. 2020. Training Generative Adversarial Networks with Limited Data. In <em>NeurIPS</em>.</p>
+<p><span id="ref-14"></span>[14] Bahjat Kawar, Shiran Zada, Oran Lang, Omer Tov, Huiwen Chang, Tali Dekel, Inbar Mosseri, and Michal Irani. 2022. Imagic: Text-Based Real Image Editing With Diffusion Models. <em>arXiv preprint arXiv:2210.09276</em> (2022).</p>
+<p><span id="ref-15"></span>[15] Agustinus Kristiadi, Matthias Hein, and Philipp Hennig. 2020. Being Bayesian, Even Just a Bit, Fixes Overconfidence in ReLU Networks. In <em>ICML</em>.</p>
+<p><span id="ref-16"></span>[16] Ziwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang. 2018. Large-scale celebfaces attributes (celeba) dataset. <em>Retrieved August</em> 15, 2018 (2018), 11.</p>
+<p><span id="ref-17"></span>[17] Radford M Neal. 2012. <em>Bayesian Learning for Neural Networks</em>. Vol. 118. Springer Science &amp; Business Media.</p>
+<p><span id="ref-18"></span>[18] Zeju Qiu, Weiyang Liu, Haiwen Feng, Yuxuan Xue, Yao Feng, Zhen Liu, Dan Zhang, Adrian Weller, and Bernhard Schölkopf. 2023. Controlling Text-to-Image Diffusion by Orthogonal Finetuning. In <em>NeurIPS</em>.</p>
+<p><span id="ref-19"></span>[19] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning Transferable Visual Models from Natural Language Supervision. In <em>ICML</em>.</p>
+<p><span id="ref-20"></span>[20] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. High-Resolution Image Synthesis With Latent Diffusion Models. In <em>CVPR</em>.</p>
+<p><span id="ref-21"></span>[21] Olaf Ronneberger, Philipp Fischer, and Thomas Brox. 2015. U-net: Convolutional Networks for Biomedical Image Segmentation. In <em>MICCAI</em>.</p>
+<p><span id="ref-22"></span>[22] Nataniel Ruiz, Yuanzhen Li, Varun Jampani, Yael Pritch, Michael Rubinstein, and Kfir Aberman. 2023. DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation. In <em>CVPR</em>.</p>
+<p><span id="ref-23"></span>[23] Mrinank Sharma, Sebastian Farquhar, Eric Nalisnick, and Tom Rainforth. 2023. Do Bayesian Neural Networks Need To Be Fully Stochastic?. In <em>AISTATS</em>.</p>
+<p><span id="ref-24"></span>[24] Jascha Sohl-Dickstein, Eric Weiss, Niru Maheswaranathan, and Surya Ganguli. 2015. Deep Unsupervised Learning Using Nonequilibrium Thermodynamics. In <em>ICML</em>.</p>
+<p><span id="ref-25"></span>[25] Yang Song and Stefano Ermon. 2019. Generative Modeling by Estimating Gradients of the Data Distribution. In <em>NeurIPS</em>.</p>
+<p><span id="ref-26"></span>[26] Yang Song, Jascha Sohl-Dickstein, Diederik P Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole. 2020. Score-based Generative Modeling through Stochastic Differential Equations. <em>arXiv preprint arXiv:2011.13456</em> (2020).</p>
+<p><span id="ref-27"></span>[27] Thanh Van Le, Hao Phung, Thuan Hoang Nguyen, Quan Dao, Ngoc Tran, and Anh Tran. 2023. Anti-DreamBooth: Protecting Users from Personalized Text-to-image Synthesis. In <em>ICCV</em>.</p>
+<p><span id="ref-28"></span>[28] Jianyi Wang, Kelvin CK Chan, and Chen Change Loy. 2023. Exploring Clip for Assessing the Look and Feel of Images. In <em>AAAI</em>.</p>
+<p><span id="ref-29"></span>[29] Xiaoyu Wu, Jiaru Zhang, Yang Hua, Bohan Lyu, Hao Wang, Tao Song, and Haibing Guan. 2024. Exploring Diffusion Models&rsquo; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks. <em>arXiv preprint arXiv:2405.19931</em> (2024).</p>
+<p><span id="ref-30"></span>[30] Yuxin Wu and Kaiming He. 2018. Group Normalization. In <em>ECCV</em>.</p>
+<p><span id="ref-31"></span>[31] Ruihan Yang, Prakhar Srivastava, and Stephan Mandt. 2022. Diffusion Probabilistic Modeling for Video Generation. <em>arXiv preprint arXiv:2203.09481</em> (2022).</p>
+<p><span id="ref-32"></span>[32] Xiaoyu Ye, Hao Huang, Jiaqi An, and Yongtao Wang. 2024. DUAW: Data-free Universal Adversarial Watermark against Stable Diffusion Customization. In <em>ICLR 2024 Workshop on Secure and Trustworthy Large Language Models</em>. <a href="https://openreview.net/forum?id=XYD342nKy8" target="_blank" rel="noopener">https://openreview.net/forum?id=XYD342nKy8</a></p>
+<p><span id="ref-33"></span>[33] Jiaru Zhang, Yang Hua, Tao Song, Hao Wang, Zhengui Xue, Ruhui Ma, and Haibing Guan. 2022. Improving Bayesian Neural Networks by Adversarial Sampling. In <em>AAAI</em>.</p>
+<p><span id="ref-34"></span>[34] Richard Zhang, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. 2018. The Unreasonable Effectiveness of Deep Features as A Perceptual Metric. In <em>CVPR</em>.</p>
+<hr>
+<h2 id="about-this-page">About this page</h2>
+<p>This is a web transcription of the paper&rsquo;s full text, produced with <strong>Claude Opus 5 + ultracode</strong>. The prose follows the original word for word; equations, tables, figures and numbers are reproduced as published. <strong>It is provided for reference only, with no guarantee of accuracy — the original PDF is authoritative.</strong> Where this page and the PDF disagree, the PDF is correct.</p>
+<ul>
+<li>Original PDF: <a href="https://arxiv.org/pdf/2405.19931" target="_blank" rel="noopener">https://arxiv.org/pdf/2405.19931</a></li>
+<li>Paper page: <a href="/publication/bfm/">Exploring Diffusion Models&rsquo; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</a></li>
+<li>Chinese translation: <a href="/publication/bfm/cn/">探究扩散模型少样本微调中的崩坏阶段并用贝叶斯神经网络加以缓解</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.3322c0d94f0e691b0b24c63f4c41064b.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

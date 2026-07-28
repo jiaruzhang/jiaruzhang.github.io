@@ -158,9 +158,9 @@
     
     <item>
       <title>Hierarchical Satellite System Graph for Approximate Nearest Neighbor Search on Big Data</title>
-      <link>https://lan-qing.github.io/publication/journal-article/</link>
+      <link>https://lan-qing.github.io/publication/hssg/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/journal-article/</guid>
+      <guid>https://lan-qing.github.io/publication/hssg/</guid>
       <description></description>
     </item>
     
@@ -420,7 +420,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-261834579&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-536892147&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -430,7 +430,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-261834579&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-536892147&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -715,14 +715,6 @@ Crash --&gt; [*]
       <link>https://lan-qing.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</link>
       <pubDate>Tue, 21 May 2019 19:00:00 +0000</pubDate>
       <guid>https://lan-qing.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generalized Tensor-based Multiple Feature Fusion Network using Block Decomposition</title>
-      <link>https://lan-qing.github.io/publication/featurefusion/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/featurefusion/</guid>
       <description></description>
     </item>
     

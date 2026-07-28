@@ -1,0 +1,12 @@
+{{/*
+  toc —— 覆盖主题的同名 shortcode，只多加一个 title 参数。
+
+  主题版本把标题写死成 i18n "table_of_contents"，站点语言是 en，
+  于是中文全文页顶上会顶着一行 "Table of Contents"。传 title="目录" 即可。
+  其余行为（hide_on / show_on / 默认展开）与主题版本保持一致。
+*/}}
+
+<details class="toc-inpage d-print-none {{with .Get "hide_on"}}d-{{.}}-none{{end}} {{with .Get "show_on"}}d-none d-{{.}}-block{{end}}" open>
+  <summary class="font-weight-bold">{{ .Get "title" | default (i18n "table_of_contents") }}</summary>
+  {{ $.Page.TableOfContents }}
+</details>

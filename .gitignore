@@ -10,3 +10,7 @@ jsconfig.json
 node_modules/
 go.sum
 .hugo_build.lock
+
+# 论文 LaTeX 原始源码（用于生成全文页，体积大，不入库）
+# 网页用的插图已转换后放在 assets/media/<slug>/
+paper-src/

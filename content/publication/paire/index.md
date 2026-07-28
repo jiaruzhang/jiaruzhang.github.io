@@ -45,10 +45,16 @@ tags: []
 # Display this page in the Featured widget?
 featured: true
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+# Custom links
+links:
+  - name: Full Text
+    url: '/publication/paire/en/'
+    icon_pack: fas
+    icon: book-open
+  - name: 中文全文
+    url: '/publication/paire/cn/'
+    icon_pack: fas
+    icon: language
 
 url_pdf: 'https://arxiv.org/pdf/2502.10883'
 url_code: 'https://github.com/microsoft/reliableAI/tree/main/causal-kit/SiCL'

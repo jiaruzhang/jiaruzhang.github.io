@@ -39,6 +39,14 @@ featured: false
 links:
   - name: OpenReview
     url: 'https://openreview.net/forum?id=xYATz9HpE7'
+  - name: Full Text
+    url: '/publication/sejd/en/'
+    icon_pack: fas
+    icon: book-open
+  - name: 中文全文
+    url: '/publication/sejd/cn/'
+    icon_pack: fas
+    icon: language
 
 url_pdf: 'https://openreview.net/pdf?id=xYATz9HpE7'
 url_code: 'https://github.com/lan-qing/SJD'

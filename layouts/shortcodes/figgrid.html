@@ -1,0 +1,55 @@
+{{/*
+  figgrid —— 按论文原来的比例并排显示一组子图。
+
+  论文里的小图通常是 \begin{subfigure}{0.24\linewidth} 套 width=\linewidth，
+  如果每张都单独用 figure shortcode 输出，就会变成 8 张整栏宽的大图竖着堆，
+  和原文的 4×2 缩略图排版差很远。这个 shortcode 把它们放回一行里。
+
+  用法：
+    {{< figgrid caption="**Figure 2**: 总图注" >}}
+    slug/a.png | 24 | (a) 子图注
+    slug/b.png | 24 | (b) 子图注
+    {{< /figgrid >}}
+
+  每行三段，用 | 分隔：图片路径（相对 assets/media/）、宽度百分比、子图注（可省略）。
+  子图注里如果要用 |，只有前两个 | 会被当作分隔符。
+*/}}
+{{ $caption := .Get "caption" }}
+<figure class="figgrid-wrap">
+  <div class="figgrid">
+    {{ range (split (trim .Inner "\n\r \t") "\n") }}
+      {{ $line := trim . " \t\r" }}
+      {{ if $line }}
+        {{ $parts := split $line "|" }}
+        {{ $src := trim (index $parts 0) " " }}
+        {{ $w := "100" }}
+        {{ if gt (len $parts) 1 }}{{ $w = trim (index $parts 1) " " }}{{ end }}
+        {{ $sub := "" }}
+        {{ if gt (len $parts) 2 }}{{ $sub = trim (delimit (after 2 $parts) "|") " " }}{{ end }}
+        {{ $img := resources.Get (path.Join "media" $src) }}
+        <div class="figgrid-item" style="flex-basis: {{ $w }}%; max-width: {{ $w }}%">
+          {{- with $img -}}
+            {{- $isVec := or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") -}}
+            {{- if $isVec -}}
+              <img src="{{ .RelPermalink }}" loading="lazy" data-zoomable alt="{{ $sub | markdownify | plainify }}" />
+            {{- else -}}
+              {{- $lg := .Fit "1400x1400 webp" -}}
+              {{- $sm := $lg.Fit "700x700 webp" -}}
+              <img src="{{ $sm.RelPermalink }}"
+                   srcset="{{ $sm.RelPermalink }} 700w, {{ $lg.RelPermalink }} 1400w"
+                   width="{{ $lg.Width }}" height="{{ $lg.Height }}"
+                   loading="lazy" data-zoomable alt="{{ $sub | markdownify | plainify }}" />
+            {{- end -}}
+          {{- else -}}
+            {{- /* assets/media/ 里没有这张图。不加这句的话会静默输出一个裂图，
+                   构建照样零错误，很难发现——所以这里必须吭声。 */ -}}
+            {{- warnf "figgrid: 找不到插图 assets/media/%s（页面 %s）" $src $.Page.File.Path -}}
+            <img src="{{ $src | relURL }}" loading="lazy" alt="{{ $sub | markdownify | plainify }}" />
+          {{- end -}}
+          {{- with $sub }}<figcaption class="figgrid-sub">{{ . | markdownify | emojify }}</figcaption>{{ end -}}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  {{- with $caption }}<figcaption>{{ . | markdownify | emojify }}</figcaption>{{ end -}}
+</figure>

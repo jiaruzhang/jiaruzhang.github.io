@@ -1,0 +1,182 @@
+// 站点自定义样式（Wowchemy 会在 main.scss 末尾 @import 本文件，覆盖主题默认值）。
+
+// ---------------------------------------------------------------------------
+// 大屏上的内容栏宽度
+//
+// 主题默认把内容锁在很窄的一栏：
+//   .article-container  760px   —— 详情页（publication / post / project / talk）
+//   .universal-wrapper  1000px  —— 列表页、首页各 widget
+// 在 1440p / 4K 显示器上两侧会留下大段空白。下面按屏幕宽度逐级放宽；
+// 断点以下完全不匹配，小屏与移动端仍走主题默认值，不受影响。
+//
+// 正文栏最宽只放到 1100px：中文一行超过 60~70 字之后换行时容易串行，
+// 再宽反而更难读。插图与表格保持与正文同宽，不做额外突破。
+//
+// 想再宽 / 再窄，直接调下面这几个数值即可。
+// ---------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+  .article-container {
+    max-width: 900px;
+  }
+  .universal-wrapper {
+    width: 1120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .article-container {
+    max-width: 1000px;
+  }
+  .universal-wrapper {
+    width: 1280px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .article-container {
+    max-width: 1100px;
+  }
+  .universal-wrapper {
+    width: 1400px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 论文全文页的排版
+// ---------------------------------------------------------------------------
+
+// 参考文献：悬挂缩进（学术文献表的标准样式），编号/作者悬出、回行缩进对齐。
+// 用 :has() 精确选中"含有 ref-N 锚点"的那些段落，不影响正文其它段落；
+// 老浏览器不支持 :has() 时会静默退化成普通段落，不会出问题。
+.article-style p:has(> span[id^='ref-']) {
+  padding-left: 2.2em;
+  text-indent: -2.2em;
+  margin-bottom: 0.5rem;
+  font-size: 0.92em;
+  line-height: 1.55;
+}
+
+// 长公式在窄屏上要能横向滚动，否则会把页面撑宽
+.article-style mjx-container[display='true'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.15em 0;
+}
+
+// 表格：论文表普遍列多，收紧行距、表头压实，数字用等宽数位对齐
+.article-style table {
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+
+  th {
+    vertical-align: bottom;
+    font-weight: 600;
+    line-height: 1.25;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.18);
+  }
+
+  th,
+  td {
+    padding: 0.34rem 0.6rem;
+    vertical-align: middle;
+  }
+
+  tbody tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}
+
+.dark .article-style table {
+  th {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+  }
+
+  tbody tr:not(:last-child) td {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+// 顶部提示条：长文里它只是辅助信息，压低一点存在感
+.article-style .alert {
+  font-size: 0.92em;
+}
+
+// 图注：比正文小一号。
+// display:table 让图注框收缩到内容宽度 —— 短图注于是整体居中，长到要换行的图注
+// 会撑满一行、按 text-align 左对齐。论文排版就是这个规则（短图注居中、长图注左对齐），
+// 纯 CSS 做不到"按行数切换对齐"，这个收缩盒子正好等价。
+.article-style figure > figcaption {
+  display: table;
+  margin: 0.7rem auto 0;
+  max-width: 100%;
+  font-size: 0.78em;   // 与主题原本的图注字号（正文的 76%）基本一致，别被 em 放大
+  line-height: 1.6;
+  text-align: left;
+}
+
+// 插图上下留白比主题默认多一点：长文里图接着正文会显得挤
+.article-style figure {
+  margin-top: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+
+// ---------------------------------------------------------------------------
+// figgrid：按论文原比例并排的子图组（配合 layouts/shortcodes/figgrid.html）
+// ---------------------------------------------------------------------------
+
+.figgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.6rem 1%;
+}
+
+.figgrid-item {
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+}
+
+.figgrid-sub {
+  margin-top: 0.35em;
+  margin-bottom: 0;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+// 窄屏上一行放不下两张，让每张各占一行，否则会挤成一条缝
+@media (max-width: 600px) {
+  .figgrid-item {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 正文插图跟随放宽后的正文栏
+//
+// 主题的 figure shortcode 和 Markdown 图片渲染钩子都会给 <img> 写死
+// width="760"（760 正是主题原本的正文栏宽度）。正文栏放宽之后，图片仍停在
+// 760px，看起来比正文还窄。
+//
+// 这里只选 width 属性正好是 760 的图 —— 也就是原图宽度 ≥760px、被这个上限
+// 卡住的那些。原图本身小于 760px 的图，width 属性是它的真实宽度，选不中，
+// 因此不会被拉伸放大。
+//
+// 画质：主题生成的 srcset 里最大有 1200w，铺满 1060px 用的仍是真实像素。
+// ---------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+  .article-style figure img[width='760'] {
+    width: 100%;
+    height: auto;
+  }
+}

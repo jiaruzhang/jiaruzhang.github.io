@@ -42,12 +42,18 @@ tags: []
 # Display this page in the Featured widget?
 featured: false
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+# Custom links
+links:
+  - name: Full Text
+    url: '/publication/bfm/en/'
+    icon_pack: fas
+    icon: book-open
+  - name: 中文全文
+    url: '/publication/bfm/cn/'
+    icon_pack: fas
+    icon: language
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2405.19931'
 url_code: ''
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 url_poster: 'poster.pdf'
