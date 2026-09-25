@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI</title>
+      <link>https://lan-qing.github.io/publication/mls-bench/</link>
+      <pubDate>Wed, 09 Dec 2026 00:00:00 +0000</pubDate>
+      <guid>https://lan-qing.github.io/publication/mls-bench/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</title>
       <link>https://lan-qing.github.io/publication/mvlad-ad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
@@ -428,7 +436,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-842375961&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-529164387&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -438,7 +446,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-842375961&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-529164387&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
