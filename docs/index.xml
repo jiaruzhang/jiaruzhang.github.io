@@ -2,237 +2,237 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiaru Zhang</title>
-    <link>https://lan-qing.github.io/</link>
-      <atom:link href="https://lan-qing.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jiaruzhang.github.io/</link>
+      <atom:link href="https://jiaruzhang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiaru Zhang</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Dec 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jiaruzhang.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Jiaru Zhang</title>
-      <link>https://lan-qing.github.io/</link>
+      <link>https://jiaruzhang.github.io/</link>
     </image>
     
     <item>
       <title>Analytical Correction for Subsampling Bias in Drifting Models</title>
-      <link>https://lan-qing.github.io/publication/abc/</link>
+      <link>https://jiaruzhang.github.io/publication/abc/</link>
       <pubDate>Wed, 09 Dec 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/abc/</guid>
+      <guid>https://jiaruzhang.github.io/publication/abc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI</title>
-      <link>https://lan-qing.github.io/publication/mls-bench/</link>
+      <link>https://jiaruzhang.github.io/publication/mls-bench/</link>
       <pubDate>Wed, 09 Dec 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/mls-bench/</guid>
+      <guid>https://jiaruzhang.github.io/publication/mls-bench/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</title>
-      <link>https://lan-qing.github.io/publication/mvlad-ad/</link>
+      <link>https://jiaruzhang.github.io/publication/mvlad-ad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/mvlad-ad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/mvlad-ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ViLaD: A Large Vision Language Diffusion Framework for End-to-End Autonomous Driving</title>
-      <link>https://lan-qing.github.io/publication/vilad/</link>
+      <link>https://jiaruzhang.github.io/publication/vilad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/vilad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/vilad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/publication/bfm/</link>
+      <link>https://jiaruzhang.github.io/publication/bfm/</link>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/bfm/</guid>
+      <guid>https://jiaruzhang.github.io/publication/bfm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Accelerating Inference of Discrete Autoregressive Normalizing Flows by Selective Jacobi Decoding</title>
-      <link>https://lan-qing.github.io/publication/sejd/</link>
+      <link>https://jiaruzhang.github.io/publication/sejd/</link>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/sejd/</guid>
+      <guid>https://jiaruzhang.github.io/publication/sejd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>One-Step Diffusion Samplers via Self-Distillation and Deterministic Flow</title>
-      <link>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</link>
+      <link>https://jiaruzhang.github.io/publication/one-step-diffusion-samplers/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</guid>
+      <guid>https://jiaruzhang.github.io/publication/one-step-diffusion-samplers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends</title>
-      <link>https://lan-qing.github.io/publication/llm4ad/</link>
+      <link>https://jiaruzhang.github.io/publication/llm4ad/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/llm4ad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/llm4ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generative Diffusion Language Model for End-to-End Autonomous Driving: Parallel Planning and Explainable Action</title>
-      <link>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</link>
+      <link>https://jiaruzhang.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 -0500</pubDate>
-      <guid>https://lan-qing.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</guid>
+      <guid>https://jiaruzhang.github.io/talk/generative-diffusion-language-model-for-end-to-end-autonomous-driving-parallel-planning-and-explainable-action/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMPERE: A Generic Energy Estimation Approach for On-Device Training</title>
-      <link>https://lan-qing.github.io/publication/thor/</link>
+      <link>https://jiaruzhang.github.io/publication/thor/</link>
       <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/thor/</guid>
+      <guid>https://jiaruzhang.github.io/publication/thor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stealthy Backdoor Attack in Federated Learning via Adaptive Layer-wise Gradient Alignment</title>
-      <link>https://lan-qing.github.io/publication/layer-wise-attack/</link>
+      <link>https://jiaruzhang.github.io/publication/layer-wise-attack/</link>
       <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/layer-wise-attack/</guid>
+      <guid>https://jiaruzhang.github.io/publication/layer-wise-attack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models</title>
-      <link>https://lan-qing.github.io/publication/finextract/</link>
+      <link>https://jiaruzhang.github.io/publication/finextract/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/finextract/</guid>
+      <guid>https://jiaruzhang.github.io/publication/finextract/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Identifiable Structures Helps Avoid Bias in DNN-based Supervised Causal Learning</title>
-      <link>https://lan-qing.github.io/publication/paire/</link>
+      <link>https://jiaruzhang.github.io/publication/paire/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/paire/</guid>
+      <guid>https://jiaruzhang.github.io/publication/paire/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CGI-DM: Digital Copyright Authentication for Diffusion Models via Contrasting Gradient Inversion</title>
-      <link>https://lan-qing.github.io/publication/cgi-dm/</link>
+      <link>https://jiaruzhang.github.io/publication/cgi-dm/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/cgi-dm/</guid>
+      <guid>https://jiaruzhang.github.io/publication/cgi-dm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SPOT: Harnessing Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior</title>
-      <link>https://lan-qing.github.io/publication/spot/</link>
+      <link>https://jiaruzhang.github.io/publication/spot/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/spot/</guid>
+      <guid>https://jiaruzhang.github.io/publication/spot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Information Bound and its Applications in Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/publication/ibbnn/</link>
+      <link>https://jiaruzhang.github.io/publication/ibbnn/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/ibbnn/</guid>
+      <guid>https://jiaruzhang.github.io/publication/ibbnn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to read and write scientific paper?</title>
-      <link>https://lan-qing.github.io/talk/how-to-read-and-write-scientific-paper/</link>
+      <link>https://jiaruzhang.github.io/talk/how-to-read-and-write-scientific-paper/</link>
       <pubDate>Thu, 27 Jul 2023 18:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/how-to-read-and-write-scientific-paper/</guid>
+      <guid>https://jiaruzhang.github.io/talk/how-to-read-and-write-scientific-paper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples</title>
-      <link>https://lan-qing.github.io/publication/aedg/</link>
+      <link>https://jiaruzhang.github.io/publication/aedg/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/aedg/</guid>
+      <guid>https://jiaruzhang.github.io/publication/aedg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Bayesian Neural Networks by Adversarial Sampling</title>
-      <link>https://lan-qing.github.io/publication/as/</link>
+      <link>https://jiaruzhang.github.io/publication/as/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/as/</guid>
+      <guid>https://jiaruzhang.github.io/publication/as/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning to Confuse: Generating Training Time Adversarial Data with Auto-Encoder</title>
-      <link>https://lan-qing.github.io/talk/learning-to-confuse-generating-training-time-adversarial-data-with-auto-encoder/</link>
+      <link>https://jiaruzhang.github.io/talk/learning-to-confuse-generating-training-time-adversarial-data-with-auto-encoder/</link>
       <pubDate>Tue, 08 Mar 2022 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/learning-to-confuse-generating-training-time-adversarial-data-with-auto-encoder/</guid>
+      <guid>https://jiaruzhang.github.io/talk/learning-to-confuse-generating-training-time-adversarial-data-with-auto-encoder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hierarchical Satellite System Graph for Approximate Nearest Neighbor Search on Big Data</title>
-      <link>https://lan-qing.github.io/publication/hssg/</link>
+      <link>https://jiaruzhang.github.io/publication/hssg/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/hssg/</guid>
+      <guid>https://jiaruzhang.github.io/publication/hssg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Attention Modules</title>
-      <link>https://lan-qing.github.io/talk/bayesian-attention-modules/</link>
+      <link>https://jiaruzhang.github.io/talk/bayesian-attention-modules/</link>
       <pubDate>Fri, 12 Nov 2021 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/bayesian-attention-modules/</guid>
+      <guid>https://jiaruzhang.github.io/talk/bayesian-attention-modules/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robust Bayesian Neural Networks by Spectral Expectation Bound Regularization</title>
-      <link>https://lan-qing.github.io/publication/sebr/</link>
+      <link>https://jiaruzhang.github.io/publication/sebr/</link>
       <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/sebr/</guid>
+      <guid>https://jiaruzhang.github.io/publication/sebr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robust Bayesian Neural Networks by Spectral Expectation Bound Regularization</title>
-      <link>https://lan-qing.github.io/talk/robust-bayesian-neural-networks-by-spectral-expectation-bound-regularization/</link>
+      <link>https://jiaruzhang.github.io/talk/robust-bayesian-neural-networks-by-spectral-expectation-bound-regularization/</link>
       <pubDate>Fri, 14 May 2021 12:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/robust-bayesian-neural-networks-by-spectral-expectation-bound-regularization/</guid>
+      <guid>https://jiaruzhang.github.io/talk/robust-bayesian-neural-networks-by-spectral-expectation-bound-regularization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lipschitz Constraint and Spectral Norm in Deep Learning</title>
-      <link>https://lan-qing.github.io/talk/lipschitz-constraint-and-spectral-norm-in-deep-learning/</link>
+      <link>https://jiaruzhang.github.io/talk/lipschitz-constraint-and-spectral-norm-in-deep-learning/</link>
       <pubDate>Thu, 13 May 2021 20:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/lipschitz-constraint-and-spectral-norm-in-deep-learning/</guid>
+      <guid>https://jiaruzhang.github.io/talk/lipschitz-constraint-and-spectral-norm-in-deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uncertainty-guided Continual Learning with Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</link>
+      <link>https://jiaruzhang.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</link>
       <pubDate>Thu, 11 Mar 2021 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</guid>
+      <guid>https://jiaruzhang.github.io/talk/uncertainty-guided-continual-learning-with-bayesian-neural-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SiCL</title>
-      <link>https://lan-qing.github.io/post/sicl/</link>
+      <link>https://jiaruzhang.github.io/post/sicl/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/post/sicl/</guid>
+      <guid>https://jiaruzhang.github.io/post/sicl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://lan-qing.github.io/post/getting-started/</link>
+      <link>https://jiaruzhang.github.io/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/post/getting-started/</guid>
+      <guid>https://jiaruzhang.github.io/post/getting-started/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -310,33 +310,33 @@
     
     <item>
       <title>Adversarial Robustness: Theory and Practice</title>
-      <link>https://lan-qing.github.io/talk/adversarial-robustness-theory-and-practice/</link>
+      <link>https://jiaruzhang.github.io/talk/adversarial-robustness-theory-and-practice/</link>
       <pubDate>Mon, 21 Sep 2020 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/adversarial-robustness-theory-and-practice/</guid>
+      <guid>https://jiaruzhang.github.io/talk/adversarial-robustness-theory-and-practice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robustness of Bayesian Neural Networks to Gradient-Based Attacks</title>
-      <link>https://lan-qing.github.io/talk/robustness-of-bayesian-neural-networks-to-gradient-based-attacks/</link>
+      <link>https://jiaruzhang.github.io/talk/robustness-of-bayesian-neural-networks-to-gradient-based-attacks/</link>
       <pubDate>Tue, 04 Aug 2020 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/robustness-of-bayesian-neural-networks-to-gradient-based-attacks/</guid>
+      <guid>https://jiaruzhang.github.io/talk/robustness-of-bayesian-neural-networks-to-gradient-based-attacks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How much Position Information Do Convolutional Neural Networks Encode?</title>
-      <link>https://lan-qing.github.io/talk/how-much-position-information-do-convolutional-neural-networks-encode/</link>
+      <link>https://jiaruzhang.github.io/talk/how-much-position-information-do-convolutional-neural-networks-encode/</link>
       <pubDate>Sat, 16 May 2020 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/how-much-position-information-do-convolutional-neural-networks-encode/</guid>
+      <guid>https://jiaruzhang.github.io/talk/how-much-position-information-do-convolutional-neural-networks-encode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Writing technical content in Markdown</title>
-      <link>https://lan-qing.github.io/post/writing-technical-content/</link>
+      <link>https://jiaruzhang.github.io/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/post/writing-technical-content/</guid>
+      <guid>https://jiaruzhang.github.io/post/writing-technical-content/</guid>
       <description>&lt;p&gt;Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p&gt;
@@ -436,7 +436,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-389421765&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-493761528&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -446,7 +446,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-389421765&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-493761528&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -728,17 +728,17 @@ Crash --&gt; [*]
     
     <item>
       <title>On the Expressive Power of Deep Neural Networks</title>
-      <link>https://lan-qing.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</link>
+      <link>https://jiaruzhang.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</link>
       <pubDate>Tue, 21 May 2019 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</guid>
+      <guid>https://jiaruzhang.github.io/talk/on-the-expressive-power-of-deep-neural-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>https://lan-qing.github.io/post/jupyter/</link>
+      <link>https://jiaruzhang.github.io/post/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/post/jupyter/</guid>
+      <guid>https://jiaruzhang.github.io/post/jupyter/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;IPython.core.display&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -763,7 +763,7 @@ Crash --&gt; [*]
                /post/jupyter/index_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_d9e5a2e19abdb65bdbff2da86e05e308.webp 400w,
                /post/jupyter/index_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_e99184a0295c25189e57b7d96a4f0f38.webp 760w,
                /post/jupyter/index_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://lan-qing.github.io/post/jupyter/index_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_d9e5a2e19abdb65bdbff2da86e05e308.webp&#34;
+               src=&#34;https://jiaruzhang.github.io/post/jupyter/index_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_d9e5a2e19abdb65bdbff2da86e05e308.webp&#34;
                width=&#34;601&#34;
                height=&#34;203&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -802,9 +802,9 @@ Crash --&gt; [*]
     
     <item>
       <title>Slides</title>
-      <link>https://lan-qing.github.io/slides/example/</link>
+      <link>https://jiaruzhang.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/slides/example/</guid>
+      <guid>https://jiaruzhang.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -927,25 +927,25 @@ $$&lt;/p&gt;
     
     <item>
       <title>Walk through Deep Transfer Learning</title>
-      <link>https://lan-qing.github.io/talk/walk-through-deep-transfer-learning/</link>
+      <link>https://jiaruzhang.github.io/talk/walk-through-deep-transfer-learning/</link>
       <pubDate>Fri, 07 Dec 2018 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/walk-through-deep-transfer-learning/</guid>
+      <guid>https://jiaruzhang.github.io/talk/walk-through-deep-transfer-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Reinforcement Learning: An Overview</title>
-      <link>https://lan-qing.github.io/talk/deep-reinforcement-learning-an-overview/</link>
+      <link>https://jiaruzhang.github.io/talk/deep-reinforcement-learning-an-overview/</link>
       <pubDate>Thu, 19 Jul 2018 19:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/talk/deep-reinforcement-learning-an-overview/</guid>
+      <guid>https://jiaruzhang.github.io/talk/deep-reinforcement-learning-an-overview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example Project</title>
-      <link>https://lan-qing.github.io/project/example/</link>
+      <link>https://jiaruzhang.github.io/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/project/example/</guid>
+      <guid>https://jiaruzhang.github.io/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -956,17 +956,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>External Project</title>
-      <link>https://lan-qing.github.io/project/external-project/</link>
+      <link>https://jiaruzhang.github.io/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/project/external-project/</guid>
+      <guid>https://jiaruzhang.github.io/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://lan-qing.github.io/admin/config.yml</link>
+      <link>https://jiaruzhang.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/admin/config.yml</guid>
+      <guid>https://jiaruzhang.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     

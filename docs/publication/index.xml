@@ -2,165 +2,165 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Jiaru Zhang</title>
-    <link>https://lan-qing.github.io/publication/</link>
-      <atom:link href="https://lan-qing.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jiaruzhang.github.io/publication/</link>
+      <atom:link href="https://jiaruzhang.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Dec 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lan-qing.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jiaruzhang.github.io/media/icon_hu9f43751bd28b709bfe4ea8a2bb44c777_438405_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://lan-qing.github.io/publication/</link>
+      <link>https://jiaruzhang.github.io/publication/</link>
     </image>
     
     <item>
       <title>Analytical Correction for Subsampling Bias in Drifting Models</title>
-      <link>https://lan-qing.github.io/publication/abc/</link>
+      <link>https://jiaruzhang.github.io/publication/abc/</link>
       <pubDate>Wed, 09 Dec 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/abc/</guid>
+      <guid>https://jiaruzhang.github.io/publication/abc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI</title>
-      <link>https://lan-qing.github.io/publication/mls-bench/</link>
+      <link>https://jiaruzhang.github.io/publication/mls-bench/</link>
       <pubDate>Wed, 09 Dec 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/mls-bench/</guid>
+      <guid>https://jiaruzhang.github.io/publication/mls-bench/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficient and Explainable End-to-End Autonomous Driving via Masked Vision-Language-Action Diffusion</title>
-      <link>https://lan-qing.github.io/publication/mvlad-ad/</link>
+      <link>https://jiaruzhang.github.io/publication/mvlad-ad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/mvlad-ad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/mvlad-ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ViLaD: A Large Vision Language Diffusion Framework for End-to-End Autonomous Driving</title>
-      <link>https://lan-qing.github.io/publication/vilad/</link>
+      <link>https://jiaruzhang.github.io/publication/vilad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/vilad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/vilad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring Diffusion Models&#39; Corruption Stage in Few-Shot Fine-tuning and Mitigating with Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/publication/bfm/</link>
+      <link>https://jiaruzhang.github.io/publication/bfm/</link>
       <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/bfm/</guid>
+      <guid>https://jiaruzhang.github.io/publication/bfm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Accelerating Inference of Discrete Autoregressive Normalizing Flows by Selective Jacobi Decoding</title>
-      <link>https://lan-qing.github.io/publication/sejd/</link>
+      <link>https://jiaruzhang.github.io/publication/sejd/</link>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/sejd/</guid>
+      <guid>https://jiaruzhang.github.io/publication/sejd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>One-Step Diffusion Samplers via Self-Distillation and Deterministic Flow</title>
-      <link>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</link>
+      <link>https://jiaruzhang.github.io/publication/one-step-diffusion-samplers/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/one-step-diffusion-samplers/</guid>
+      <guid>https://jiaruzhang.github.io/publication/one-step-diffusion-samplers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends</title>
-      <link>https://lan-qing.github.io/publication/llm4ad/</link>
+      <link>https://jiaruzhang.github.io/publication/llm4ad/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/llm4ad/</guid>
+      <guid>https://jiaruzhang.github.io/publication/llm4ad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AMPERE: A Generic Energy Estimation Approach for On-Device Training</title>
-      <link>https://lan-qing.github.io/publication/thor/</link>
+      <link>https://jiaruzhang.github.io/publication/thor/</link>
       <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/thor/</guid>
+      <guid>https://jiaruzhang.github.io/publication/thor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stealthy Backdoor Attack in Federated Learning via Adaptive Layer-wise Gradient Alignment</title>
-      <link>https://lan-qing.github.io/publication/layer-wise-attack/</link>
+      <link>https://jiaruzhang.github.io/publication/layer-wise-attack/</link>
       <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/layer-wise-attack/</guid>
+      <guid>https://jiaruzhang.github.io/publication/layer-wise-attack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Leveraging Model Guidance to Extract Training Data from Personalized Diffusion Models</title>
-      <link>https://lan-qing.github.io/publication/finextract/</link>
+      <link>https://jiaruzhang.github.io/publication/finextract/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/finextract/</guid>
+      <guid>https://jiaruzhang.github.io/publication/finextract/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Identifiable Structures Helps Avoid Bias in DNN-based Supervised Causal Learning</title>
-      <link>https://lan-qing.github.io/publication/paire/</link>
+      <link>https://jiaruzhang.github.io/publication/paire/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/paire/</guid>
+      <guid>https://jiaruzhang.github.io/publication/paire/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CGI-DM: Digital Copyright Authentication for Diffusion Models via Contrasting Gradient Inversion</title>
-      <link>https://lan-qing.github.io/publication/cgi-dm/</link>
+      <link>https://jiaruzhang.github.io/publication/cgi-dm/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/cgi-dm/</guid>
+      <guid>https://jiaruzhang.github.io/publication/cgi-dm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SPOT: Harnessing Differentiable Causal Discovery in the Presence of Latent Confounders with Skeleton Posterior</title>
-      <link>https://lan-qing.github.io/publication/spot/</link>
+      <link>https://jiaruzhang.github.io/publication/spot/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/spot/</guid>
+      <guid>https://jiaruzhang.github.io/publication/spot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Information Bound and its Applications in Bayesian Neural Networks</title>
-      <link>https://lan-qing.github.io/publication/ibbnn/</link>
+      <link>https://jiaruzhang.github.io/publication/ibbnn/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/ibbnn/</guid>
+      <guid>https://jiaruzhang.github.io/publication/ibbnn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples</title>
-      <link>https://lan-qing.github.io/publication/aedg/</link>
+      <link>https://jiaruzhang.github.io/publication/aedg/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/aedg/</guid>
+      <guid>https://jiaruzhang.github.io/publication/aedg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Bayesian Neural Networks by Adversarial Sampling</title>
-      <link>https://lan-qing.github.io/publication/as/</link>
+      <link>https://jiaruzhang.github.io/publication/as/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/as/</guid>
+      <guid>https://jiaruzhang.github.io/publication/as/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hierarchical Satellite System Graph for Approximate Nearest Neighbor Search on Big Data</title>
-      <link>https://lan-qing.github.io/publication/hssg/</link>
+      <link>https://jiaruzhang.github.io/publication/hssg/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/hssg/</guid>
+      <guid>https://jiaruzhang.github.io/publication/hssg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robust Bayesian Neural Networks by Spectral Expectation Bound Regularization</title>
-      <link>https://lan-qing.github.io/publication/sebr/</link>
+      <link>https://jiaruzhang.github.io/publication/sebr/</link>
       <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://lan-qing.github.io/publication/sebr/</guid>
+      <guid>https://jiaruzhang.github.io/publication/sebr/</guid>
       <description></description>
     </item>
     
