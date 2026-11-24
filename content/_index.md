@@ -211,7 +211,7 @@ sections:
       subtitle:
       text: |-
         - Organizer: 1st [WAM-AD Workshop](https://wam-ad.github.io/) @ [IEEE/CVF WACV 2027](https://wacv.thecvf.com/Conferences/2027), 5th [LLVM-AD Workshop](https://llvm-ad.github.io/WACV_2026/) @ [IEEE/CVF WACV 2026](https://wacv.thecvf.com/Conferences/2026), 4th [LLVM-AD Workshop](https://llvm-ad.github.io/ITSC_2025/) @ [IEEE ITSC 2025](https://ieee-itsc.org/2025/)
-        - Conference reviewer: CVPR 2027, WACV 2027, AAAI 2027, AISTATS 2027, ACL ARR May 2026, NeurIPS 2026, ICML 2026, IROS 2026, CVPR 2026, AISTATS 2026, KDD 2026, AAAI 2026, NeurIPS 2025, ICCV 2025, ACM MM 2025, KDD 2025, ICML 2025, CVPR 2025, AISTATS 2025, AAAI 2025, ICPR 2024, NeurIPS 2024, CVPR 2024, ICML 2024, ICLR 2024, NeurIPS 2023, EAI CollaborateCom 2022.
+        - Conference reviewer: NeurIPS (2023–2026), ICML (2024–2026), ICLR (2024), CVPR (2024–2027), ICCV (2025), WACV (2027), AAAI (2025–2027), AISTATS (2025–2027), KDD (2025–2026), IROS (2026), ACL Rolling Review (May 2026), ACM Multimedia (2025), ICPR (2024), EAI CollaborateCom (2022).
         - Journal reviewer: *Transactions on Intelligent Transportation Systems*, *Software: Practice and Experience*, *IEEE Computational Intelligence Magazine*, *IEEE Internet of Things Journal*.
     design:
       columns: '2'
